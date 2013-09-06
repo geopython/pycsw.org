@@ -17,3 +17,16 @@
 .bash .nb {
      color: #1c8fe3;   
 }
+
+.github-fork {
+    overflow: hidden;
+    width: 53px;
+    height: 20px;
+    border: 0;
+}
+
+.logo {
+    clear: left;
+    float: left;
+    margin-right: 1em;        
+}
