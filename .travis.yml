@@ -10,3 +10,9 @@ script:
 branches:
   only:
     - website
+
+notifications:
+  irc:
+    channels:
+      - "irc.freenode.org#pycsw"
+    use_notice: true
