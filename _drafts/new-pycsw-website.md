@@ -1,9 +1,9 @@
 ---
 layout: post
-title: New Website
+title: New pycsw Website
 ---
 
-In time for [FOSS4G2013](http://2013.foss4g.org), we're happy to announce the new [website](http://pycsw.org)!  Notable changes:
+In time for [FOSS4G2013](http://2013.foss4g.org), we're happy to announce our new, updated [website](http://pycsw.org)!  Notable changes:
 
 - a [blog](http://pycsw.org/blog) is now available, and part of [Planet OSGeo](http://planet.osgeo.org)
 - new design using [Bootstrap](http://getbootstrap.com), mobile friendly
