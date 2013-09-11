@@ -21,6 +21,8 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  position: relative;
+  z-index: 3;
   text-align: center;
   background-color: transparent;
 }
@@ -28,6 +30,21 @@ body {
   font-size: 21px;
   padding: 14px 24px;
 }
+
+.jumbotron:after {
+  opacity: 0.2;
+  /*background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)), url('/img/pycsw_overview.jpg');*/
+  background-image: url('/img/pycsw_overview.jpg');
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
 
