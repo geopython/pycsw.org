@@ -10,7 +10,7 @@ Setting up website environment locally
     virtualenv pycsw-website && cd $_
     . bin/activate
     # get the website branch
-    git clone git@github.com/geopython/pycsw.git -b website && cd pycsw
+    git clone git@github.com:geopython/pycsw.git -b website && cd pycsw
     # set Ruby environment variables
     . setenv-ruby-gem
     # install Jekyll
