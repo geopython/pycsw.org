@@ -1,6 +1,8 @@
 ---
 layout: post
 title: New pycsw Website
+author: Tom Kralidis
+author_url: https://github.com/tomkralidis
 ---
 
 In time for [FOSS4G2013](http://2013.foss4g.org), we're happy to announce our new, updated [website](http://pycsw.org)!  Notable changes:
