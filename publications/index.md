@@ -12,4 +12,4 @@ active_page: publications_index
   * [LaTeX source](osgeo_journal_2011.tex)
 * FOSS4G2013
   * [Abstract] (http://2013.foss4g.org/conf/programme/presentations/133/)
-  * [Presentation](foss4g2013/index.html)
+  * [Presentation](foss4g2013)
