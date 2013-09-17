@@ -1,3 +1,6 @@
+
+[![Build Status](https://travis-ci.org/geopython/pycsw.png?branch=website)](https://travis-ci.org/geopython/pycsw)
+
 pycsw.org
 =========
 
