@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Publications
+keywords: publications, conferences, journals, presentations
 active_page: publications_index
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Community
+description: community participation
+keywords: community, testing, mailing list, irc, chat, contributing, pull request
 active_page: community
 ---
 

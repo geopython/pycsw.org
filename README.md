@@ -36,7 +36,12 @@ Workflow
     git push origin website
     # adding blogposts
     cd _drafts
-    vi newpost.md  # make sure to set layout, title, author, author_url YAML front matter
+    vi newpost.md
+    # make sure to set the following YAML front matter:
+    # layout: post
+    # title: Some Title
+    # author: Firstname Lastname
+    # author_url: URL to link to the author (Twitter, GitHub, etc.)
     # preview with `make drafts` and draft will show up as latest post
     # publish with `git mv _drafts/newpost.md _posts/YYYY-MM-DD-newpost.md && git commit -m 'publish article'`
 

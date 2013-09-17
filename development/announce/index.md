@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Release Announcements
+description: release annoucements
+keywords: release, announce
 active_page: announce_index
 ---
 

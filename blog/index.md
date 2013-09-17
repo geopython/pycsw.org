@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Blog
+description: project blog and news
+keywords: blog, development, announcements
 active_page: blog
 ---
 

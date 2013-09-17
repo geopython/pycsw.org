@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Download
+description: download software
+keywords: download, access, tar.gz, zip, PyPI, GitHub, packages, rpm, OSGeo-Live, ppa
 active_page: download
 ---
 

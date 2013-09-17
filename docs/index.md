@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Documentation
+description: documentation landing
+keywords: documentation, versions, master, workshop
 active_page: docs
 ---
 

@@ -1,6 +1,8 @@
 ---
 layout: default
 title: FAQ
+description: frequently asked questions
+keywords: faq, questions, problems, solutions
 active_page: faq
 ---
 
