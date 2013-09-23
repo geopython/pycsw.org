@@ -1,6 +1,6 @@
 # =================================================================
 #
-# Authors: Tom Kralidis <tomkralidis@hotmail.com>
+# Authors: Tom Kralidis <tomkralidis@gmail.com>
 #          Ryan Clark <ryan.clark@azgs.az.gov>
 #
 # Copyright (c) 2013 Tom Kralidis
