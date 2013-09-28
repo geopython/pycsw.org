@@ -3,7 +3,7 @@ layout: post
 title: pycsw FOSS4G 2013 Presentation
 author: Tom Kralidis
 author_url: https://github.com/tomkralidis
-publish_date: 2013-09-23 13:30:00 -0400
+publish_date: 2013-09-27 17:59 -0400
 ---
 
 Angelos' presentation from [last week](http://2013.foss4g.org) is now [online](http://pycsw.org/publications/foss4g2013/).

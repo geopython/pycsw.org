@@ -2,7 +2,11 @@
 layout: default
 ---
 <div id="post">
-	<h1>{{ page.title }}</h1>
-	<p><small>{{ page.date | date_to_long_string }} - by <a href="{{ page.author_url }}">{{ page.author }}</a></small></p>
-	{{ content }}
+    <h1>{{ page.title }}</h1>
+    {% if page.publish_date %}
+    <p><small>{{ page.publish_date | date: "%d %B %Y %H:%M:%S %Z"}} - by <a href="{{ page.author_url }}">{{ page.author }}</a></small></p>
+    {% else %}
+    <p><small>{{ page.date | date_to_long_string }} - by <a href="{{ page.author_url }}">{{ page.author }}</a></small></p>
+    {% endif %}
+    {{ content }}
 </div>
