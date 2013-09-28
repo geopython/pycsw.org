@@ -2,7 +2,7 @@
 layout: post
 title: pycsw FOSS4G 2013 Presentation
 author: Tom Kralidis
-author_url: https://github.com/tomkralidis
+author_url: https://twitter.com/tomkralidis
 publish_date: 2013-09-27 17:59 -0400
 ---
 
