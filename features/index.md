@@ -22,6 +22,7 @@ active_page: features
 - flexible repository configuration
 - [GeoNode](http://geonode.org) connectivity
 - [Open Data Catalog](https://github.com/azavea/Open-Data-Catalog/) connectivity
+- [CKAN](http://ckan.org) connectivity
 - federated catalogue distributed searching
 - realtime XML Schema validation
 - extensible plugin architecture
