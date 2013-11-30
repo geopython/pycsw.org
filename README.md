@@ -63,5 +63,5 @@ the familiar targets:
     make html
     make linkcheck
     make clean
-    make username=<username> publish 
+    make publish username=<username>
     make drafts
