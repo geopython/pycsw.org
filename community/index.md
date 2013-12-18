@@ -21,6 +21,7 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 [![OGC Climate-Hydrologic Information Sharing Pilot]({{site.baseurl}}/img/ogc-chisp.jpg)](http://www.opengeospatial.org/projects/initiatives/chisp)
 [![Open Data Catalog, Code for America Brigade]({{site.baseurl}}/img/open-data-catalog.png)](http://commons.codeforamerica.org/apps/open-data-catalog)
 [![University of Cologne, Department of Geography, Collaborative Research Centre 806]({{site.baseurl}}/img/uni-koeln.png)](http://crc806db.uni-koeln.de/)
+[![NOAA - National Oceanic and Atmospheric Administration]({{site.baseurl}}/img/noaa.png)](http://data.noaa.gov/)
 
 There are numerous ways to interact with the pycsw community.
 
