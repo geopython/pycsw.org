@@ -61,7 +61,7 @@ pycsw service providers (core development, support, training) can be found on th
 
 The pycsw [wiki](https://github.com/geopython/pycsw/wiki) provides an area for supporting information that frequently changes and / or is outside the scope of the formal documentation.
 
-pycsw's [issue tracker](https://github.com/geopython/pycsw/issues) is the place to report bugs or request enhancements.  To submit a [bug](https://github.com/geopython/pycsw/issues/) be sure to specify the version you are using, the appropriate component, a description of how to reproduce the bug, as well as what version of Python and platform.  For convenience, you can run `sbin/pycsw-admin.py -c get_sysprof` and copy/paste the output into your bug report.
+pycsw's [issue tracker](https://github.com/geopython/pycsw/issues) is the place to report bugs or request enhancements.  To submit a [bug](https://github.com/geopython/pycsw/issues/) be sure to specify the version you are using, the appropriate component, a description of how to reproduce the bug, as well as what version of Python and platform.  For convenience, you can run `pycsw-admin.py -c get_sysprof` and copy/paste the output into your bug report.
 
 GitHub provides the ability for users to issue [pull requests](https://help.github.com/articles/creating-a-pull-request), and is the preferred way to have your contributions added to pycsw, although patches and other mechanisms are welcome as well.  If you are submitting a patch, please add the `has-patch` label to the ticket (so tickets with patches can be easily filtered).  Also read the [_FAQ_]({{site.baseurl}}/faq.html) before submitting.
 
