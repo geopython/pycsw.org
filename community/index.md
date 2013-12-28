@@ -71,7 +71,7 @@ All pycsw [source code](https://github.com/geopython/pycsw) is managed on GitHub
 
 Users, developers and others are more than welcome!  There are plenty of ways to get involved:
 
-__Developers__ (check [Development](http://pycsw.org/docs/development.html) for more info)
+__Developers__ (check [Contributing](http://pycsw.org/docs/latest/contributing.html) for more info)
 
 - adding new functionality
 - fixing issues
