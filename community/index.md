@@ -41,7 +41,7 @@ Mailing list archives are available at <http://lists.osgeo.org/pipermail/pycsw-d
 
 ## IRC
 
-Internet Relay Chat (IRC) allows for real-time communication and group discussion.  The pycsw IRC channel can be found at:
+Internet Relay Chat (IRC) allows for real-time communication and group discussion.  The [pycsw IRC channel](irc://irc.freenode.net/pycsw) can be found at:
 
 - **Server**: `irc.freenode.net`
 - **Channel**: `#pycsw` (or `#geopython`)
