@@ -10,6 +10,8 @@ active_page: download
 
 * Current Stable Release (1.6.1) <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.6.1.tar.gz">tar.gz <span class="glyphicon glyphicon-compressed"> </span></a> <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.6.1.zip">zip <span class="glyphicon glyphicon-compressed"> </span></a>
 
+* Current Development Release (1.8.0-beta1) <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.8.0-beta1.tar.gz">tar.gz <span class="glyphicon glyphicon-compressed"> </span></a> <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.8.0-beta1.zip">zip <span class="glyphicon glyphicon-compressed"> </span></a>
+
 * [All Releases](http://download.osgeo.org/pycsw/)
 
 ## Source Code
