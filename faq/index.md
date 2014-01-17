@@ -18,6 +18,8 @@ active_page: faq
 
 [How can I handle transactions safely?](#how_can_i_handle_transactions_safely)
 
+[How can I make CSW POST XML requests?](#how_can_i_make_csw_post_xml_requests)
+
 Can I use pycsw within my WSGI application?
 -------------------------------------------
 
@@ -74,3 +76,36 @@ How can I handle transactions safely?
 -------------------------------------
 
 Transactions are handled by an IP-based authentication list which can be set in pycsw's [configuration](http://pycsw.org/docs/configuration.html#configuration) (in `manager.allowed_ips`).  Supported notations includes traditional IP address, wildcard, and CIDR.
+
+How can I make CSW POST XML requests?
+-------------------------------------
+
+HTTP POST requests with XML are a bit different then the traditional HTTP POST appraoch (key=value).  An HTTP client opens a connection to the server and sends XML directly.  CSW implements HTTP POST in this manner with XML requests.
+
+There are numerous ways to make this type of request, but here are a few:
+
+Python
+{% highlight python %}
+import requests
+requests.post('http://host/csw', data=open('/path/to/request.xml').read()).text
+
+from owslib.util import http_post
+# see owslib.util.http_post in https://github.com/geopython/OWSLib/blob/master/owslib/util.py
+response = http_post('http://host/csw', request=open('/path/to/request.xml').read())
+{% endhighlight %}
+
+Command line tools:
+{% highlight bash %}
+# pycsw-admin.py utility
+pycsw-admin.py -c post_xml -u http://host/csw -x /path/to/request.xml
+
+# curl
+curl -X POST -d @/path/to/request.xml http://host/csw
+
+# lwp-request
+cat /path/to/request.xml | POST http://demo.pycsw.org/cite/csw
+
+# wget
+wget http://demo.pycsw.org/cite/csw --post-file=/path/to/request.xml
+
+{% endhighlight %}
