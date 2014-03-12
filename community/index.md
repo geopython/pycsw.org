@@ -12,14 +12,16 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 
 <script src="https://embed.github.com/view/geojson/geopython/pycsw/website/live-deployments.geojson"> </script>
 
+[![Data.gov](http://catalog.data.gov/fanstatic/geodatagov/:version:2014-02-27T20:17:26.50/images/logo.png)](http://data.gov)
 [![CKAN]({{site.baseurl}}/img/ckan.png)](http://ckan.org)
 [![USGS Center for Integrated Data Analytics]({{site.baseurl}}/img/usgs-cida.jpg)](http://cida.usgs.gov/)
 [![Geonode]({{site.baseurl}}/img/geonode.jpg)](http://geonode.org/)
-[![Secretariat of the Pacific Community]({{site.baseurl}}/img/sopac.jpg)](http://www.sopac.org)
 
+[![Secretariat of the Pacific Community]({{site.baseurl}}/img/sopac.jpg)](http://www.sopac.org)
 [![INSIDE Idaho]({{site.baseurl}}/img/inside-idaho.jpg)](http://insideidaho.org)
 [![OGC Climate-Hydrologic Information Sharing Pilot]({{site.baseurl}}/img/ogc-chisp.jpg)](http://www.opengeospatial.org/projects/initiatives/chisp)
 [![Open Data Catalog, Code for America Brigade]({{site.baseurl}}/img/open-data-catalog.png)](http://commons.codeforamerica.org/apps/open-data-catalog)
+
 [![University of Cologne, Department of Geography, Collaborative Research Centre 806]({{site.baseurl}}/img/uni-koeln.png)](http://crc806db.uni-koeln.de/)
 [![NOAA - National Oceanic and Atmospheric Administration]({{site.baseurl}}/img/noaa.png)](http://data.noaa.gov/)
 
