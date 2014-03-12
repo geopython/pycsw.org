@@ -8,7 +8,7 @@ active_page: docs
 
 # Documentation
 
-* [Current Release (1.6.2)]({{site.baseurl}}/docs/1.6.2)
+* [Current Release (1.6.3)]({{site.baseurl}}/docs/1.6.3)
 * [Latest (master)]({{site.baseurl}}/docs/latest)
 
 * [All Releases](https://pycsw.readthedocs.org)
