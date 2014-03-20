@@ -12,7 +12,7 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 
 <script src="https://embed.github.com/view/geojson/geopython/pycsw/website/live-deployments.geojson"> </script>
 
-[![Data.gov](http://catalog.data.gov/fanstatic/geodatagov/:version:2014-02-27T20:17:26.50/images/logo.png)](http://data.gov)
+[![Data.gov]({{site.baseurl}}/img/data-gov.png)](http://data.gov)
 [![CKAN]({{site.baseurl}}/img/ckan.png)](http://ckan.org)
 [![USGS Center for Integrated Data Analytics]({{site.baseurl}}/img/usgs-cida.jpg)](http://cida.usgs.gov/)
 [![Geonode]({{site.baseurl}}/img/geonode.jpg)](http://geonode.org/)
