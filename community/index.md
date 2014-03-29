@@ -55,6 +55,8 @@ pycsw developers can be found in the IRC channel.  Below are some suggested IRC 
 - [Colloquy](http://colloquy.info/) (Mac OS)
 - [irssi](http://irssi.org/) (Terminal-based)
 
+IRC logs can be found at [http://irclogs.geoapt.com/pycsw/](http://irclogs.geoapt.com/pycsw/)
+
 ## Service Providers
 
 pycsw service providers (core development, support, training) can be found on the [OSGeo Service Provider Directory](http://www.osgeo.org/search_profile?SET=1&MUL_TECH[]=00107)
