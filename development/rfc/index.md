@@ -16,3 +16,4 @@ MapServer, major additions to functionality, or changes in the direction of
 the project.
 
 * [RFC1: Project Steering Committee Guidelines](rfc-1.html)
+* [RFC2: OGC OpenSearch Geo/Time support](rfc-2.html)
