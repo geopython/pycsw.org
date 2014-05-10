@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/geopython/pycsw.png?branch=website)](https://travis-ci.org/geopython/pycsw)
+[![Build Status](https://travis-ci.org/geopython/pycsw.org.png)](https://travis-ci.org/geopython/pycsw.org)
 
 pycsw.org
 =========
@@ -10,10 +10,10 @@ Setting up website environment locally
 --------------------------------------
 
     # setup virtualenv
-    virtualenv pycsw-website && cd $_
+    virtualenv pycsw.org && cd $_
     . bin/activate
-    # get the website branch
-    git clone git@github.com:geopython/pycsw.git -b website && cd pycsw
+    # get the repo
+    git clone git@github.com:geopython/pycsw.org.git && cd pycsw.org
     # set Ruby environment variables
     . setenv-ruby-gem
     # install Jekyll
@@ -33,7 +33,7 @@ Workflow
     # update live deployment map
     python to_geojson.py
     git commit -m 'update live deployment map' live-deployments.geojson
-    git push origin website
+    git push origin master
     # adding blogposts
     cd _drafts
     vi newpost.md
@@ -55,7 +55,7 @@ Workflow
     # update the publish_date YAML front matter
     # commit and push
     git commit -m 'publish article'
-    git push origin website
+    git push origin master
 
 For a [Sphinx](http://sphinx-doc.org/) feel, there's a `Makefile` with
 the familiar targets:

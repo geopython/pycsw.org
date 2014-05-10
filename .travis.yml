@@ -9,7 +9,7 @@ script:
 
 branches:
   only:
-    - website
+    - master
 
 notifications:
   irc:
