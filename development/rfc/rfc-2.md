@@ -103,11 +103,11 @@ The `docs/opensearch.rst` and `docs/introduction.rst` documents are going to be 
 
 ### Issue Tracking ID
 
-https://github.com/geopython/pycsw/issues/245
+[https://github.com/geopython/pycsw/issues/245](https://github.com/geopython/pycsw/issues/245)
 
 ### Pull Request
 
-https://github.com/geopython/pycsw/pull/247
+[https://github.com/geopython/pycsw/pull/247](https://github.com/geopython/pycsw/pull/247)
 
 ### Voting History
 
