@@ -112,8 +112,6 @@ Initial PSC members are (in alphabetical order):
 * [Adrià Mercader](https://github.com/amercader)
 * [Angelos Tzotsos](https://github.com/kalxas)
 
-### Updates
-
-Status:
+## Voting History
 
 Adopted on 2014-04-08. +1: capooti, ahinz, tomkralidis, amercader, kalxas
