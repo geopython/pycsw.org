@@ -111,8 +111,8 @@ The `docs/opensearch.rst` and `docs/introduction.rst` documents are going to be 
 
 ### Voting History
 
-None yet
++1 from Adam Hinz, Adria Mercader, Tom Kralidis, Paolo Corti and Angelos Tzotsos
 
 ### Status
 
-Proposed on 2014-05-10.
+Accepted on 2014-05-12.
