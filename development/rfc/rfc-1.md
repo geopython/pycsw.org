@@ -46,7 +46,7 @@ In brief the project team votes on proposals on pycsw-devel.  Proposals are avai
 * If a proposal is vetoed, and it cannot be revised to satisfy all parties, then it can be resubmitted for an override vote in which a majority of all eligible votes indicating +1 is sufficient to pass it.  Note that this is a majority of all committee members, not just those who actively vote
 * Upon completion of discussion and voting the author should announce whether they are proceeding (proposal accepted) or are withdrawing (vetoed)
 * The Chair gets a vote
-* The Chair is responsible for keeping track of who is a member of the PSC.  The authoritative and current PSC membership list is maintained at http://pycsw.org/community/psc.html
+* The Chair is responsible for keeping track of who is a member of the PSC.  The authoritative and current PSC membership list is maintained at [http://pycsw.org/community/psc.html](http://pycsw.org/community/psc.html)
 * Addition and removal of members from the PSC, including selection of a Chair should be handled as a proposal to the committee
 * The Chair adjudicates in cases of disputes about voting
 
