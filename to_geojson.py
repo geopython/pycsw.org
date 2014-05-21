@@ -77,12 +77,13 @@ def build_psc_geojson():
         feature = {
             'type': 'Feature',
             'properties': {
-                'name': row[0],
-                'url': '<a href="https://github.com/%s">%s</a>' % (row[1], row[0])
+                'name': '<a href="https://github.com/%s">%s</a>' % (row[1], row[0]),
+                'role': row[2]
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [ float(row[4]), float(row[3]) ] }
+                'coordinates': [ float(row[4]), float(row[3]) ]
+            }
         }
         if row[2] == 'PSC':
             color = '0000FF'
