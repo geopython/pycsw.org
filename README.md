@@ -31,7 +31,7 @@ Workflow
     # publish to live
     ./publish.sh <username>
     # update live deployment map
-    python to_geojson.py
+    python to_geojson.py live_deployments
     git commit -m 'update live deployment map' live-deployments.geojson
     git push origin master
     # adding blogposts

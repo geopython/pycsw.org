@@ -30,6 +30,7 @@
 
 import csv
 import json
+import sys
 from StringIO import StringIO
 from urllib2 import urlopen
 
@@ -63,5 +64,47 @@ def build_live_deployments_geojson():
     with open('live-deployments.geojson', 'w') as output_file:
         output_file.write(json.dumps(geojson))
 
+def build_psc_geojson():
+    """Create GeoJSON of PSC membership for GitHub to render"""
+    geojson = { 'type': 'FeatureCollection', 'features': [] }
+
+    # serialize as GeoJSON
+    psc_reader = csv.reader(open('community/psc.csv'))
+    next(psc_reader)  # skip fields row
+    for row in psc_reader:
+        xycoords = row[3].split(',')
+
+        feature = {
+            'type': 'Feature',
+            'properties': {
+                'name': row[0],
+                'url': '<a href="https://github.com/%s">%s</a>' % (row[1], row[0])
+            },
+            'geometry': {
+                'type': 'Point',
+                'coordinates': [ float(row[4]), float(row[3]) ] }
+        }
+        if row[2] == 'PSC':
+            color = '0000FF'
+        else:
+            color = '00FF00'
+
+        feature['properties']['marker-color'] = color
+
+        geojson['features'].append(feature)
+
+    with open('community/psc.geojson', 'w') as output_file:
+        output_file.write(json.dumps(geojson))
+
 if __name__ == '__main__':
-    build_live_deployments_geojson()
+    usage = 'Usage: %s <live_deployments|psc>' % sys.argv[0]
+    if len(sys.argv) < 2:
+        print usage
+        sys.exit(1)
+    if sys.argv[1] not in ['live_deployments', 'psc']:
+        print usage
+        sys.exit(2)
+    if sys.argv[1] == 'live_deployments':
+        build_live_deployments_geojson()
+    elif sys.argv[1] == 'psc':
+        build_psc_geojson()

@@ -6,6 +6,8 @@ install:
 script:
   - jekyll build
 #  - check-links _site
+  - python -mjson.tool live-deployments.geojson
+  - python -mjson.tool psc.geojson
 
 branches:
   only:

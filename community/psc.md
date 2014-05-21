@@ -14,8 +14,14 @@ the authoritative and current PSC membership list is maintained at
 
 Members are (in alphabetical order):
 
-* [Paolo Corti](https://github.com/capooti)
-* [Adam Hinz](https://github.com/ahinz)
-* [Tom Kralidis](https://github.com/tomkralidis) (Chair)
-* [Adrià Mercader](https://github.com/amercader)
-* [Angelos Tzotsos](https://github.com/kalxas)
+<ul>
+{% for member in site.data.psc_members %}
+  {% if member[2] == 'PSC' %}
+  <li><a title="{{ member[0]  }}" href="https://github.com/{{ member[1] }}">{{ member[0] }}</a></li>
+  {% elsif member[2] == 'PSC Chair' %}
+  <li><a title="{{ member[0]  }}" href="https://github.com/{{ member[1] }}">{{ member[0] }}</a> (Chair)</li>
+  {% endif %}
+{% endfor %}
+<ul>
+
+<script src="https://embed.github.com/view/geojson/geopython/pycsw.org/master/live-deployments.geojson"></script>
