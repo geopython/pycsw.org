@@ -85,7 +85,7 @@ def build_psc_geojson():
                 'coordinates': [ float(row[4]), float(row[3]) ]
             }
         }
-        if row[2] == 'PSC':
+        if row[2].startswith('PSC'):
             color = '0000FF'
         else:
             color = '00FF00'
