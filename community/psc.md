@@ -14,14 +14,21 @@ the authoritative and current PSC membership list is maintained at
 
 Members are (in alphabetical order):
 
-<ul>
+<table>
+    <tr>
+        <td class="psc">
+            <ul>
 {% for member in site.data.psc_members %}
   {% if member[2] == 'PSC' %}
-  <li><a title="{{ member[0]  }}" href="https://github.com/{{ member[1] }}">{{ member[0] }}</a></li>
+                <li><a title="{{ member[0]  }}" href="https://github.com/{{ member[1] }}">{{ member[0] }}</a></li>
   {% elsif member[2] == 'PSC Chair' %}
-  <li><a title="{{ member[0]  }}" href="https://github.com/{{ member[1] }}">{{ member[0] }}</a> (Chair)</li>
+                <li><a title="{{ member[0]  }}" href="https://github.com/{{ member[1] }}">{{ member[0] }}</a> (Chair)</li>
   {% endif %}
 {% endfor %}
-<ul>
-
-<script src="https://embed.github.com/view/geojson/geopython/pycsw.org/master/live-deployments.geojson"></script>
+            <ul>
+        </td>
+        <td>
+            <script src="https://embed.github.com/view/geojson/geopython/pycsw.org/master/community/psc.geojson?width=400&height=300"></script>
+        </td>
+    </tr>
+</table>
