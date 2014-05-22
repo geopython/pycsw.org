@@ -18,7 +18,7 @@ Data.gov is the home of the U.S. Government's open data.
 The 1.8.0 release brings significant features, enhancements and fixes to the codebase, including:
  
 * support for PostgreSQL Full Text Search
-* support for [repository filtering](http://pycsw.org/docs/1.8.0/repofilters.html)
+* support for [repository filtering](http://docs.pycsw.org/en/1.8.0/repofilters.html)
 * support for PostgreSQL schemas other than 'public'
 * implement database connection pooling for WSGI
 * more robust native model

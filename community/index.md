@@ -78,7 +78,7 @@ Users, developers and others are more than welcome!  There are plenty of ways to
 - [Development](http://pycsw.org/development)
 - [Project Steering Committee](psc.html)
 
-__Developers__ (check [Contributing](http://pycsw.org/docs/latest/contributing.html) for more info)
+__Developers__ (check [Contributing](http://docs.pycsw.org/en/latest/contributing.html) for more info)
 
 - adding new functionality
 - fixing issues

@@ -26,13 +26,13 @@ active_page: download
 
 pycsw exists as a [package](https://build.opensuse.org/package/show?package=python-pycsw&project=Application%3AGeo) in openSUSE Build Service (OBS). Since release 0.1.0 it is included in the official [Application:Geo](https://build.opensuse.org/project/show?project=Application%3AGeo) repository.
 
-__See Also:__ [_Installing from an OpenSUSE Build Service_](http://pycsw.org/docs/installation.html#opensuse)
+__See Also:__ [_Installing from an OpenSUSE Build Service_](http://docs.pycsw.org/en/latest/installation.html#opensuse)
 
 ### Ubuntu
 
 pycsw exists as a package in [Launchpad](https://code.launchpad.net/~gcpp-kalxas/+archive/ppa-tzotsos)
 
-__See Also:__ [_Installing on Ubuntu/Xubuntu/Kubuntu_](http://pycsw.org/docs/installation.html#ubuntu)
+__See Also:__ [_Installing on Ubuntu/Xubuntu/Kubuntu_](http://docs.pycsw.org/en/latest/installation.html#ubuntu)
 
 ## OSGeo-Live
 

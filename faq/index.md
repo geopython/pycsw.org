@@ -37,7 +37,7 @@ $ pycsw-admin.py -c export_records -f default.cfg -p /path/to/output_dir
 How do I add a custom metadata format?
 --------------------------------------
 
-pycsw provides a plugin framework in which you can implement a custom profile (see [Profile Plugins](http://pycsw.org/docs/profiles.html#profiles))
+pycsw provides a plugin framework in which you can implement a custom profile (see [Profile Plugins](http://docs.pycsw.org/en/latest/profiles.html#profiles))
 
 How can I catalogue 'sets' of metadata?
 ---------------------------------------
@@ -75,7 +75,7 @@ The above query will search for all metadata records of the same `apiso:parentId
 How can I handle transactions safely?
 -------------------------------------
 
-Transactions are handled by an IP-based authentication list which can be set in pycsw's [configuration](http://pycsw.org/docs/configuration.html#configuration) (in `manager.allowed_ips`).  Supported notations includes traditional IP address, wildcard, and CIDR.
+Transactions are handled by an IP-based authentication list which can be set in pycsw's [configuration](http://docs.pycsw.org/en/latest/configuration.html#configuration) (in `manager.allowed_ips`).  Supported notations includes traditional IP address, wildcard, and CIDR.
 
 How can I make CSW POST XML requests?
 -------------------------------------
