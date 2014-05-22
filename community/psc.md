@@ -26,7 +26,7 @@ Members are (in alphabetical order):
             </ul>
         </td>
         <td>
-            <script src="https://embed.github.com/view/geojson/geopython/pycsw.org/master/community/psc.geojson?width=400&height=300"></script>
+            <script src="https://embed.github.com/view/geojson/geopython/pycsw.org/master/community/psc.geojson?width=400&amp;height=300"> </script>
         </td>
     </tr>
 </table>
