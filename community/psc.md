@@ -18,13 +18,11 @@ Members are (in alphabetical order):
     <tr>
         <td class="psc">
             <ul>
-{% for member in site.data.psc_members %}
-  {% if member[2] == 'PSC' %}
-                <li><a title="{{ member[0]  }}" href="https://github.com/{{ member[1] }}">{{ member[0] }}</a></li>
-  {% elsif member[2] == 'PSC Chair' %}
-                <li><a title="{{ member[0]  }}" href="https://github.com/{{ member[1] }}">{{ member[0] }}</a> (Chair)</li>
-  {% endif %}
-{% endfor %}
+                <li>Paolo Corti (@capooti)</li>
+                <li>Adam Hinz (@ahinz)</li>
+                <li>Tom Kralidis (@tomkralidis) (Chair)</li>
+                <li>Adrià Mercader (@amercader)</li>
+                <li>Angelos Tzotsos (@kalxas)</li>
             <ul>
         </td>
         <td>

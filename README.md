@@ -17,7 +17,7 @@ Setting up website environment locally
     # set Ruby environment variables
     . setenv-ruby-gem
     # install Jekyll
-    gem install jekyll link-checker
+    gem install jekyll link-checker jekyll-mentions jekyll-sitemap github-pages
 
 Workflow
 --------
