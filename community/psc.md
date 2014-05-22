@@ -23,7 +23,7 @@ Members are (in alphabetical order):
                 <li>Tom Kralidis (@tomkralidis) (Chair)</li>
                 <li>Adri&agrave; Mercader (@amercader)</li>
                 <li>Angelos Tzotsos (@kalxas)</li>
-            <ul>
+            </ul>
         </td>
         <td>
             <script src="https://embed.github.com/view/geojson/geopython/pycsw.org/master/community/psc.geojson?width=400&height=300"></script>
