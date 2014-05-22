@@ -10,7 +10,7 @@ active_page: community
 
 pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in government, academia and industry, both as a standalone and embedded component in geospatial data portal applications.
 
-<script src="https://embed.github.com/view/geojson/geopython/pycsw.org/master/live-deployments.geojson"> </script>
+<script src="https://embed.github.com/view/geojson/geopython/pycsw.org/gh-pages/live-deployments.geojson"> </script>
 
 [![Data.gov]({{site.baseurl}}/img/data-gov.png)](http://data.gov)
 [![CKAN]({{site.baseurl}}/img/ckan.png)](http://ckan.org)
