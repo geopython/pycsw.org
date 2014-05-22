@@ -21,7 +21,7 @@ Members are (in alphabetical order):
                 <li>Paolo Corti (@capooti)</li>
                 <li>Adam Hinz (@ahinz)</li>
                 <li>Tom Kralidis (@tomkralidis) (Chair)</li>
-                <li>Adrià Mercader (@amercader)</li>
+                <li>Adri&agrave; Mercader (@amercader)</li>
                 <li>Angelos Tzotsos (@kalxas)</li>
             <ul>
         </td>
