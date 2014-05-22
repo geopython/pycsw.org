@@ -1,4 +1,5 @@
 name: pycsw
+markdown: kramdown
 highlighter: pygments
 timezone: GMT
 baseurl: http://pycsw.org
