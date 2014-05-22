@@ -33,7 +33,7 @@ Workflow
     # update live deployment map
     python to_geojson.py live_deployments
     git commit -m 'update live deployment map' live-deployments.geojson
-    git push origin master
+    git push origin gh-pages
     # adding blogposts
     cd _drafts
     vi newpost.md
@@ -55,7 +55,7 @@ Workflow
     # update the publish_date YAML front matter
     # commit and push
     git commit -m 'publish article'
-    git push origin master
+    git push origin gh-pages
 
 For a [Sphinx](http://sphinx-doc.org/) feel, there's a `Makefile` with
 the familiar targets:
