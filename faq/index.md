@@ -20,6 +20,12 @@ active_page: faq
 
 [How can I make CSW POST XML requests?](#how_can_i_make_csw_post_xml_requests)
 
+[Does pycsw have a GUI/webapp/interface?](#does-pycsw-have-a-guiwebappinterface)
+
+[I have 2147 metadata records.  How do I add them?](#i-have-2147-metadata-records--how-do-i-add-them)
+
+[How do I add metadata from a WAF?](#how-do-i-add-metadata-from-a-waf)
+
 Can I use pycsw within my WSGI application?
 -------------------------------------------
 
@@ -108,4 +114,43 @@ cat /path/to/request.xml | POST http://demo.pycsw.org/cite/csw
 # wget
 wget http://demo.pycsw.org/cite/csw --post-file=/path/to/request.xml
 
+{% endhighlight %}
+
+Does pycsw have a GUI/webapp/interface?
+---------------------------------------
+
+No.  pycsw is a headless metadata catalog.  [Administration](http://docs.pycsw.org/en/latest/administration.html) is via command line.  For full metadata management, applications like [CKAN](http://ckan.org), [GeoNode](http://geonode.org)  and [Open Data Catalog](http://commons.codeforamerica.org/apps/open-data-catalog) are built with pycsw inside and provide functionality to manage metadata via a GUI.
+
+I have 2147 metadata records.  How do I add them?
+-------------------------------------------------
+
+Add metadata using `pycsw-admin.py`:
+
+{% highlight bash %}
+# read a directory of metadata files
+pycsw-admin.py -c load_records -f /path/to/default.cfg -p /path/to/records
+
+# read a directory of metadata files, recursively
+pycsw-admin.py -c load_records -f /path/to/default.cfg -p /path/to/records -r
+
+{% endhighlight %}
+
+See [Loading Records](http://docs.pycsw.org/en/latest/administration.html#loading-records) in the documentation.
+
+How do I add metadata from a WAF?
+---------------------------------
+
+Use the `pycsw-admin.py` [utility](http://docs.pycsw.org/en/latest/administration.html) and CSW's `Harvest` operation against your own server:
+
+{% highlight bash %}
+pycsw-admin.py -c post_xml -u http://localhost/csw -x /path/to/harvest-waf.xml
+{% endhighlight %}
+
+`harvest-waf.xml`:
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<Harvest xmlns="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" service="CSW" version="2.0.2">
+  <Source>http://demo.pycsw.org/waf</Source>
+  <ResourceType>urn:geoss:waf</ResourceType>
+</Harvest>
 {% endhighlight %}
