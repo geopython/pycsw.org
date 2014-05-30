@@ -24,6 +24,7 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 
 [![University of Cologne, Department of Geography, Collaborative Research Centre 806]({{site.baseurl}}/img/uni-koeln.png)](http://crc806db.uni-koeln.de/)
 [![NOAA - National Oceanic and Atmospheric Administration]({{site.baseurl}}/img/noaa.png)](http://data.noaa.gov/)
+[![NGDS - National Geothermal Data System]({{site.baseurl}}/img/ngds.png)](http://geothermaldata.org/)
 
 There are numerous ways to interact with the pycsw community.
 
