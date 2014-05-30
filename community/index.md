@@ -12,19 +12,19 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 
 <script src="https://embed.github.com/view/geojson/geopython/pycsw.org/gh-pages/live-deployments.geojson"> </script>
 
-[![Data.gov]({{site.baseurl}}/img/data-gov.png)](http://data.gov)
-[![CKAN]({{site.baseurl}}/img/ckan.png)](http://ckan.org)
-[![USGS Center for Integrated Data Analytics]({{site.baseurl}}/img/usgs-cida.jpg)](http://cida.usgs.gov/)
-[![Geonode]({{site.baseurl}}/img/geonode.jpg)](http://geonode.org/)
-
-[![Secretariat of the Pacific Community]({{site.baseurl}}/img/sopac.jpg)](http://www.sopac.org)
-[![INSIDE Idaho]({{site.baseurl}}/img/inside-idaho.jpg)](http://insideidaho.org)
-[![OGC Climate-Hydrologic Information Sharing Pilot]({{site.baseurl}}/img/ogc-chisp.jpg)](http://www.opengeospatial.org/projects/initiatives/chisp)
-[![Open Data Catalog, Code for America Brigade]({{site.baseurl}}/img/open-data-catalog.png)](http://commons.codeforamerica.org/apps/open-data-catalog)
-
-[![University of Cologne, Department of Geography, Collaborative Research Centre 806]({{site.baseurl}}/img/uni-koeln.png)](http://crc806db.uni-koeln.de/)
-[![NOAA - National Oceanic and Atmospheric Administration]({{site.baseurl}}/img/noaa.png)](http://data.noaa.gov/)
-[![NGDS - National Geothermal Data System]({{site.baseurl}}/img/ngds.png)](http://geothermaldata.org/)
+<div class="pycsw-powered">
+<a class="reference external image-reference" href="http://data.gov"><img alt="Data.gov" src="{{site.baseurl}}/img/data-gov.png"/></a>
+<a class="reference external image-reference" href="http://ckan.org"><img alt="CKAN" src="{{site.baseurl}}/img/ckan.png"/></a>
+<a class="reference external image-reference" href="http://cida.usgs.org"><img alt="USGS Center for Integrated Data Analytics" src="{{site.baseurl}}/img/usgs-cida.jpg"/></a>
+<a class="reference external image-reference" href="http://geonode.org"><img alt="GeoNode" src="{{site.baseurl}}/img/geonode.jpg"/></a>
+<a class="reference external image-reference" href="http://sopac.org"><img alt="Secretariat of the Pacific Community" src="{{site.baseurl}}/img/sopac.jpg"/></a>
+<a class="reference external image-reference" href="http://insideidaho.org"><img alt="INSIDE Idaho" src="{{site.baseurl}}/img/inside-idaho.jpg"/></a>
+<a class="reference external image-reference" href="http://www.opengeospatial.org/projects/initiatives/chisp"><img alt="OGC Climate-Hydrologic Information Sharing Pilot" src="{{site.baseurl}}/img/ogc-chisp.jpg"/></a>
+<a class="reference external image-reference" href="http://commons.codeforamerica.org/apps/open-data-catalog"><img alt="Open Data Catalog, Code for America Brigade" src="{{site.baseurl}}/img/open-data-catalog.png"/></a>
+<a class="reference external image-reference" href="http://crc806db.uni-koeln.de"><img alt="University of Cologne, Department of Geography, Collaborative Research Centre 806" src="{{site.baseurl}}/img/uni-koeln.png"/></a>
+<a class="reference external image-reference" href="http://data.noaa.gov"><img alt="National Oceanic and Atmospheric Administration" src="{{site.baseurl}}/img/noaa.png"/></a>
+<a class="reference external image-reference" href="http://geothermaldata.org"><img alt="National Geothermal Data System" src="{{site.baseurl}}/img/ngds.png"/></a>
+</div>
 
 There are numerous ways to interact with the pycsw community.
 
@@ -90,3 +90,32 @@ __Users__
 - reporting bugs
 - testing
 - documentation
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+  function makeSimpleSlideshow(container) {
+    container.addClass('slideshow').hide().slideDown('slow');
+    $('a', container).each(function() {
+      $(this).attr('title', $('img', this).attr('alt'));
+    }).clone().appendTo(container);
+    var links = $('a', container).wrapAll('<div class=items></div>');
+    var items = $('div.items', container);
+    var firstLink = $(links[0]);
+    var lastLink = $(links[links.length / 2 - 1]);
+    var pixels = lastLink.offset().left - firstLink.offset().left + lastLink.width();
+
+    function scroll() {
+      items.animate({left: -pixels + 'px'}, pixels * 20, 'linear', function() {
+        items.css('left', '0px');
+        scroll();
+      });
+    }
+    scroll();
+  }
+
+  $(document).ready(function() {
+      var powered = $('div.pycsw-powered');
+      if (powered.length > 0)
+          makeSimpleSlideshow(powered);
+  });
+</script>
