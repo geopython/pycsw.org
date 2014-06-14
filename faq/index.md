@@ -8,17 +8,17 @@ active_page: faq
 
 # FAQ <span class="glyphicon glyphicon-question-sign"> </span>
 
-[Can I use pycsw within my WSGI application?](#can_i_use_pycsw_within_my_wsgi_application)
+[Can I use pycsw within my WSGI application?](#can-i-use-pycsw-within-my-wsgi-application)
 
-[How do I export my repository?](#how_do_i_export_my_repository)
+[How do I export my repository?](#how-do-i-export-my-repository)
 
-[How do I add a custom metadata format?](#how_do_i_add_a_custom_metadata_format)
+[How do I add a custom metadata format?](#how-do-i-add-a-custom-metadata-format)
 
-[How can I catalogue 'sets' of metadata?](#how_can_i_catalogue_sets_of_metadata)
+[How can I catalogue 'sets' of metadata?](#how-can-i-catalogue-sets-of-metadata)
 
-[How can I handle transactions safely?](#how_can_i_handle_transactions_safely)
+[How can I handle transactions safely?](#how-can-i-handle-transactions-safely)
 
-[How can I make CSW POST XML requests?](#how_can_i_make_csw_post_xml_requests)
+[How can I make CSW POST XML requests?](#how-can-i-make-csw-post-xml-requests)
 
 [Does pycsw have a GUI/webapp/interface?](#does-pycsw-have-a-guiwebappinterface)
 
