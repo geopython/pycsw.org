@@ -93,20 +93,20 @@ There are numerous ways to make this type of request, but here are a few:
 Python
 {% highlight python %}
 import requests
-requests.post('http://host/csw', data=open('/path/to/request.xml').read()).text
+requests.post('http://demo.pycsw.org/cite/csw', data=open('/path/to/request.xml').read()).text
 
 from owslib.util import http_post
 # see owslib.util.http_post in https://github.com/geopython/OWSLib/blob/master/owslib/util.py
-response = http_post('http://host/csw', request=open('/path/to/request.xml').read())
+response = http_post('http://demo.pycsw.org/cite/csw', request=open('/path/to/request.xml').read())
 {% endhighlight %}
 
 Command line tools:
 {% highlight bash %}
 # pycsw-admin.py utility
-pycsw-admin.py -c post_xml -u http://host/csw -x /path/to/request.xml
+pycsw-admin.py -c post_xml -u http://demo.pycsw.org/cite/csw -x /path/to/request.xml
 
 # curl
-curl -X POST -d @/path/to/request.xml http://host/csw
+curl -X POST -d @/path/to/request.xml http://demo.pycsw.org/cite/csw
 
 # lwp-request
 cat /path/to/request.xml | POST http://demo.pycsw.org/cite/csw
