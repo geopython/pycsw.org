@@ -11,7 +11,7 @@ active_page: docs
 * [Current Release (1.8.2)](http://docs.pycsw.org/en/1.8.2)
 * [Latest (master)](http://docs.pycsw.org/en/latest)
 
-* [All Releases](https://docs.pycsw.org)
+* [All Releases](http://docs.pycsw.org)
 
 Workshop
 --------
