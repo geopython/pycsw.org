@@ -32,34 +32,58 @@ import csv
 import json
 import sys
 from StringIO import StringIO
-from urllib2 import urlopen
+import urllib2
+
+def health_check_csw(url):
+    """Do a terse check / smoke test on a live deployment CSW"""
+
+    try:
+        content = urllib2.urlopen(url).read()
+        if 'Capabilities ' not in content:
+            raise RuntimeError('Unexpected response: %s' % content)
+    except urllib2.HTTPError, err:
+        raise RuntimeError('HTTP problem with %s: %s' % (url, err))
+    except urllib2.URLError, err:
+        raise RuntimeError('URL problem with %s: %s' % (url, err))
+
 
 def build_live_deployments_geojson():
     """Convert Live Deployments wiki page to GeoJSON for GitHub to render"""
+
+    errors = 0
     dep_url = 'https://raw.github.com/wiki/geopython/pycsw/Live-Deployments.md'
     geojson = { 'type': 'FeatureCollection', 'features': [] }
 
     # grab Markdown file of Live Deployments from GitHub
-    content = urlopen(dep_url).read()
+    content = urllib2.urlopen(dep_url).read()
 
     # serialize as GeoJSON
     dep_reader = csv.reader(StringIO(content), delimiter='|')
     next(dep_reader)  # skip fields row
     next(dep_reader)  # skip dashed line row
     for row in dep_reader:
-        xycoords = row[3].split(',')
+        url = row[2].strip()
+        if url != 'http://demo.pycsw.org/':
+            try:
+                health_check_csw(url)
 
-        feature = {
-            'type': 'Feature',
-            'properties': {
-                'url': '<a href="%s">%s</a>' % (row[2].strip(), row[1].strip())
-            },
-            'geometry': {
-                'type': 'Point',
-                'coordinates': [ float(xycoords[1]), float(xycoords[0]) ] }
-        }
+                xycoords = row[3].split(',')
 
-        geojson['features'].append(feature)
+                feature = {
+                    'type': 'Feature',
+                    'properties': {
+                        'url': '<a href="%s">%s</a>' % (url, row[1].strip())
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [float(xycoords[1]), float(xycoords[0])]}
+                }
+                geojson['features'].append(feature)
+            except RuntimeError, e:
+                errors += 1
+                print 'ERROR: %s' % e
+
+    return errors
 
     with open('live-deployments.geojson', 'w') as output_file:
         output_file.write(json.dumps(geojson))
@@ -106,6 +130,7 @@ if __name__ == '__main__':
         print usage
         sys.exit(2)
     if sys.argv[1] == 'live_deployments':
-        build_live_deployments_geojson()
+        errors = build_live_deployments_geojson()
+        sys.exit(errors)
     elif sys.argv[1] == 'psc':
         build_psc_geojson()
