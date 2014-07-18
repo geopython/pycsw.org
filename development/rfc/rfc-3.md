@@ -16,7 +16,7 @@ active_page: rfc-3
 
 ## Overview
 
-This RFC describes the pycsw implementation of the `The Open Archives Initiative Protocol for Metadata Harvesting`_.
+This RFC describes the pycsw implementation of the [The Open Archives Initiative Protocol for Metadata Harvesting](http://www.openarchives.org/OAI/openarchivesprotocol.html).
 
 The Open Archives Initiative Protocol for Metadata Harvesting (referred to as the OAI-PMH in the remainder of this document) provides an application-independent interoperability framework based on metadata harvesting.
 
@@ -24,7 +24,7 @@ The OAI-PMH standard provides a straightforward API for listing metadata records
 
 ## Proposed Solution
 
-Similar to pycsw's `SRU`_ support, a simple wrapper will be implemented to:
+Similar to pycsw's [SRU](http://docs.pycsw.org/en/latest/sru.html) support, a simple wrapper will be implemented to:
 
 - intercept OAI-PMH requests
 - transform into the equivalent CSW request
@@ -86,6 +86,3 @@ None yet
 ### Status
 
 Proposed on 2014-07-18.
-
-.. _`The Open Archives Initiative Protocol for Metadata Harvesting`: http://www.openarchives.org/OAI/openarchivesprotocol.html
-.. _`SRU`: http://docs.pycsw.org/en/latest/sru.html
