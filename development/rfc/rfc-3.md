@@ -12,7 +12,7 @@ active_page: rfc-3
 - author: Tom Kralidis
 - contact: tomkralidis@gmail.com
 - status: draft
-- modified: 2014-07-18
+- modified: 2014-07-27
 
 ## Overview
 
@@ -81,8 +81,8 @@ Current branch (pull request forthcoming)
 
 ### Voting History
 
-None yet
++1 from capooti, ahinz, tomkralidis, amercader, kalxas
 
 ### Status
 
-Proposed on 2014-07-18.
+Adopted on 2014-07-27.
