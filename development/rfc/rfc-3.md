@@ -12,7 +12,7 @@ active_page: rfc-3
 - author: Tom Kralidis
 - contact: tomkralidis@gmail.com
 - status: draft
-- modified: 2014-07-27
+- modified: 2014-08-13
 
 ## Overview
 
@@ -75,9 +75,7 @@ The `docs/oaipmh.rst` document will be created and added to the main documentati
 
 ### Pull Request
 
-Current branch (pull request forthcoming)
-
-[https://github.com/tomkralidis/pycsw/compare/issue-199](https://github.com/tomkralidis/pycsw/compare/issue-199)
+[https://github.com/geopython/pycsw/pull/265](https://github.com/geopython/pycsw/pull/265)
 
 ### Voting History
 
