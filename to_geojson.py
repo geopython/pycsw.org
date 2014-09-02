@@ -83,8 +83,6 @@ def build_live_deployments_geojson():
                 errors += 1
                 print 'ERROR: %s' % e
 
-    return errors
-
     with open('live-deployments.geojson', 'w') as output_file:
         output_file.write(json.dumps(geojson))
 
