@@ -42,11 +42,6 @@ Workflow
     # title: Some Title
     # author: Firstname Lastname
     # author_url: URL to link to the author (Twitter, GitHub, etc.)
-    # publish_date: YYYY-MM-DD HH:MM:SS [zone]
-    # - examples:
-    #  - 2013-09-23 11:11:11  # default timezone is UTC
-    #  - 2013-09-23 11:11:11 -0400  # per http://asg.web.cmu.edu/rfc/rfc822.html#sec-5.1)
-    #  - 2013-09-23 11:11:11 EST  # per http://asg.web.cmu.edu/rfc/rfc822.html#sec-5.1)
     # preview with `make drafts` and draft will show up as latest post
     # when you are ready to publish:
     # - rename the file as per the current YYYY-MM-DD
