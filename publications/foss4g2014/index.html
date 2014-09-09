@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Data.gov/Geoplatform.gov CSW implementation through pycsw and CKAN integration</title>
+
+    <meta name="description" content="A library for publishing geospatial metadata">
+    <meta name="author" content="Angelos Tzotsos">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../foss4g2013/css/reveal.min.css">
+    <link rel="stylesheet" href="../foss4g2013/css/theme/pycsw.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../foss4g2013/lib/css/zenburn.css">
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <!--h1>pycsw</h1-->
+            <h3>Data.gov/Geoplatform.gov CSW </br> implementation through pycsw </br> and CKAN integration</h3>
+            <a class="image" href="http://catalog.data.gov/dataset" target="_blank">
+                <img src="img/Datagov_logo.jpg">
+            </a>
+            <a class="image" href="http://pycsw.org" target="_blank">
+                <img src="../../img/pycsw-logo.png" width="150">
+            </a>
+            <p>
+                <small>Presented by <a href="http://users.ntua.gr/tzotsos/">Angelos Tzotsos</a> / <a href="http://twitter.com/tzotsos">@tzotsos</a></small>
+            </p>
+	    <p><a href="http://2014.foss4g.org/">FOSS4G 2014 Portland</a></p>
+        </section>
+
+        <section>
+            <h2>Outline</h2>
+            <ul>
+                <li>Introduction</li>
+                <li>Features</li>
+                <li>Architecture/Components</li>
+                <li>Installation/Configuration</li>
+                <li>How To Access Data</li>
+                <li>Open Data and pycsw Deployments</li>
+                <li>Future Developments</li>
+                <li>Community</li>
+            </ul>
+        </section>
+        
+        <!--Metadata Background-->
+        <section>
+
+        </section>
+
+        <!--Metadata Background-->
+        <section>
+
+        </section>
+
+        <!--Metadata Background-->
+        <section>
+
+        </section>
+
+        <section>
+            <h1>Thank you</h1>
+            <h3>Questions?</h3>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="../foss4g2013/lib/js/head.min.js"></script>
+<script src="../foss4g2013/js/reveal.min.js"></script>
+
+<script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: '../foss4g2013/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: '../foss4g2013/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '../foss4g2013/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '../foss4g2013/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: '../foss4g2013/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: '../foss4g2013/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/leap/leap.js', async: true }
+            // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
+</body>
+
+</html>
