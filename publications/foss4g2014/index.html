@@ -46,8 +46,8 @@
             <h2>Outline</h2>
             <ul>
                 <li>Introduction</li>
-                <li>Features</li>
                 <li>Architecture/Components</li>
+                <li>Features</li>
                 <li>Installation/Configuration</li>
                 <li>How To Access Data</li>
                 <li>Open Data and pycsw Deployments</li>
@@ -55,12 +55,103 @@
                 <li>Community</li>
             </ul>
         </section>
-        
-        <!--Metadata Background-->
+
+        <!--Introduction-->
         <section>
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    <a href="http://www.data.gov">Data.gov</a> is the home of the US government’s open data.
+                </p>
+                <p>
+                    You can find Federal, state and local data, tools, and resources to conduct research, build apps, design data visualizations, and more.
+                </p>
+                <p>
+                    The Data.gov team works at the <a href="http://www.gsa.gov/portal/category/100000">U.S. General Services Administration</a>, and the whole project is <a href="https://github.com/GSA/data.gov/">open source</a>.
+                </p>
+                <aside class="notes">
+                    Oh hey, these are some notes. (hit 's' on your keyboard).
+                </aside>
+            </section>
 
+            <section>
+                <h2>Introduction</h2>
+                    <p align="left"><strong>CKAN:</strong> An abbreviation for “Comprehensive Knowledge Archive Network” </p>
+                    <p align="left"><strong>Open Source</strong> web platform for <strong>publishing and sharing data</strong> with impressive deployment history:</p>
+                    <table align="left" style="margin: 0px auto;">
+                        <tr><td>
+                        <ul>
+                            <li><p style="color:#005b54;"><a href="http://open-data.europa.eu/">EU Open Data Portal</a></li>
+                            <li><p style="color:#005b54;"><a href="http://www.data.gov/">USA data.gov</a></li>
+                            <li><p style="color:#005b54;"><a href="http://data.gov.uk/">UK data.gov.uk</a></li>
+                            <li><p style="color:#005b54;"><a href="http://data.gov.au/">Australia data.gov.au</a></li>
+                            <li><p style="color:#005b54;"><a href="http://ckan.org/instances/">and many many others...</a></li>
+                        </ul>
+                        </td></tr>
+                    </table>
+                    <br/>
+                    <a class="image" href="http://ckan.org" target="_blank">
+                    <img width="150" src="img/ckan.png">
+                    </a>
+            </section>
+
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    <a href="http://pycsw.org">pycsw</a> is a OGC CSW server implementation written in Python.
+                </p>
+                <p>
+                    <a href="https://github.com/geopython/pycsw">pycsw</a> is an Open Source project released under the MIT license.
+                </p>
+            </section>
+            
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    pycsw is certified <a href="http://www.opengeospatial.org/resource/products/details/?pid=1104">OGC Compliant</a>, and is an OGC Reference Implementation
+                </p>
+                <p>
+                <a title="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." href="http://www.opengeospatial.org/resource/products/details/?pid=1104"><img alt="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." src="https://portal.opengeospatial.org/public_ogc/compliance/Certified_OGC_Compliant_Logo_Web.gif" height="74"/></a>
+                </p>
+                <p>
+                <a title="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." href="http://www.opengeospatial.org/resource/products/details/?pid=1104"><img alt="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." src="https://portal.opengeospatial.org/public_ogc/compliance/badge.php?s=CAT%20CSW%202.0.2&r=1" height="38"/></a>
+                </p>
+                <p>
+                pycsw is currently under OSGeo Incubation
+                </p>
+                <p>
+                <a title="OSGeo Project in Incubation" href="https://github.com/geopython/pycsw/wiki/OSGeo-Incubation"><img alt="OSGeo Project in Incubation" src="http://svn.osgeo.org/osgeo/marketing/logo/png8/150/OSGeo_incubation.png" height="64"/></a>
+                </p>
+                
+            </section>
+            
+            <section>
+                <h2>History</h2>
+                <ul>
+                <li>2012: Development started for Data.gov 2.0 as Open Source</li>
+                <li>2013: OKFN implemented the first prototype as a CKAN 2.0 extension</li>
+                <li>2013: GSA takes over the extension development and reaches production state</li>
+                <li>2013: CKAN drops internal CSW implementation in favor of pycsw within CKAN Spatial extension</li>
+                <li>early 2014: pycsw 1.8.0 is released and deployed on data.gov</li>
+                <li>mid 2014: pycsw implements new featurs (targeted for 1.10 release)</li>
+                </ul>
+                
+            </section>
+            
+            <section>
+                <h2>Goals</h2>
+                <ul>
+                <li> deploy pycsw via WSGI to <a href="http://catalog.data.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities">http://catalog.data.gov/csw</a></li>
+                <li> establish synchronization mechanism to populate and keep up to date CKAN harvested records</li>
+                <li> collection level suport</li>
+                <li> performance optimization</li>
+                <li> update documentation</li>
+                <li> </li>
+                </ul>
+            </section>
+            
         </section>
-
+        
         <!--Metadata Background-->
         <section>
 
