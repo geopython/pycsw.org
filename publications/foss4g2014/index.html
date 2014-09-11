@@ -30,7 +30,7 @@
         <section>
             <!--h1>pycsw</h1-->
             <h3>Data.gov/Geoplatform.gov CSW </br> implementation through pycsw </br> and CKAN integration</h3>
-            <a class="image" href="http://catalog.data.gov/dataset" target="_blank">
+            <a class="image" href="http://catalog.data.gov" target="_blank">
                 <img src="img/Datagov_logo.jpg">
             </a>
             <a class="image" href="http://pycsw.org" target="_blank">
@@ -51,7 +51,7 @@
                 <li>Installation/Configuration</li>
                 <li>How To Access Data</li>
                 <li>Open Data and pycsw Deployments</li>
-                <li>Future Developments</li>
+                <li>Perspectives/Future Developments</li>
                 <li>Community</li>
             </ul>
         </section>
@@ -61,7 +61,7 @@
             <section>
                 <h2>Introduction</h2>
                 <p>
-                    <a href="http://www.data.gov">Data.gov</a> is the home of the US government’s open data.
+                    <a href="http://www.data.gov">Data.gov</a> is the home of the US government's open data.
                 </p>
                 <p>
                     You can find Federal, state and local data, tools, and resources to conduct research, build apps, design data visualizations, and more.
@@ -75,8 +75,8 @@
             </section>
 
             <section>
-                <h2>Introduction</h2>
-                    <p align="left"><strong>CKAN:</strong> An abbreviation for “Comprehensive Knowledge Archive Network” </p>
+                <h2>CKAN</h2>
+                    <p align="left"><strong>CKAN:</strong> An abbreviation for .Comprehensive Knowledge Archive Network. </p>
                     <p align="left"><strong>Open Source</strong> web platform for <strong>publishing and sharing data</strong> with impressive deployment history:</p>
                     <table align="left" style="margin: 0px auto;">
                         <tr><td>
@@ -96,17 +96,38 @@
             </section>
 
             <section>
-                <h2>Introduction</h2>
+                <h2>ckanext-spatial</h2>
+                <p>
+                    <a href="https://ckanext-spatial.readthedocs.org">ckanext-spatial</a> adds geospatial capabilities to CKAN.
+                </p>
+                <table align="left" style="margin: 0px auto;">
+                    <tr><td>
+                    <ul>
+                        <li>spatial support in domain model via PostGIS</li>
+                        <li>viewing capabilities via OpenLayers</li>
+                        <li>harvesting geospatial metadata via OWSLib</li>
+                        <li>CSW support via pycsw</li>
+                        <li>GeoJSON support</li>
+                    </ul>
+                    </td></tr>
+                </table>
+            </section>
+            
+            <section>
+                <h2>pycsw</h2>
                 <p>
                     <a href="http://pycsw.org">pycsw</a> is a OGC CSW server implementation written in Python.
                 </p>
                 <p>
                     <a href="https://github.com/geopython/pycsw">pycsw</a> is an Open Source project released under the MIT license.
                 </p>
+                <a class="image" href="http://ckan.org" target="_blank">
+                    <img width="150" src="../../img/pycsw-logo.png">
+                </a>
             </section>
             
             <section>
-                <h2>Introduction</h2>
+                <h2>pycsw</h2>
                 <p>
                     pycsw is certified <a href="http://www.opengeospatial.org/resource/products/details/?pid=1104">OGC Compliant</a>, and is an OGC Reference Implementation
                 </p>
@@ -128,12 +149,14 @@
             <section>
                 <h2>History</h2>
                 <ul>
+                <li>2011: CKAN initial investigation of pycsw as default ckanext-spatial CSW component</li>
                 <li>2012: Development started for Data.gov 2.0 as Open Source</li>
                 <li>2013: OKFN implemented the first prototype as a CKAN 2.0 extension</li>
                 <li>2013: GSA takes over the extension development and reaches production state</li>
-                <li>2013: CKAN drops internal CSW implementation in favor of pycsw within CKAN Spatial extension</li>
+                <li>2013: CKAN drops internal CSW implementation in favour of pycsw within CKAN Spatial extension</li>
+                <li>pycsw implements new features (full text search for PostgreSQL, repositoring filtering, connection pooling)</li>
                 <li>early 2014: pycsw 1.8.0 is released and deployed on data.gov</li>
-                <li>mid 2014: pycsw implements new featurs (targeted for 1.10 release)</li>
+                <li>mid 2014: pycsw implements new features (targeted for 1.10 release)</li>
                 </ul>
                 
             </section>
@@ -145,28 +168,116 @@
                 <li> establish synchronization mechanism to populate and keep up to date CKAN harvested records</li>
                 <li> collection level suport</li>
                 <li> performance optimization</li>
-                <li> update documentation</li>
-                <li> </li>
+                <li> reproducible workflow</li>
+                <li> documentation</li>
                 </ul>
             </section>
             
         </section>
         
-        <!--Metadata Background-->
+        <!--Architecture/Components-->
         <section>
-
+          <h2>Architecture/Components</h2>
+          - TODO need diagram
         </section>
 
-        <!--Metadata Background-->
+        <!--Features-->
         <section>
+          <h2>Features</h2>
+          <ul>
+          <li>repository filtering</li>
+          <li>database connection pooling for WSGI</li>
+          <li>PostgreSQL FTS</li>
+          <li>link detection</li>
+          </ul>
+        </section>
 
+        <!--Installation/Configuration-->
+        <section>
+          <h2>Installation/Configuration</h2>
+          <ul>
+            <li>TODO ansible</li>
+            <li>TODO rpm's</li>
+          </ul>
+        </section>
+
+        <!--How to Access Data-->
+        <section>
+          <h2>How to Access Data</h2>
+          <ul>
+            <li><a href="https://gist.github.com/kalxas/5ab6237b4163b0fdc930">CSW Howto</a></li>
+            <li><a href="http://geopython.github.io/MetaSearch">MetaSearch (core QGIS plugin)</a></li>
+            <li>Any CSW client</li>
+          </ul>
+          <p><img src="http://geopython.github.io/MetaSearch/_images/metasearch-splash.png"/>
+        </section>
+
+        <!--Recent Deployments-->
+        <section>
+          <h2>Recent Deployments</h2>
+          <p>
+          <ul>
+            <li>NOAA (<a href="http://data.noaa.gov">data.noaa.gov</a>)</li>
+            <li>DOI (<a href="http://data.doi.gov">data.doi.gov</a>)</li>
+            <li>PacIOOS (<a href="http://pacioos.org">pacioos.org</a>)</li>
+          </ul>
+          </p>
+          <p>See more at the pycsw <a href="http://pycsw.org/community">Live Deployments Map</a></p>
+        </section>
+
+        <!--Perspectives/Future Developments-->
+        <section>
+            <section>
+              <h2>Perspectives</h2>
+              <ul>
+                <li>it's all about the DB</li>
+                <li>packaging/deps</li>
+                <li>PostgreSQL FTS nuts and bolts</li>
+                <li>the importance of identifiers!</li>
+                <li>the confusion of identifiers!</li>
+                <li>extrapolating metadata
+                  <ul>
+                    <li>overriding values (necessary, but expensive)</li>
+                    <li>best fixed at source</li>
+                    <li>link type detection</li>
+                  </ul>
+                </li>
+                <li>deeper integration / binding against CKAN model</li>
+                  <ul>
+                    <li>eliminate need for synchronization</li>
+                  </ul>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Future Developments</h2>
+                <ul>
+                  <li>enhanced link type detection</li>
+                  <li>OGC OpenSearch Geo and Time Extensions</li>
+                  <li>OAI-PMH</li>
+                  <li>CSW 3.0</li>
+                </ul>
+            </section>
         </section>
 
         <section>
-            <h1>Thank you</h1>
-            <h3>Questions?</h3>
+            <section>
+	      <h2>Thanks to</h2>
+	      <ul>
+	        <li>USGS/FGDC/GSA/data.gov</li>
+	        <li>REI/COMSO</li>
+	      </ul>
+            </section>
+            <section>
+              <h2>In Memory of Doug Nebert</h2>
+              <img align="right" src="https://www.fgdc.gov/fgdc-news/doug-nebert/image_mini"/><p>Doug was a driving force in the geospatial community. His expertise, vision and knowledge metadata, cataloguing and all things geospatial interoperability provided sound direction and results to this project.
+              <p>
+            </section>
+            <section>
+                <h1>Thank you</h1>
+                <h3>Questions?</h3>
+            </section>
         </section>
-
     </div>
 
 </div>
@@ -205,3 +316,5 @@
 </body>
 
 </html>
+
+
