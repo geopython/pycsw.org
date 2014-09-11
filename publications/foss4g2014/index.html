@@ -458,15 +458,14 @@
 >>> from owslib.fes import PropertyIsLike
 >>> csw = CatalogueServiceWeb('http://catalog.data.gov/csw-all')
 >>> csw.identification.title
+>>> csw.getrecords2()
+>>> csw.results
 >>> q=PropertyIsLike('csw:AnyText', 'oregon thermal springs')
 >>> csw.getrecords2(constraints=[q])
 >>> csw.results
 >>> for key, value in csw.records.iteritems():
 ...     print value.title
 ... 
-
->>> csw.getrecords2()
->>> csw.results
                 </code></pre>
             </section>
         </section>
