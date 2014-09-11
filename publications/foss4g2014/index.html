@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Data.gov/Geoplatform.gov CSW implementation through pycsw and CKAN integration</title>
+
+    <meta name="description" content="A library for publishing geospatial metadata">
+    <meta name="author" content="Angelos Tzotsos">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="../foss4g2013/css/reveal.min.css">
+    <link rel="stylesheet" href="../foss4g2013/css/theme/pycsw.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../foss4g2013/lib/css/zenburn.css">
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <!--h1>pycsw</h1-->
+            <h3>Data.gov/Geoplatform.gov CSW </br> implementation through pycsw </br> and CKAN integration</h3>
+            <a class="image" href="http://catalog.data.gov" target="_blank">
+                <img src="img/Datagov_logo.jpg">
+            </a>
+            <a class="image" href="http://pycsw.org" target="_blank">
+                <img src="../../img/pycsw-logo.png" width="150">
+            </a>
+            <p>
+                <small>Presented by <a href="http://users.ntua.gr/tzotsos/">Angelos Tzotsos</a> / <a href="http://twitter.com/tzotsos">@tzotsos</a></small>
+            </p>
+	    <p><a href="http://2014.foss4g.org/">FOSS4G 2014 Portland</a></p>
+        </section>
+
+        <section>
+            <h2>Outline</h2>
+            <ul>
+                <li>Introduction</li>
+                <li>Architecture/Components</li>
+                <li>Features</li>
+                <li>Installation/Configuration</li>
+                <li>How To Access Data</li>
+                <li>Open Data and pycsw Deployments</li>
+                <li>Perspectives and Future Developments</li>
+            </ul>
+        </section>
+
+        <!--Introduction-->
+        <section>
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    <a href="http://www.data.gov">Data.gov</a> is the home of the US government's open data.
+                </p>
+                <p>
+                    You can find Federal, state and local data, tools, and resources to conduct research, build apps, design data visualizations, and more.
+                </p>
+                <p>
+                    The Data.gov team works at the <a href="http://www.gsa.gov/portal/category/100000">U.S. General Services Administration</a>, and the whole project is <a href="https://github.com/GSA/data.gov/">open source</a>.
+                </p>
+                <aside class="notes">
+                    Oh hey, these are some notes. (hit 's' on your keyboard).
+                </aside>
+            </section>
+
+            <section>
+                <h2>CKAN</h2>
+                    <p align="left"><strong>CKAN:</strong> An abbreviation for Comprehensive Knowledge Archive Network </p>
+                    <p align="left"><strong>Open Source</strong> web platform for <strong>publishing and sharing data</strong> with impressive deployment history:</p>
+                    <table align="left" style="margin: 0px auto;">
+                        <tr><td>
+                        <ul>
+                            <li><p style="color:#005b54;"><a href="http://open-data.europa.eu/">EU Open Data Portal</a></li>
+                            <li><p style="color:#005b54;"><a href="http://www.data.gov/">USA data.gov</a></li>
+                            <li><p style="color:#005b54;"><a href="http://data.gov.uk/">UK data.gov.uk</a></li>
+                            <li><p style="color:#005b54;"><a href="http://data.gov.au/">Australia data.gov.au</a></li>
+                            <li><p style="color:#005b54;"><a href="http://ckan.org/instances/">and many many others...</a></li>
+                        </ul>
+                        </td></tr>
+                    </table>
+                    <br/>
+                    <a class="image" href="http://ckan.org" target="_blank">
+                    <img width="150" src="img/ckan.png">
+                    </a>
+            </section>
+
+            <section>
+                <h2>ckanext-spatial</h2>
+                <p>
+                    <a href="https://ckanext-spatial.readthedocs.org">ckanext-spatial</a> adds geospatial capabilities to CKAN.
+                </p>
+                <table align="left" style="margin: 0px auto;">
+                    <tr><td>
+                    <ul>
+                        <li>Spatial support in domain model via PostGIS</li>
+                        <li>Viewing capabilities via OpenLayers</li>
+                        <li>Harvesting geospatial metadata via OWSLib</li>
+                        <li>CSW support via pycsw</li>
+                        <li>GeoJSON support</li>
+                    </ul>
+                    </td></tr>
+                </table>
+            </section>
+            
+            <section>
+                <h2>pycsw</h2>
+                <p>
+                    <a href="http://pycsw.org">pycsw</a> is a OGC CSW server implementation written in Python.
+                </p>
+                <p>
+                    <a href="https://github.com/geopython/pycsw">pycsw</a> is an Open Source project released under the MIT license.
+                </p>
+                <a class="image" href="http://ckan.org" target="_blank">
+                    <img width="150" src="../../img/pycsw-logo.png">
+                </a>
+            </section>
+            
+            <section>
+                <h2>pycsw</h2>
+                <p>
+                    pycsw is certified <a href="http://www.opengeospatial.org/resource/products/details/?pid=1104">OGC Compliant</a>, and is an OGC Reference Implementation
+                </p>
+                <p>
+                <a title="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." href="http://www.opengeospatial.org/resource/products/details/?pid=1104"><img alt="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." src="https://portal.opengeospatial.org/public_ogc/compliance/Certified_OGC_Compliant_Logo_Web.gif" height="74"/></a>
+                </p>
+                <p>
+                <a title="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." href="http://www.opengeospatial.org/resource/products/details/?pid=1104"><img alt="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." src="https://portal.opengeospatial.org/public_ogc/compliance/badge.php?s=CAT%20CSW%202.0.2&r=1" height="38"/></a>
+                </p>
+                <p>
+                pycsw is currently under OSGeo Incubation
+                </p>
+                <p>
+                <a title="OSGeo Project in Incubation" href="https://github.com/geopython/pycsw/wiki/OSGeo-Incubation"><img alt="OSGeo Project in Incubation" src="http://svn.osgeo.org/osgeo/marketing/logo/png8/150/OSGeo_incubation.png" height="64"/></a>
+                </p>
+                
+            </section>
+            
+            <section>
+                <h2>History</h2>
+                <ul>
+                <li>2011: CKAN initial investigation of pycsw as default ckanext-spatial CSW component</li>
+                <li>2012: Development started for Data.gov 2.0 as Open Source</li>
+                <li>2013: OKFN implemented the first prototype as a CKAN 2.0 extension</li>
+                <li>2013: GSA takes over the extension development and reaches production state</li>
+                <li>2013: CKAN drops internal CSW implementation in favour of pycsw within CKAN Spatial extension</li>
+                <li>late 2013: pycsw implements new features (Full Text Search for PostgreSQL, repositoring filtering, connection pooling)</li>
+                <li>early 2014: pycsw 1.8.0 is released and deployed on data.gov</li>
+                <li>mid 2014: pycsw implements new features (targeted for 1.10 release)</li>
+                </ul>
+                
+            </section>
+            
+            <section>
+                <h2>Goals</h2>
+                <ul>
+                <li> Deploy pycsw via WSGI to <a href="http://catalog.data.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities">http://catalog.data.gov/csw</a></li>
+                <li> Establish synchronization mechanism to populate and keep up to date CKAN harvested records</li>
+                <li> Collection level suport</li>
+                <li> Performance optimization</li>
+                <li> Reproducible workflow</li>
+                <li> Documentation</li>
+                </ul>
+            </section>
+            
+        </section>
+        
+        <!--Architecture/Components-->
+        <section>
+            <section>
+                <h2>Architecture/Components</h2>
+                <br/>
+                <a class="image" href="http://publicamundi.eu" target="_blank">
+                <img width="600" src="img/overview_diagram.png"></a>
+            </section>
+
+            <section>
+                <h2>CKAN</h2>
+                <p align="left"> </p>
+                <ul>
+                    <li>CKAN is a powerful data management system that makes data accessible – by providing tools to streamline publishing, sharing, finding and using open data.</li>
+                    <li>CKAN is aimed at data publishers (national and regional governments, companies and organizations) wanting to make their data open and available.</li>
+                </ul>
+                <br/>
+                    <a class="image" href="http://ckan.org" target="_blank">
+                    <img width="150" src="img/ckan.png">
+                    </a>
+            </section>
+
+            <section>
+                <h2>CKAN Features</h2>
+                <ul>
+                    <li>Publish and find datasets</li>
+                    <li>Store and manage data</li>
+                    <li>Federated nodes</li>
+                    <li>Harvesting</li>
+                    <li>Metadata Editing/Management</li>
+                    <li>APIs and Extensions</li>
+                </ul>           
+            </section>
+
+            <section>
+                <h2>Publish Data</h2>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="800" src="img/ckan-screen1.png"></a>
+            </section>
+
+            <section>
+                <h2>Search and Discovery</h2>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="800" src="img/ckan-screen2.png"></a>
+            </section>
+
+            <section>
+                <h2>Metadata</h2>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="500" src="img/ckan-screen3.png"></a>
+            </section>
+
+            <section>
+                <h2>Geospatial</h2>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="800" src="img/ckan-geospatial.jpg"></a>
+            </section>
+
+            <section>
+                <h2>Visualization</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="500" src="img/ckan-visualisation.jpg"></a>
+            </section>
+
+            <section>
+                <h2>ckanext-spatial</h2>
+                <ul>
+                    <li>A spatial field on the default CKAN dataset schema, that uses PostGIS as the backend and allows to perform spatial queries and to display the dataset extent on the frontend</li>
+                    <li>Harvesters to import geospatial metadata into CKAN from other sources in ISO 19139 and other formats</li>
+                    <li>Commands to support the CSW standard using pycsw</li>
+                    <li>Plugins to preview spatial formats such as GeoJSON</li>
+                </ul>
+                <br/>
+                <a class="image" href="https://ckanext-spatial.readthedocs.org" target="_blank">
+                <img width="150" src="img/ckan.png">
+                </a>
+            </section>
+
+            <section>
+                <h2>Spatial Search</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="700" src="img/ckan-spatial1.png"></a>
+            </section>
+
+            <section>
+                <h2>Spatial Search</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="700" src="img/ckan-spatial2.png"></a>
+            </section>
+
+            <section>
+                <h2>Spatial Datasets</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="700" src="img/ckan-spatial3.png"></a>
+            </section>
+
+            <section>
+                <h2>Spatial Datasets Preview</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="500" src="img/preview-geojson.png"></a>
+            </section>
+
+            <section>
+                <h2>Spatial Datasets Preview</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="500" src="img/preview-wms.png"></a>
+            </section>
+
+            <section>
+                <h2>ISO 19115 Metadata</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="700" src="img/ckan-spatial4.png"></a>
+            </section>
+
+            <section>
+                <h2>CSW Interface</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="700" src="img/ckan-spatial5.png"></a>
+            </section>
+
+        </section>
+
+        <!--Features-->
+        <section>
+            <section>
+              <h2>New pycsw features</h2>
+              <ul>
+              <li>Repository filtering</li>
+              <li>Database connection pooling for WSGI</li>
+              <li>PostgreSQL FTS</li>
+              <li>Link type detection</li>
+              <li>OGC OpenSearch Geo/Time extensions 1.0</li>
+              </ul>
+            </section>
+
+            <section>
+                <h2>pycsw features</h2>
+                <ul>
+                <li> Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS</li>
+                <li> Implements ISO Metadata Application Profile 1.0.0</li>
+                <li> Implements FGDC CSDGM Application Profile for CSW 2.0</li>
+                <li> Implements INSPIRE Discovery Services 3.0</li>
+                <li> Supports ISO, Dublin Core, DIF, FGDC and Atom metadata models</li>
+                <li> Standalone of embedded deployment (CGI or WSGI)</li>
+                <li> Transactional capabilities (CSW-T)</li>
+                <li> Flexible repository configuration (SQLite, PostgreSQL, PostGIS, MySQL)</li>
+                <li> Federated catalogue distributed searching</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>More features...</h2>
+                <ul>
+                <li> Simple configuration</li>
+                <li> Extensible plugin architecture (profiles, repositories/backends)</li>
+                <li> Seamless integration with Python environments (e.g. GeoNode, Open Data Catalog)</li>
+                <li> Includes commandline utility to administer the metadata repository</li>
+                <li> Implements the Search/Retrieval via URL (SRU) search protocol</li>
+                <li> Implements OpenSearch</li>
+                <li> Realtime XML Schema validation</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>Standards Support</h2>
+                <ul>
+                <li> OGC CSW 2.0.2</li>
+                <li> OGC Filter 1.1.0</li>
+                <li> OGC OWS Common 1.0.0</li>
+                <li> OGC OpenSearch Geo/Time</li>
+                <li> OGC GML 3.1.1</li>
+                <li> OGC SFSQL 1.2.1</li>
+                <li> Dublin Core 1.1</li>
+                <li> SOAP 1.2</li>
+                <li> ISO 19115 2003</li>
+                <li> ISO 19139 2007</li>
+                <li> ISO 19119 2005</li>
+                <li> NASA DIF 9.7</li>
+                <li> FGDC CSDGM 1998</li>
+                <li> SRU 1.1</li>
+                <li> A9 OpenSearch 1.1</li>
+                </ul>
+            </section>
+        </section>
+
+        <!--Installation/Configuration-->
+        <section>
+            <h2>Installation/Configuration</h2>
+            <ul>
+                <li>Automated process with Ansible</li>
+                <li>Automated packaging to RPMs</li>
+                <li>Database, Front-end and Harvester clusters</li>
+                <li>CentOS 6</li>
+            </ul>
+        </section>
+
+        <!--How to Access Data-->
+        <section>
+            <section>
+              <h2>How to Access Data</h2>
+              <ul>
+                <li><a href="https://gist.github.com/kalxas/5ab6237b4163b0fdc930">CSW Howto</a></li>
+                <li><a href="http://geopython.github.io/MetaSearch">MetaSearch (core QGIS plugin)</a></li>
+                <li>Any CSW client</li>
+              </ul>
+              <p><img src="img/metasearch-splash.png"/>
+            </section>
+
+            <section>
+              <h2>Data.gov CSW endpoints</h2>
+              <p align="left">Data.gov provides access to its catalog via the CSW standard for both first-order and all metadata for harvested data, services and applications:</p>
+              <ul>
+                <li>The first-order CSW endpoint provides collection level filtering of all metadata records <a href="http://catalog.data.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities">http://catalog.data.gov/csw</a></li>
+                <li>The all metadata CSW endpoint provides all levels of metadata at varying levels of granularity <a href="http://catalog.data.gov/csw-all?service=CSW&version=2.0.2&request=GetCapabilities">http://catalog.data.gov/csw-all</a></li>
+              </ul>
+            </section>
+        </section>
+
+        <!--Recent Deployments-->
+        <section>
+          <h2>Recent Deployments</h2>
+          <p>
+          <ul>
+            <li>NOAA (<a href="http://data.noaa.gov">data.noaa.gov</a>)</li>
+            <li>DOI (<a href="http://data.doi.gov">data.doi.gov</a>)</li>
+            <li>PacIOOS (<a href="http://pacioos.org">pacioos.org</a>)</li>
+          </ul>
+          </p>
+          <p>See more at the pycsw <a href="http://pycsw.org/community">Live Deployments Map</a></p>
+        </section>
+
+        <!--Perspectives/Future Developments-->
+        <section>
+            <section>
+              <h2>Perspectives</h2>
+              <ul>
+                <li>It's all about the DB</li>
+                <li>Packaging/Dependencies very important</li>
+                <li>PostgreSQL FTS nuts and bolts</li>
+                <li>The importance of identifiers!</li>
+                <li>Extrapolating metadata
+                  <ul>
+                    <li>Overriding values (necessary, but expensive)</li>
+                    <li>Best fixed at source</li>
+                    <li>Link type detection</li>
+                  </ul>
+                </li>
+                <li>Deeper integration / binding against CKAN model</li>
+                  <ul>
+                    <li>Eliminate need for synchronization</li>
+                  </ul>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Future Developments</h2>
+                <ul>
+                  <li>CSW 3.0</li>
+                </ul>
+            </section>
+        </section>
+
+        <section>
+            <section>
+                <h2>Live Demo</h2>
+            </section>
+            <section>
+                <h2>QGIS MetaSearch plugin</h2>
+            </section>
+            <section>
+                <h2>OWSLib</h2>
+                <pre><code data-trim contenteditable>
+
+>>> from owslib.csw import CatalogueServiceWeb
+>>> from owslib.fes import PropertyIsLike
+>>> from owslib.fes import BBox
+>>> csw = CatalogueServiceWeb('http://catalog.data.gov/csw-all')
+>>> csw.identification.title
+>>> csw.getrecords2()
+>>> csw.results
+{'matches': 432392, 'nextrecord': 11, 'returned': 10}
+>>> q = PropertyIsLike('csw:AnyText', 'oregon thermal springs')
+>>> csw.getrecords2(constraints=[q])  # freetext
+>>> csw.results
+{'matches': 8, 'nextrecord': 0, 'returned': 8}
+>>> for key, value in csw.records.iteritems():
+...     print value.title
+... 
+>>> bbox=BBox([-136.8, 35.3, -101.4, 51.6])
+>>> csw.getrecords2(constraints=[q, bbox])  # freetext OR spatial
+>>> csw.results
+{'matches': 14, 'nextrecord': 11, 'returned': 10}
+                </code></pre>
+            </section>
+        </section>
+
+        <section>
+            <section>
+        	    <h2>Thanks to</h2>
+        	    <ul>
+                    <li>USGS (special thanks to James Bauer)</li>
+                    <li>FGDC</li>
+                    <li>GSA/data.gov</li>
+        	        <li>COMSO</li>
+                    <li>REI</li>
+                    <li>Special thanks to Tom Kralidis and Adam Hinz</li>
+        	    </ul>
+            </section>
+            <section>
+                <h2>In Memory of Doug Nebert</h2>
+                <img align="right" src="img/Doug.jpg"/><p>Doug was a driving force in the geospatial community. His expertise, vision and knowledge in metadata, cataloguing and geospatial interoperability provided sound direction and results to this project.
+                <p>
+            </section>
+            
+        </section>
+
+        <section>
+                <h1>Thank you</h1>
+                <h3>Questions?</h3>
+                </br>
+                <p>
+                <a href="http://catalog.data.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities">http://catalog.data.gov/csw</a></p>
+                <p><a href="http://catalog.data.gov/csw-all?service=CSW&version=2.0.2&request=GetCapabilities">http://catalog.data.gov/csw-all</a></p>
+                <p><a href="http://pycsw.org/publications/foss4g2014/">http://pycsw.org/publications/foss4g2014/</a></p>
+
+        </section>
+    </div>
+
+</div>
+
+<script src="../foss4g2013/lib/js/head.min.js"></script>
+<script src="../foss4g2013/js/reveal.min.js"></script>
+
+<script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: '../foss4g2013/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: '../foss4g2013/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '../foss4g2013/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '../foss4g2013/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: '../foss4g2013/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: '../foss4g2013/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/leap/leap.js', async: true }
+            // { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+            // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+
+</script>
+
+</body>
+
+</html>
+
+
