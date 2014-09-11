@@ -462,10 +462,16 @@
 >>> csw.results
 {'matches': 432392, 'nextrecord': 11, 'returned': 10}
 >>> q = PropertyIsLike('csw:AnyText', 'oregon thermal springs')
->>> csw.getrecords2(constraints=[q])
+>>> csw.getrecords2(constraints=[q])  # freetext
+>>> csw.results
+{'matches': 8, 'nextrecord': 0, 'returned': 8}
 >>> for key, value in csw.records.iteritems():
 ...     print value.title
 ... 
+>>> bbox=BBox([-136.8, 35.3, -101.4, 51.6])
+>>> csw.getrecords2(constraints=[q, bbox])  # freetext OR spatial
+>>> csw.results
+{'matches': 14, 'nextrecord': 11, 'returned': 10}
                 </code></pre>
             </section>
         </section>
