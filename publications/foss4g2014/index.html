@@ -51,8 +51,7 @@
                 <li>Installation/Configuration</li>
                 <li>How To Access Data</li>
                 <li>Open Data and pycsw Deployments</li>
-                <li>Perspectives/Future Developments</li>
-                <li>Community</li>
+                <li>Perspectives and Future Developments</li>
             </ul>
         </section>
 
@@ -76,7 +75,7 @@
 
             <section>
                 <h2>CKAN</h2>
-                    <p align="left"><strong>CKAN:</strong> An abbreviation for .Comprehensive Knowledge Archive Network. </p>
+                    <p align="left"><strong>CKAN:</strong> An abbreviation for Comprehensive Knowledge Archive Network </p>
                     <p align="left"><strong>Open Source</strong> web platform for <strong>publishing and sharing data</strong> with impressive deployment history:</p>
                     <table align="left" style="margin: 0px auto;">
                         <tr><td>
@@ -103,9 +102,9 @@
                 <table align="left" style="margin: 0px auto;">
                     <tr><td>
                     <ul>
-                        <li>spatial support in domain model via PostGIS</li>
-                        <li>viewing capabilities via OpenLayers</li>
-                        <li>harvesting geospatial metadata via OWSLib</li>
+                        <li>Spatial support in domain model via PostGIS</li>
+                        <li>Viewing capabilities via OpenLayers</li>
+                        <li>Harvesting geospatial metadata via OWSLib</li>
                         <li>CSW support via pycsw</li>
                         <li>GeoJSON support</li>
                     </ul>
@@ -154,7 +153,7 @@
                 <li>2013: OKFN implemented the first prototype as a CKAN 2.0 extension</li>
                 <li>2013: GSA takes over the extension development and reaches production state</li>
                 <li>2013: CKAN drops internal CSW implementation in favour of pycsw within CKAN Spatial extension</li>
-                <li>pycsw implements new features (full text search for PostgreSQL, repositoring filtering, connection pooling)</li>
+                <li>late 2013: pycsw implements new features (Full Text Search for PostgreSQL, repositoring filtering, connection pooling)</li>
                 <li>early 2014: pycsw 1.8.0 is released and deployed on data.gov</li>
                 <li>mid 2014: pycsw implements new features (targeted for 1.10 release)</li>
                 </ul>
@@ -164,12 +163,12 @@
             <section>
                 <h2>Goals</h2>
                 <ul>
-                <li> deploy pycsw via WSGI to <a href="http://catalog.data.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities">http://catalog.data.gov/csw</a></li>
-                <li> establish synchronization mechanism to populate and keep up to date CKAN harvested records</li>
-                <li> collection level suport</li>
-                <li> performance optimization</li>
-                <li> reproducible workflow</li>
-                <li> documentation</li>
+                <li> Deploy pycsw via WSGI to <a href="http://catalog.data.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities">http://catalog.data.gov/csw</a></li>
+                <li> Establish synchronization mechanism to populate and keep up to date CKAN harvested records</li>
+                <li> Collection level suport</li>
+                <li> Performance optimization</li>
+                <li> Reproducible workflow</li>
+                <li> Documentation</li>
                 </ul>
             </section>
             
@@ -177,19 +176,193 @@
         
         <!--Architecture/Components-->
         <section>
-          <h2>Architecture/Components</h2>
-          - TODO need diagram
+            <section>
+              <h2>Architecture/Components</h2>
+              - TODO need diagram
+            </section>
+
+            <section>
+                <h2>CKAN</h2>
+                <p align="left"> </p>
+                <ul>
+                    <li>CKAN is a powerful data management system that makes data accessible – by providing tools to streamline publishing, sharing, finding and using open data.</li>
+                    <li>CKAN is aimed at data publishers (national and regional governments, companies and organizations) wanting to make their data open and available.</li>
+                </ul>
+                <br/>
+                    <a class="image" href="http://ckan.org" target="_blank">
+                    <img width="150" src="img/ckan.png">
+                    </a>
+            </section>
+
+            <section>
+                <h2>CKAN Features</h2>
+                <ul>
+                    <li>Publish and find datasets</li>
+                    <li>Store and manage data</li>
+                    <li>Federated nodes</li>
+                    <li>Harvesting</li>
+                    <li>Metadata Editing/Management</li>
+                    <li>APIs and Extensions</li>
+                </ul>           
+            </section>
+
+            <section>
+                <h2>Publish Data</h2>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="800" src="img/ckan-screen1.png"></a>
+            </section>
+
+            <section>
+                <h2>Search and Discovery</h2>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="800" src="img/ckan-screen2.png"></a>
+            </section>
+
+            <section>
+                <h2>Metadata</h2>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="500" src="img/ckan-screen3.png"></a>
+            </section>
+
+            <section>
+                <h2>Geospatial</h2>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="800" src="img/ckan-geospatial.jpg"></a>
+            </section>
+
+            <section>
+                <h2>Visualization</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="500" src="img/ckan-visualisation.jpg"></a>
+            </section>
+
+            <section>
+                <h2>ckanext-spatial - Geo plugins for CKAN</h2>
+                <ul>
+                    <li>A spatial field on the default CKAN dataset schema, that uses PostGIS as the backend and allows to perform spatial queries and to display the dataset extent on the frontend</li>
+                    <li>Harvesters to import geospatial metadata into CKAN from other sources in ISO 19139 format and others</li>
+                    <li>Commands to support the CSW standard using pycsw</li>
+                    <li>Plugins to preview spatial formats such as GeoJSON</li>
+                </ul>
+                <br/>
+                <a class="image" href="https://ckanext-spatial.readthedocs.org" target="_blank">
+                <img width="150" src="img/ckan.png">
+                </a>
+            </section>
+
+            <section>
+                <h2>Spatial Search</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="700" src="img/ckan-spatial1.png"></a>
+            </section>
+
+            <section>
+                <h2>Spatial Search</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="700" src="img/ckan-spatial2.png"></a>
+            </section>
+
+            <section>
+                <h2>Spatial Datasets</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="700" src="img/ckan-spatial3.png"></a>
+            </section>
+
+            <section>
+                <h2>Spatial Datasets Preview</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="500" src="img/preview-geojson.png"></a>
+            </section>
+
+            <section>
+                <h2>Spatial Datasets Preview</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="500" src="img/preview-wms.png"></a>
+            </section>
+
+            <section>
+                <h2>ISO 19115 Metadata</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="700" src="img/ckan-spatial4.png"></a>
+            </section>
+
+            <section>
+                <h2>CSW Interface</h2>
+                <br/>
+                <a class="image" href="http://ckan.org/" target="_blank">
+                  <img width="700" src="img/ckan-spatial5.png"></a>
+            </section>
+
         </section>
 
         <!--Features-->
         <section>
-          <h2>Features</h2>
-          <ul>
-          <li>repository filtering</li>
-          <li>database connection pooling for WSGI</li>
-          <li>PostgreSQL FTS</li>
-          <li>link detection</li>
-          </ul>
+            <section>
+              <h2>New pycsw features</h2>
+              <ul>
+              <li>Repository filtering</li>
+              <li>Database connection pooling for WSGI</li>
+              <li>PostgreSQL FTS</li>
+              <li>Link type detection</li>
+              <li>OGC OpenSearch Geo/Time extensions 1.0</li>
+              </ul>
+            </section>
+
+            <section>
+                <h2>pycsw features</h2>
+                <ul>
+                <li> Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS</li>
+                <li> Implements ISO Metadata Application Profile 1.0.0</li>
+                <li> Implements FGDC CSDGM Application Profile for CSW 2.0</li>
+                <li> Implements INSPIRE Discovery Services 3.0</li>
+                <li> Supports ISO, Dublin Core, DIF, FGDC and Atom metadata models</li>
+                <li> Standalone of embedded deployment (CGI or WSGI)</li>
+                <li> Transactional capabilities (CSW-T)</li>
+                <li> Flexible repository configuration (SQLite, PostgreSQL, PostGIS, MySQL)</li>
+                <li> Federated catalogue distributed searching</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>More features...</h2>
+                <ul>
+                <li> Simple configuration</li>
+                <li> Extensible plugin architecture (profiles, repositories/backends)</li>
+                <li> Seamless integration with Python environments (e.g. GeoNode, Open Data Catalog)</li>
+                <li> Includes commandline utility to administer the metadata repository</li>
+                <li> Implements the Search/Retrieval via URL (SRU) search protocol</li>
+                <li> Implements OpenSearch</li>
+                <li> Realtime XML Schema validation</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2>Standards Support</h2>
+                <ul>
+                <li> OGC CSW 2.0.2</li>
+                <li> OGC Filter 1.1.0</li>
+                <li> OGC OWS Common 1.0.0</li>
+                <li> OGC OpenSearch Geo/Time</li>
+                <li> OGC GML 3.1.1</li>
+                <li> OGC SFSQL 1.2.1</li>
+                <li> Dublin Core 1.1</li>
+                <li> SOAP 1.2</li>
+                <li> ISO 19115 2003</li>
+                <li> ISO 19139 2007</li>
+                <li> ISO 19119 2005</li>
+                <li> NASA DIF 9.7</li>
+                <li> FGDC CSDGM 1998</li>
+                <li> SRU 1.1</li>
+                <li> A9 OpenSearch 1.1</li>
+                </ul>
+            </section>
         </section>
 
         <!--Installation/Configuration-->
@@ -270,7 +443,7 @@
             </section>
             <section>
               <h2>In Memory of Doug Nebert</h2>
-              <img align="right" src="https://www.fgdc.gov/fgdc-news/doug-nebert/image_mini"/><p>Doug was a driving force in the geospatial community. His expertise, vision and knowledge metadata, cataloguing and all things geospatial interoperability provided sound direction and results to this project.
+              <img align="right" src="img/Doug.jpg"/><p>Doug was a driving force in the geospatial community. His expertise, vision and knowledge metadata, cataloguing and all things geospatial interoperability provided sound direction and results to this project.
               <p>
             </section>
             <section>
