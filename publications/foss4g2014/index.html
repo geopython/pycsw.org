@@ -460,9 +460,9 @@
 >>> csw.identification.title
 >>> csw.getrecords2()
 >>> csw.results
->>> q=PropertyIsLike('csw:AnyText', 'oregon thermal springs')
+{'matches': 432392, 'nextrecord': 11, 'returned': 10}
+>>> q = PropertyIsLike('csw:AnyText', 'oregon thermal springs')
 >>> csw.getrecords2(constraints=[q])
->>> csw.results
 >>> for key, value in csw.records.iteritems():
 ...     print value.title
 ... 
