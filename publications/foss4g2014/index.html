@@ -434,12 +434,41 @@
 
         <section>
             <section>
+                <h2>Live Demo</h2>
+            </section>
+            <section>
+                <h2>QGIS Metasearch plugin</h2>
+            </section>
+            <section>
+                <h2>OWSLib</h2>
+                <pre><code data-trim contenteditable>
+
+>>> from owslib.csw import CatalogueServiceWeb
+>>> from owslib.fes import PropertyIsLike
+>>> csw = CatalogueServiceWeb('http://catalog.data.gov/csw-all')
+>>> csw.identification.title
+>>> q=PropertyIsLike('csw:AnyText', 'oregon thermal springs')
+>>> csw.getrecords2(constraints=[q])
+>>> csw.results
+>>> for key, value in csw.records.iteritems():
+...     print value.title
+... 
+
+>>> csw.getrecords2()
+>>> csw.results
+                </code></pre>
+            </section>
+        </section>
+
+        <section>
+            <section>
         	    <h2>Thanks to</h2>
         	    <ul>
                     <li>USGS (special thanks to James Bauer)</li>
                     <li>FGDC</li>
                     <li>GSA/data.gov</li>
         	        <li>REI</li>
+                    <li>special thanks to Tom Kralidis for reviewing all Pull Requests</li>
         	    </ul>
             </section>
             <section>
