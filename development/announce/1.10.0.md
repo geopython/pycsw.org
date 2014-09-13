@@ -6,7 +6,7 @@ author_url: https://twitter.com/tomkralidis
 publish_date: 2014-09-13 14:50:00 -0400
 ---
 
-The pycsw team announces the release of pycsw 1.10.0.
+The pycsw team announces the release of pycsw 1.10.0 from FOSS4G 2014 PDX.
 
 The 1.10.0 release brings significant features, enhancements and fixes to the codebase, including:
 
