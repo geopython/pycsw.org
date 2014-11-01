@@ -26,6 +26,8 @@ active_page: faq
 
 [How do I add metadata from a WAF?](#how-do-i-add-metadata-from-a-waf)
 
+[How do I harvest huge OGC services without getting HTTP timeout errors?][#how-do-i-harvest-huge-ogc-servicess-without-getting-http-timeout-errors]
+
 Can I use pycsw within my WSGI application?
 -------------------------------------------
 
@@ -152,5 +154,33 @@ pycsw-admin.py -c post_xml -u http://localhost/csw -x /path/to/harvest-waf.xml
 <Harvest xmlns="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" service="CSW" version="2.0.2">
   <Source>http://demo.pycsw.org/waf</Source>
   <ResourceType>urn:geoss:waf</ResourceType>
+</Harvest>
+{% endhighlight %}
+
+How do I harvest huge OGC services without getting HTTP timeouts?
+-----------------------------------------------------------------
+
+The CSW `Harvest` operation supports asynchronous processing via `ResponseHandler` parameter.  When specified, this parameter allows the request to continue while
+returning the response to the client.  The client will then be notified of completion by sending to the URI value of the `ResponseHandler` parameter.
+
+pycsw supports both FTP and SMTP-based `ResponseHandler` processing:
+
+FTP (result gets pushed to `ftp://host/result.xml`):
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<Harvest xmlns="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" service="CSW" version="2.0.2">
+  <Source>http://demo.pycsw.org/waf</Source>
+  <ResourceType>urn:geoss:waf</ResourceType>
+  <ResponseHandler>ftp://host/result.xml</ResponseHandler>
+</Harvest>
+{% endhighlight %}
+
+SMTP (result gets emailed to `you@example.com`.  See http://docs.pycsw.org/en/latest/configuration.html for configuring `server.smtp_host`):
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
+<Harvest xmlns="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" service="CSW" version="2.0.2">
+  <Source>http://demo.pycsw.org/waf</Source>
+  <ResourceType>urn:geoss:waf</ResourceType>
+  <ResponseHandler>mailto:you@example.com</ResponseHandler>
 </Harvest>
 {% endhighlight %}
