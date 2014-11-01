@@ -26,7 +26,7 @@ active_page: faq
 
 [How do I add metadata from a WAF?](#how-do-i-add-metadata-from-a-waf)
 
-[How do I harvest huge OGC services without getting HTTP timeout errors?][#how-do-i-harvest-huge-ogc-servicess-without-getting-http-timeout-errors]
+[How do I harvest huge OGC services without getting HTTP timeout errors?](#how-do-i-harvest-huge-ogc-servicess-without-getting-http-timeout-errors)
 
 Can I use pycsw within my WSGI application?
 -------------------------------------------
