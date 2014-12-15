@@ -28,6 +28,8 @@ active_page: faq
 
 [How do I harvest huge OGC services without getting HTTP timeout errors?](#how-do-i-harvest-huge-ogc-services-without-getting-http-timeouts)
 
+[Why am I getting a 'Connection refused' error when connecting pycsw?](#why-am-i-getting-a-connection-refused-error-when-connecting-to-pycsw)
+
 Can I use pycsw within my WSGI application?
 -------------------------------------------
 
@@ -184,3 +186,9 @@ SMTP (result gets emailed to `you@example.com`.  See [the docs](http://docs.pycs
   <ResponseHandler>mailto:you@example.com</ResponseHandler>
 </Harvest>
 {% endhighlight %}
+
+
+Why am I getting a 'Connection refused' error when connecting to pycsw?
+-----------------------------------------------------------------------
+
+Most CSW client tools like (e.g. (QGIS MetaSearch)[https://hub.qgis.org/projects/MetaSearch], [OWSLib](http://geopython.github.io/OWSLib), etc.) derive the CSW URL from the `GetCapabilities` reponse XML, as opposed to using directly the URL you provide.  Ensure that the `server.url` configuration value is set to ensure the URL to be advertised in the CSW Capabilities XML.
