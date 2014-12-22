@@ -90,7 +90,7 @@ Transactions are handled by an IP-based authentication list which can be set in 
 How can I make CSW POST XML requests?
 -------------------------------------
 
-HTTP POST requests with XML are a bit different then the traditional HTTP POST appraoch (key=value).  An HTTP client opens a connection to the server and sends XML directly.  CSW implements HTTP POST in this manner with XML requests.
+HTTP POST requests with XML are a bit different then the traditional HTTP POST approach (key=value).  An HTTP client opens a connection to the server and sends XML directly.  CSW implements HTTP POST in this manner with XML requests.
 
 There are numerous ways to make this type of request, but here are a few:
 
