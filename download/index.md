@@ -8,9 +8,7 @@ active_page: download
 
 # Download <span class="glyphicon glyphicon-download"> </span>
 
-* Current Stable Release (1.10.0) <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.10.0.tar.gz">tar.gz <span class="glyphicon glyphicon-compressed"> </span></a> <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.10.0.zip">zip <span class="glyphicon glyphicon-compressed"> </span></a>
-
-* Current Development Release (1.10.0-rc1) <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.10.0-rc1.tar.gz">tar.gz <span class="glyphicon glyphicon-compressed"> </span></a> <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.10.0-rc1.zip">zip <span class="glyphicon glyphicon-compressed"> </span></a>
+* Current Stable Release (1.10.1) <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.10.1.tar.gz">tar.gz <span class="glyphicon glyphicon-compressed"> </span></a> <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.10.1.zip">zip <span class="glyphicon glyphicon-compressed"> </span></a>
 
 * [All Releases](http://download.osgeo.org/pycsw/)
 
@@ -30,9 +28,9 @@ pycsw exists as a [package](https://build.opensuse.org/package/show?package=pyth
 
 __See Also:__ [_Installing from an OpenSUSE Build Service_](http://docs.pycsw.org/en/latest/installation.html#opensuse)
 
-### Ubuntu
+### UbuntuGIS
 
-pycsw exists as a package in [Launchpad](https://code.launchpad.net/~gcpp-kalxas/+archive/ppa-tzotsos)
+pycsw exists as a UbuntuGIS package in [Launchpad](https://launchpad.net/~ubuntugis/+archive/ubuntu/ubuntugis-unstable/+packages?field.name_filter=pycsw&field.status_filter=published&field.series_filter=)
 
 __See Also:__ [_Installing on Ubuntu/Xubuntu/Kubuntu_](http://docs.pycsw.org/en/latest/installation.html#ubuntu)
 
