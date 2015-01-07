@@ -41,10 +41,12 @@ def health_check_csw(url):
         content = urllib2.urlopen(url).read()
         if 'Capabilities ' not in content:
             raise RuntimeError('Unexpected response: %s' % content)
-    except urllib2.HTTPError, err:
+    except urllib2.HTTPError as err:
         raise RuntimeError('HTTP problem with %s: %s' % (url, err))
-    except urllib2.URLError, err:
+    except urllib2.URLError as err:
         raise RuntimeError('URL problem with %s: %s' % (url, err))
+    except Exception as err:
+        raise RuntimeError('Cannot open %s: %s' % (url, err))
 
 
 def build_live_deployments_geojson():
@@ -79,7 +81,7 @@ def build_live_deployments_geojson():
                         'coordinates': [float(xycoords[1]), float(xycoords[0])]}
                 }
                 geojson['features'].append(feature)
-            except RuntimeError, e:
+            except RuntimeError as e:
                 errors += 1
                 print 'ERROR: %s' % e
 
