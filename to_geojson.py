@@ -34,6 +34,7 @@ import sys
 from StringIO import StringIO
 import urllib2
 
+
 def health_check_csw(url):
     """Do a terse check / smoke test on a live deployment CSW"""
 
@@ -54,7 +55,7 @@ def build_live_deployments_geojson():
 
     errors = 0
     dep_url = 'https://raw.github.com/wiki/geopython/pycsw/Live-Deployments.md'
-    geojson = { 'type': 'FeatureCollection', 'features': [] }
+    geojson = {'type': 'FeatureCollection', 'features': []}
 
     # grab Markdown file of Live Deployments from GitHub
     content = urllib2.urlopen(dep_url).read()
@@ -74,39 +75,45 @@ def build_live_deployments_geojson():
                 feature = {
                     'type': 'Feature',
                     'properties': {
-                        'url': '<a href="%s">%s</a>' % (url, row[1].strip())
+                        'url': '<a target="_blank" href="%s">%s</a>' %
+                               (url, row[1].strip())
                     },
                     'geometry': {
                         'type': 'Point',
-                        'coordinates': [float(xycoords[1]), float(xycoords[0])]}
+                        'coordinates': [float(xycoords[1]), float(xycoords[0])]
+                    }
                 }
                 geojson['features'].append(feature)
-            except RuntimeError as e:
+            except RuntimeError as rte:
                 errors += 1
-                print 'ERROR: %s' % e
+                print 'ERROR: %s' % rte
 
     with open('live-deployments.geojson', 'w') as output_file:
-        output_file.write(json.dumps(geojson))
+        output_file.write(json.dumps(geojson, indent=4))
+
+    return errors
+
 
 def build_psc_geojson():
     """Create GeoJSON of PSC membership for GitHub to render"""
-    geojson = { 'type': 'FeatureCollection', 'features': [] }
+    geojson = {'type': 'FeatureCollection', 'features': []}
 
     # serialize as GeoJSON
     psc_reader = csv.reader(open('community/psc.csv'))
     next(psc_reader)  # skip fields row
     for row in psc_reader:
-        xycoords = row[3].split(',')
+        url = '<a target="_blank" href="https://github.com/%s">%s</a>' % \
+              (row[1], row[0])
 
         feature = {
             'type': 'Feature',
             'properties': {
-                'name': '<a href="https://github.com/%s">%s</a>' % (row[1], row[0]),
+                'name': url,
                 'role': row[2]
             },
             'geometry': {
                 'type': 'Point',
-                'coordinates': [ float(row[4]), float(row[3]) ]
+                'coordinates': [float(row[4]), float(row[3])]
             }
         }
         if row[2].startswith('PSC'):
@@ -119,18 +126,18 @@ def build_psc_geojson():
         geojson['features'].append(feature)
 
     with open('community/psc.geojson', 'w') as output_file:
-        output_file.write(json.dumps(geojson))
+        output_file.write(json.dumps(geojson, indent=4))
 
 if __name__ == '__main__':
-    usage = 'Usage: %s <live_deployments|psc>' % sys.argv[0]
+    USAGE = 'Usage: %s <live_deployments|psc>' % sys.argv[0]
     if len(sys.argv) < 2:
-        print usage
+        print USAGE
         sys.exit(1)
     if sys.argv[1] not in ['live_deployments', 'psc']:
-        print usage
+        print USAGE
         sys.exit(2)
     if sys.argv[1] == 'live_deployments':
-        errors = build_live_deployments_geojson()
-        sys.exit(errors)
+        ERRORS = build_live_deployments_geojson()
+        sys.exit(ERRORS)
     elif sys.argv[1] == 'psc':
         build_psc_geojson()
