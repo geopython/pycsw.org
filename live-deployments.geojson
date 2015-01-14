@@ -161,13 +161,13 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -61.391602, 
-                    15.36895
+                    32.5656, 
+                    0.3156
                 ]
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://dominode.net/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Dominode.net</a>"
+                "url": "<a target=\"_blank\" href=\"http://maps.data.ug/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Uganda Open Data</a>"
             }
         }, 
         {
