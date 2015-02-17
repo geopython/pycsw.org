@@ -70,6 +70,19 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
+                    -70.673086, 
+                    41.526498
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geoport.whoi.edu/csw?service=CSW&version=2.0.2&request=GetCapabilities\">USGS Coastal and Marine Geoscience Portal</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
                     -79.468857, 
                     43.782039
                 ]
@@ -148,19 +161,6 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    12.315515, 
-                    45.440847
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://siplan.veniceandlagoon.org/catalogue/csw?request=GetCapabilities&version=2.0.2&service=CSW\">UNESCO SIPLAN Venezia e la sua laguna</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
                     32.5656, 
                     0.3156
                 ]
@@ -233,6 +233,19 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://pcrafi.spc.int/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Pacific Risk Information System</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    36.821946, 
+                    -1.292066
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://horn.rcmrd.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open Data for the Horn (OpenDRI)</a>"
             }
         }, 
         {
