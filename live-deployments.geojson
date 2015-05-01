@@ -31,6 +31,19 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
+                    174.776236, 
+                    -41.28646
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://data.linz.govt.nz/feeds/csw?service=CSW&version=2.0.2&request=GetCapabilities\">LINZ Data Service</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
                     -77.026088, 
                     38.990666
                 ]
@@ -135,19 +148,6 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -48.549454, 
-                    -27.596904
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://mapas.ciga.sc.gov.br/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Sistema de Informa\u00e7\u00f5es Geogr\u00e1ficas CIGA</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
                     -89.504288, 
                     43.097217
                 ]
@@ -155,6 +155,19 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://cida.usgs.gov/coastalchangehazardsportal/csw/?service=CSW&version=2.0.2&request=GetCapabilities\">USGS Coastal Hazards Geospatial Catalogue</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    12.315515, 
+                    45.440847
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://siplan.veniceandlagoon.org/catalogue/csw?request=GetCapabilities&version=2.0.2&service=CSW\">UNESCO SIPLAN Venezia e la sua laguna</a>"
             }
         }, 
         {
