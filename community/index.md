@@ -25,6 +25,7 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 <a class="reference external image-reference" href="http://data.noaa.gov"><img alt="National Oceanic and Atmospheric Administration" src="{{site.baseurl}}/img/noaa.png"/></a>
 <a class="reference external image-reference" href="http://geothermaldata.org"><img alt="National Geothermal Data System" src="{{site.baseurl}}/img/ngds.png"/></a>
 <a class="reference external image-reference" href="http://data.linz.govt.nz"><img alt="Land Information New Zealand" src="{{site.baseurl}}/img/linz.png"/></a>
+<a class="reference external image-reference" href="http://geonode.state.gov"><img alt="U.S. Department of State" src="{{site.baseurl}}/img/usdos.png"/></a>
 </div>
 
 There are numerous ways to interact with the pycsw community.
