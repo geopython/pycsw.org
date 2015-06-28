@@ -18,3 +18,4 @@ the project.
 * [RFC1: Project Steering Committee Guidelines](rfc-1.html)
 * [RFC2: OGC OpenSearch Geo/Time support](rfc-2.html)
 * [RFC3: OAI-PMH Support](rfc-3.html)
+* [RFC4: CSW 3.0 Support](rfc-4.html)
