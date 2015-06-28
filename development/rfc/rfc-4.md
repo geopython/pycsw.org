@@ -27,7 +27,7 @@ CSW 3.0 provides major features and improvements over CSW 2.0.2 as part of the e
 - proper use of HTTP status codes
 - proper use of HTTP request/response headers
 - `UnHarvest` operation
-- use of temporal predicates for query and presentation.
+- use of temporal predicates for query and presentation
 
 Catalogue Services 3.0 - General Model ([OGC 12-168r5](https://portal.opengeospatial.org/files/?artifact_id=61522&version=1)) encompasses numerous changes (hence the major version change) to Catalogue Services overall.  This RFC (and pycsw) focuses exclusively on the HTTP Protocol Binding.
 
