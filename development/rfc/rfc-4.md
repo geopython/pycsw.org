@@ -83,7 +83,7 @@ Documentation will be augmented to advertise support and describe changes and de
 
 ### Pull Request
 
-None yet.  [csw3](https://github.com/geopython/pycsw/tree/csw3) branch in progress.
+[https://github.com/geopython/pycsw/pull/354](https://github.com/geopython/pycsw/pull/354)
 
 ### Voting History
 
