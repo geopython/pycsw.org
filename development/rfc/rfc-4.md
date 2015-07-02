@@ -87,8 +87,8 @@ Documentation will be augmented to advertise support and describe changes and de
 
 ### Voting History
 
-TBD
++1 from ahinz, amercader, capooti, kalxas, @tomkralidis
 
 ### Status
 
-Proposed on 2015-06-28
+Adopted on 2015-07-02
