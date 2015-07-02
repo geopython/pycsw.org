@@ -87,7 +87,7 @@ Documentation will be augmented to advertise support and describe changes and de
 
 ### Voting History
 
-+1 from ahinz, amercader, capooti, kalxas, @tomkralidis
++1 from @ahinz, @amercader, @capooti, @kalxas, @tomkralidis
 
 ### Status
 
