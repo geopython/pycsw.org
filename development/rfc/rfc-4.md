@@ -12,7 +12,7 @@ active_page: rfc-4
 - author: Tom Kralidis, Angelos Tzotsos
 - contact: tomkralidis@gmail.com, tzotsos@gmail.com
 - status: draft
-- modified: 2015-06-28
+- modified: 2015-07-02
 
 ## Overview
 
