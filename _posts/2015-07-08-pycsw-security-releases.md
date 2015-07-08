@@ -10,7 +10,7 @@ The pycsw team announces the release of pycsw 1.10.2 and 1.8.4.
 
 This is a security release to mitigate an information disclosure issue
 with libxml2 (versions older than 2.9, c.f.
-[https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0339](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0339) which
+[https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0339](https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-0339)) which
 can reveal any file accessible on the host system by passing a
 specially crafted XML file. Although this is not an issue with
 pycsw itself, the update blocks this vector of attack when pycsw
