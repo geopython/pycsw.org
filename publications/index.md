@@ -18,3 +18,6 @@ active_page: publications_index
   * [Abstract](https://2014.foss4g.org/session/data-govgeoplatform-gov-csw-implementation-pycsw-ckan-integration/)
   * [Presentation](foss4g2014)
   * [Video](http://vimeo.com/107476247)
+* FOSS4G Europe 2015
+  * [Presentation](foss4ge2015)
+  
