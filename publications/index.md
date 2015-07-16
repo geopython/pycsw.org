@@ -9,7 +9,7 @@ active_page: publications_index
 # Publications
 
 * OSGeo Journal Volume 11
-  * [HTML](http://geojournaleditor.com/2012/11/30/volume-11-pycsw-osgeo-software-project-spotlight/)
+  * [HTML](http://svn.osgeo.org/osgeo/journal/volume_11/en-us/master_pdf/OSGeo_Journal_Volume_11.pdf)
   * [LaTeX source](osgeo_journal_2011.tex)
 * FOSS4G2013
   * [Abstract](http://2013.foss4g.org/conf/programme/presentations/133/)
