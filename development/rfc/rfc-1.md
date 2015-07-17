@@ -71,6 +71,7 @@ In brief the project team votes on proposals on pycsw-devel.  Proposals are avai
 ## Committee Membership
 
 The PSC is comprised of individuals who are:
+
 * technical contributors
 * documentation and training contributors
 * other prominent members of the pycsw community
