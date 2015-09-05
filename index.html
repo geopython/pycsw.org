@@ -36,7 +36,7 @@ active_page: home
         $ pycsw-admin.py -c load_records -f default.cfg -p /path/to/xml/
         
         # Run the server:
-        $ python csw.wsgi
+        $ python ./pycsw/wsgi.py
         
         # See that it works!
         $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
