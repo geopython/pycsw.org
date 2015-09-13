@@ -7,5 +7,6 @@ description: pycsw is an OGC CSW server implementation written in Python. Starte
 keywords: pycsw, csw, catalogue, catalog, metadata, discovery, search, ogc, iso, fgdc, dif, ebrim, inspire
 exclude: [to_geojson.py, Makefile, README.md, community/psc.csv, community/psc.geojson, live-deployments.geojson, setenv-ruby-gem, publish.sh, LICENSE.txt, CNAME]
 gems:
+- jekyll-feed
 - jekyll-mentions
 - jekyll-sitemap
