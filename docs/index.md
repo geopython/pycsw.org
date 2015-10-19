@@ -8,7 +8,7 @@ active_page: docs
 
 # Documentation
 
-* [Current Release (1.10.2)](http://docs.pycsw.org/en/1.10.2)
+* [Current Release (1.10.3)](http://docs.pycsw.org/en/1.10.3)
 * [Latest (master)](http://docs.pycsw.org/en/latest)
 
 * [All Releases](http://docs.pycsw.org)
