@@ -44,6 +44,19 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
+                    23.807655, 
+                    38.054956
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geodata.gov.gr/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Geodata.gov.gr geodata.gov.gr CSW Geospatial Catalogue</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
                     -77.026088, 
                     38.990666
                 ]
@@ -70,19 +83,6 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -77.036871, 
-                    38.907192
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"https://data.doi.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities\">DOI Data Catalog</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
                     -70.673086, 
                     41.526498
                 ]
@@ -90,6 +90,19 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://geoport.whoi.edu/csw?service=CSW&version=2.0.2&request=GetCapabilities\">USGS Coastal and Marine Geoscience Portal</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -77.4875, 
+                    39.0437
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geonode.state.gov/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">U.S. Department of State</a>"
             }
         }, 
         {
@@ -141,7 +154,7 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geothermaldata.org/csw?service=CSW&Version=2.0.2&request=GetCapabilities\">US National Geothermal Data System</a>"
+                "url": "<a target=\"_blank\" href=\"http://search.geothermaldata.org/csw?service=CSW&Version=2.0.2&request=GetCapabilities\">US National Geothermal Data System</a>"
             }
         }, 
         {
@@ -187,52 +200,13 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -84.51202, 
-                    39.103118
+                    -58.381593, 
+                    -34.603723
                 ]
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://www.opendatacincy.org/catalog/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open Data Cincinnati</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -78.898619, 
-                    35.994033
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://opendatadurham.org/catalog/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open Data Durham</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    178.4419, 
-                    -18.1416
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geonode.sopac.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Secretariat of the Pacific Community</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    6.960279, 
-                    50.937531
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://sfb806ckan.geographie.uni-koeln.de/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Collaborative Research Centre 806 Database</a>"
+                "url": "<a target=\"_blank\" href=\"http://nodo.mapaeducativo.edu.ar/catalogue/csw?request=GetCapabilities&version=2.0.2&service=CSW\">Mapa Educativo Nacional - Inicio</a>"
             }
         }, 
         {
@@ -246,19 +220,6 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://pcrafi.spc.int/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Pacific Risk Information System</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    36.821946, 
-                    -1.292066
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://horn.rcmrd.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open Data for the Horn (OpenDRI)</a>"
             }
         }, 
         {
@@ -330,19 +291,6 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -117.157255, 
-                    32.715329
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://maps.opensandiego.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open San Diego</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
                     11.26031667, 
                     43.77731667
                 ]
@@ -389,6 +337,19 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://pycsw.secoora.org/?service=CSW&version=2.0.2.&request=GetCapabilities\">SECOORA Geospatial Catalogue</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    12.5, 
+                    41.9
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geonode.wfp.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">UN WFP GeoNode</a>"
             }
         }
     ]
