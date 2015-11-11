@@ -77,7 +77,7 @@ GM03 information document will be added to the main documentation as required.
 
 ### Pull Request
 
-TBD
+[https://github.com/geopython/pycsw/issues/385](https://github.com/geopython/pycsw/issues/385)
 
 ### Voting History
 
