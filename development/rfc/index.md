@@ -19,3 +19,4 @@ the project.
 * [RFC2: OGC OpenSearch Geo/Time support](rfc-2.html)
 * [RFC3: OAI-PMH Support](rfc-3.html)
 * [RFC4: CSW 3.0 Support](rfc-4.html)
+* [RFC5: GM03 Support](rfc-5.html)
