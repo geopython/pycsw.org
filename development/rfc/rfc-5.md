@@ -81,8 +81,8 @@ GM03 information document will be added to the main documentation as required.
 
 ### Voting History
 
-TBD
++1 from @ahinz, @amercader, @capooti, @kalxas, @tomkralidis (PSC) and @ricardogsilva
 
 ### Status
 
-TBD
+Adopted on 2015-11-17
