@@ -16,7 +16,7 @@ active_page: rfc-6
 
 ## Overview
 
-This RFC describes improvements to pycsw's JSON support to provide a more natural, efficient approach to the currnet capability.
+This RFC describes improvements to pycsw's JSON support to provide a more natural, efficient approach to the current capability.
 
 The [current approach](https://github.com/geopython/pycsw/blob/1.10/pycsw/util.py#L314-L332) takes an `lxml.etree.Element` object and converts it to a Python `dict` which is then converted to JSON by Python's default json implementation.  Below is a snippet of JSON output of a `GetRecords` request with `outputFormat=application/json` specified:
 
