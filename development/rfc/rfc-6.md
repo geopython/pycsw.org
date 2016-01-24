@@ -12,7 +12,7 @@ active_page: rfc-6
 - author: Tom Kralidis
 - contact: tomkralidis@gmail.com
 - status: draft
-- modified: 2016-01-13
+- modified: 2016-01-24
 
 ## Overview
 
@@ -123,8 +123,8 @@ Documentation will be updated as required.
 
 ### Voting History
 
-TBD
++1 from @ahinz, @amercader, @capooti, @kalxas, @tomkralidis
 
 ### Status
 
-TBD
+Adopted on 2016-01-24
