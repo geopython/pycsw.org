@@ -8,7 +8,7 @@ active_page: features
 
 # Features <span class="glyphicon glyphicon-ok-circle"> </span>
 
-- certified OGC [Compliant](http://www.opengeospatial.org/resource/products/details/?pid=1104) and OGC Reference Implementation
+- certified OGC [Compliant](http://www.opengeospatial.org/resource/products/details/?pid=1325) and OGC Reference Implementation
 - harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS
 - implements [INSPIRE Discovery Services 3.0](http://inspire.jrc.ec.europa.eu/documents/Network_Services/TechnicalGuidance_DiscoveryServices_v3.0.pdf)
 - implements [ISO Metadata Application Profile 1.0.0](http://portal.opengeospatial.org/files/?artifact_id=21460)
