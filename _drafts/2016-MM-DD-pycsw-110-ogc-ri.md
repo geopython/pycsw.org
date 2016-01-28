@@ -3,10 +3,10 @@ layout: post
 title: pycsw 1.10 Receives OGC Compliance Certification and Reference Implementation Status
 author: Tom Kralidis
 author_url: https://twitter.com/tomkralidis
-publish_date: 2016-01-27 22:12:23 -0400
+publish_date: 2016-01-26 17:21:24 -0400
 ---
 
-27 January 2016
+26 January 2016
 
 The pycsw development team is happy to announce that pycsw 1.10 is now 
 certified OGC Compliant for OGC CSW 2.0.2 [1], and passes all CITE 
