@@ -40,9 +40,9 @@ How do I export my repository?
 
 Use the `pycsw-admin.py` utility to dump the records as XML documents to a directory:
 
-{% highlight bash %}
+```bash
 $ pycsw-admin.py -c export_records -f default.cfg -p /path/to/output_dir
-{% endhighlight %}
+```
 
 How do I add a custom metadata format?
 --------------------------------------
@@ -54,7 +54,7 @@ How can I catalogue 'sets' of metadata?
 
 Create a 'parent' metadata record from which all relevant metadata records (imagery, features) derive from via the same `dc:source` element of Dublin Core or `apiso:parentIdentifier` element of ISO 19139:2007.  Then, do a `GetRecords` request, filtering on the identifier of the parent metadata record.  Sample request:
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
 <csw:GetRecords xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:ogc="http://www.opengis.net/ogc" service="CSW" version="2.0.2" resultType="results" startPosition="1" maxRecords="5" outputFormat="application/xml" outputSchema="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd" xmlns:gml="http://www.opengis.net/gml" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:apiso="http://www.opengis.net/cat/csw/apiso/1.0">
   <csw:Query typeNames="csw:Record">
@@ -78,7 +78,7 @@ Create a 'parent' metadata record from which all relevant metadata records (imag
     </csw:Constraint>
   </csw:Query>
 </csw:GetRecords>
-{% endhighlight %}
+```
 
 The above query will search for all metadata records of the same `apiso:parentIdentifier` (identified by `$identifier`) within a given area of interest.  The equivalent query can be done against `dc:source` with the same design pattern.
 
@@ -95,17 +95,17 @@ HTTP POST requests with XML are a bit different then the traditional HTTP POST a
 There are numerous ways to make this type of request, but here are a few:
 
 Python
-{% highlight python %}
+```python
 import requests
 requests.post('http://demo.pycsw.org/cite/csw', data=open('/path/to/request.xml').read()).text
 
 from owslib.util import http_post
 # see owslib.util.http_post in https://github.com/geopython/OWSLib/blob/master/owslib/util.py
 response = http_post('http://demo.pycsw.org/cite/csw', request=open('/path/to/request.xml').read())
-{% endhighlight %}
+```
 
 Command line tools:
-{% highlight bash %}
+```bash
 # pycsw-admin.py utility
 pycsw-admin.py -c post_xml -u http://demo.pycsw.org/cite/csw -x /path/to/request.xml
 
@@ -118,7 +118,7 @@ cat /path/to/request.xml | POST http://demo.pycsw.org/cite/csw
 # wget
 wget http://demo.pycsw.org/cite/csw --post-file=/path/to/request.xml
 
-{% endhighlight %}
+```
 
 Does pycsw have a GUI/webapp/interface?
 ---------------------------------------
@@ -130,14 +130,14 @@ I have 2147 metadata records.  How do I add them?
 
 Add metadata using `pycsw-admin.py`:
 
-{% highlight bash %}
+```bash
 # read a directory of metadata files
 pycsw-admin.py -c load_records -f /path/to/default.cfg -p /path/to/records
 
 # read a directory of metadata files, recursively
 pycsw-admin.py -c load_records -f /path/to/default.cfg -p /path/to/records -r
 
-{% endhighlight %}
+```
 
 See [Loading Records](http://docs.pycsw.org/en/latest/administration.html#loading-records) in the documentation.
 
@@ -146,18 +146,18 @@ How do I add metadata from a WAF?
 
 Use the `pycsw-admin.py` [utility](http://docs.pycsw.org/en/latest/administration.html) and CSW's `Harvest` operation against your own server:
 
-{% highlight bash %}
+```bash
 pycsw-admin.py -c post_xml -u http://localhost/csw -x /path/to/harvest-waf.xml
-{% endhighlight %}
+```
 
 `harvest-waf.xml`:
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Harvest xmlns="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" service="CSW" version="2.0.2">
   <Source>http://demo.pycsw.org/waf</Source>
   <ResourceType>urn:geoss:waf</ResourceType>
 </Harvest>
-{% endhighlight %}
+```
 
 How do I harvest huge OGC services without getting HTTP timeouts?
 -----------------------------------------------------------------
@@ -168,24 +168,24 @@ returning the response to the client.  The client will then be notified of compl
 pycsw supports both FTP and SMTP-based `ResponseHandler` processing:
 
 FTP (result gets pushed to `ftp://host/result.xml`):
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Harvest xmlns="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" service="CSW" version="2.0.2">
   <Source>http://demo.pycsw.org/waf</Source>
   <ResourceType>urn:geoss:waf</ResourceType>
   <ResponseHandler>ftp://host/result.xml</ResponseHandler>
 </Harvest>
-{% endhighlight %}
+```
 
 SMTP (result gets emailed to `you@example.com`.  See [the docs](http://docs.pycsw.org/en/latest/configuration.html) for more information on configuring `server.smtp_host`):
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <Harvest xmlns="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" service="CSW" version="2.0.2">
   <Source>http://demo.pycsw.org/waf</Source>
   <ResourceType>urn:geoss:waf</ResourceType>
   <ResponseHandler>mailto:you@example.com</ResponseHandler>
 </Harvest>
-{% endhighlight %}
+```
 
 
 Why am I getting a 'Connection refused' error when connecting to pycsw?
