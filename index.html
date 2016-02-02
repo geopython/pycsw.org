@@ -13,34 +13,34 @@ active_page: home
   <p>
     <a class="btn btn-lg btn-success collapse-data-btn" data-toggle="collapse" href="#deploy-in-4-minutes">Deploy in 4 Minutes</a>
     <div id="deploy-in-4-minutes" class="collapse panel panel-default text-left">
-        ```bash
+        {% highlight bash %}
         # Setup a virtual environment:
-        virtualenv pycsw && cd pycsw && . bin/activate
+        $ virtualenv pycsw && cd pycsw && . bin/activate
         
         # Grab the pycsw source code:
-        git clone https://github.com/geopython/pycsw.git && cd pycsw
-        pip install -e . && pip install -r requirements-standalone.txt
+        $ git clone https://github.com/geopython/pycsw.git && cd pycsw
+        $ pip install -e . && pip install -r requirements-standalone.txt
         
         # Create and adjust a configuration file:
-        cp default-sample.cfg default.cfg
-        vi default.cfg
+        $ cp default-sample.cfg default.cfg
+        $ vi default.cfg
         # adjust paths in
         # - server.home
         # - repository.database
         # set server.url to http://localhost:8000/
         
         # Setup the database:
-        pycsw-admin.py -c setup_db -f default.cfg
+        $ pycsw-admin.py -c setup_db -f default.cfg
         
         # Load records by indicating a directory of XML files, use -r for recursive:
-        pycsw-admin.py -c load_records -f default.cfg -p /path/to/xml/
+        $ pycsw-admin.py -c load_records -f default.cfg -p /path/to/xml/
         
         # Run the server:
-        python ./pycsw/wsgi.py
+        $ python ./pycsw/wsgi.py
         
         # See that it works!
-        curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
-        ```
+        $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
+        {% endhighlight %}
     </div>
 </div>
 <div class="row">
