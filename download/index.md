@@ -8,7 +8,7 @@ active_page: download
 
 # Download <span class="glyphicon glyphicon-download"> </span>
 
-* Current Stable Release (1.10.3) <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.10.3.tar.gz">tar.gz <span class="glyphicon glyphicon-compressed"> </span></a> <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.10.3.zip">zip <span class="glyphicon glyphicon-compressed"> </span></a>
+* Current Stable Release (1.10.4) <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.10.4.tar.gz">tar.gz <span class="glyphicon glyphicon-compressed"> </span></a> <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-1.10.4.zip">zip <span class="glyphicon glyphicon-compressed"> </span></a>
 
 * [All Releases](http://download.osgeo.org/pycsw/)
 
