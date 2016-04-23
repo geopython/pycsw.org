@@ -41,7 +41,7 @@ How do I export my repository?
 Use the `pycsw-admin.py` utility to dump the records as XML documents to a directory:
 
 {% highlight bash %}
-$ pycsw-admin.py -c export_records -f default.cfg -p /path/to/output_dir
+pycsw-admin.py -c export_records -f default.cfg -p /path/to/output_dir
 {% endhighlight %}
 
 How do I add a custom metadata format?
