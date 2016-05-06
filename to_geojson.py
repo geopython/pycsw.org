@@ -43,11 +43,11 @@ def health_check_csw(url):
         if 'Capabilities ' not in content:
             raise RuntimeError('Unexpected response: %s' % content)
     except urllib2.HTTPError as err:
-        raise RuntimeError('HTTP problem with %s: %s' % (url, err))
+        raise RuntimeError('HTTP problem with %s' % url)
     except urllib2.URLError as err:
-        raise RuntimeError('URL problem with %s: %s' % (url, err))
+        raise RuntimeError('URL problem with %s' % url)
     except Exception as err:
-        raise RuntimeError('Cannot open %s: %s' % (url, err))
+        raise RuntimeError('Cannot open %s' % url)
 
 
 def build_live_deployments_geojson():

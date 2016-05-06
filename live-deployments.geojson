@@ -70,19 +70,6 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -77.036871, 
-                    38.907192
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"https://data.doi.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities\">DOI Data Catalog</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
                     -70.673086, 
                     41.526498
                 ]
@@ -116,6 +103,19 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://geo.woudc.org/csw?service=CSW&version=2.0.2&request=GetCapabilities\">World Ozone and Ultraviolet Radiation Data Centre (WOUDC)</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -89.512008, 
+                    30.388758
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geoint.nrlssc.navy.mil/pycsw/csw.py?service=CSW&version=2.0.2&request=GetCapabilities\">U.S. Naval Research Laboratory</a>"
             }
         }, 
         {
@@ -213,6 +213,19 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
+                    178.4419, 
+                    -18.1416
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geonode.sopac.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Secretariat of the Pacific Community</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
                     179.472656, 
                     -10.728072
                 ]
@@ -220,6 +233,19 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://pcrafi.spc.int/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Pacific Risk Information System</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    36.821946, 
+                    -1.292066
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://horn.rcmrd.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open Data for the Horn (OpenDRI)</a>"
             }
         }, 
         {
