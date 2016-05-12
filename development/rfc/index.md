@@ -21,3 +21,4 @@ the project.
 * [RFC4: CSW 3.0 Support](rfc-4.html)
 * [RFC5: GM03 Support](rfc-5.html)
 * [RFC6: JSON Improvements](rfc-6.html)
+* [RFC7: HHypermap Repository Plugin](rfc-7.html)
