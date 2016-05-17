@@ -22,3 +22,4 @@ the project.
 * [RFC5: GM03 Support](rfc-5.html)
 * [RFC6: JSON Improvements](rfc-6.html)
 * [RFC7: HHypermap Repository Plugin](rfc-7.html)
+* [RFC8: Move to pytest testing tool](rfc-8.html)
