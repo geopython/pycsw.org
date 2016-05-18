@@ -12,7 +12,7 @@ active_page: rfc-7
 - author: Tom Kralidis
 - contact: tomkralidis@gmail.com
 - status: draft
-- modified: 2016-05-12
+- modified: 2016-05-18
 
 ## Overview
 
@@ -81,12 +81,12 @@ TBD, branch at [https://github.com/tomkralidis/pycsw/tree/HHypermap](https://git
 
 ### Pull Request
 
-TBD
+A pull request will be issued once required changes are made to the HHypermap core to enable ease of integration.
 
 ### Voting History
 
-TBD
++1 from @ahinz, @amercader, @capooti, @kalxas, @tomkralidis
 
 ### Status
 
-TBD
+Adopted.
