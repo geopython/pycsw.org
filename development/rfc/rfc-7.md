@@ -51,6 +51,8 @@ pycsw is enabled and configured by default in HHypermap, so there are no additio
 
 None expected, new functionality. Unit tests will all succeed. CITE tests will be 100% successful.
 
+Given this RFC articulates a repository plugin, tests are rooted in the downstream application itself because of the specific use case / workflow.  In addition, this keeps pycsw testing light so as not to setup downstream applications in a test env/run.
+
 ### Internal Interface changes
 
 None
