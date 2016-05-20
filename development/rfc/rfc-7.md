@@ -77,11 +77,11 @@ Documentation will be updated as required.
 
 ### Issue Tracking ID
 
-TBD, branch at [https://github.com/tomkralidis/pycsw/tree/HHypermap](https://github.com/tomkralidis/pycsw/tree/HHypermap)
+[https://github.com/geopython/pycsw/pull/437](https://github.com/geopython/pycsw/pull/437)
 
 ### Pull Request
 
-A pull request will be issued once required changes are made to the HHypermap core to enable ease of integration.
+[https://github.com/geopython/pycsw/pull/437](https://github.com/geopython/pycsw/pull/437)
 
 ### Voting History
 
