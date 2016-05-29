@@ -183,13 +183,13 @@ Documentation will be updated as required.
 
 ### Issue Tracking ID
 
-https://github.com/geopython/pycsw/issues/428
+[https://github.com/geopython/pycsw/issues/428](https://github.com/geopython/pycsw/issues/428)
 
 ### Pull Request
 
 Pull request has not been issued yet. Implementation is ongoing at:
 
-https://github.com/ricardogsilva/pycsw/tree/issue%23428
+[https://github.com/ricardogsilva/pycsw/tree/issue#428](https://github.com/ricardogsilva/pycsw/tree/issue%23428)
 
 ### Voting History
 
