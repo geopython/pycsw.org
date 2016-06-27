@@ -28,6 +28,8 @@ active_page: faq
 
 [How do I harvest huge OGC services without getting HTTP timeout errors?](#how-do-i-harvest-huge-ogc-services-without-getting-http-timeouts)
 
+[Is pycsw customizable or extensible?](#is-pycsw-customizable-or-extensible)
+
 [Why am I getting a 'Connection refused' error when connecting pycsw?](#why-am-i-getting-a-connection-refused-error-when-connecting-to-pycsw)
 
 Can I use pycsw within my WSGI application?
@@ -187,6 +189,10 @@ SMTP (result gets emailed to `you@example.com`.  See [the docs](http://docs.pycs
 </Harvest>
 {% endhighlight %}
 
+Is pycsw customizable or extensible?
+------------------------------------
+
+Yes.  See our [API](http://docs.pycsw.org/en/latest/api.html) docs for examples on deploying pycsw in a custom application/framework.
 
 Why am I getting a 'Connection refused' error when connecting to pycsw?
 -----------------------------------------------------------------------
