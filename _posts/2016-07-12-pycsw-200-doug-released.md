@@ -32,7 +32,7 @@ pycsw allows for the publishing and discovery of geospatial metadata. Existing r
 
 pycsw is Open Source, released under an MIT license, and runs on all major platforms (Windows, Linux, Mac OS X).
 
-Source and binary downloads:
+Source and binary downloads
 --------------------------------------------
 The source code is available at:
 [http://pycsw.org/download](http://pycsw.org/download)
