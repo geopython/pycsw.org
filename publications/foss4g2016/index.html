@@ -43,9 +43,9 @@
 		            <ul>
 		                <li>Introduction to pycsw</li>
 		                <li>Features</li>
+		                <li>What's new in pycsw 2.0</li>
 		                <li>Architecture</li>
-		                <li>Installation/Configuration</li>
-		                <li>New in pycsw 2.0</li>
+		                <li>Installation</li>
 		                <li>Downstream Projects and Deployments</li>
 		                <li>Future Developments</li>
 		                <li>Community</li>
@@ -54,6 +54,11 @@
 
 		        <!--Introduction-->
 		        <section>
+
+		        	<section>
+		                <h2>Introduction</h2>
+		            </section>
+
 		            <section>
 		                <h2>Introduction</h2>
 		                <ul>
@@ -120,18 +125,26 @@
 
 		        <!--Features-->
 		        <section>
+
+		        	<section>
+		                <h2>Features</h2>
+		            </section>
+
 		            <section>
 		                <h2>Features</h2>
 		                <ul>
+		                <li> Certified OGC Compliant and OGC Reference Implementation for both CSW 2.0.2 and CSW 3.0.0</li>
 		                <li> Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS</li>
 		                <li> Implements ISO Metadata Application Profile 1.0.0</li>
 		                <li> Implements FGDC CSDGM Application Profile for CSW 2.0</li>
+		                <li> Implements OGC OpenSearch Geo and Time Extensions</li>
 		                <li> Implements INSPIRE Discovery Services 3.0</li>
-		                <li> Supports ISO, Dublin Core, DIF, FGDC and Atom metadata models</li>
+		                <li> Supports ISO, Dublin Core, DIF, FGDC, Atom and GM03 metadata models</li>
 		                <li> Standalone of embedded deployment (CGI or WSGI)</li>
 		                <li> Transactional capabilities (CSW-T)</li>
 		                <li> Flexible repository configuration (SQLite, PostgreSQL, PostGIS, MySQL)</li>
 		                <li> Federated catalogue distributed searching</li>
+		                <li> Python 2 and 3 compatible</li>
 		                </ul>
 		            </section>
 		            
@@ -140,11 +153,12 @@
 		                <ul>
 		                <li> Simple configuration</li>
 		                <li> Extensible plugin architecture (profiles, repositories/backends)</li>
-		                <li> Seamless integration with Python environments (e.g. GeoNode, Open Data Catalog)</li>
+		                <li> Seamless integration with Python environments (e.g. GeoNode, HHypermap, Open Data Catalog)</li>
 		                <li> Integration with CKAN through ckanext-spatial and ckanext-publicamundi</li>
 		                <li> Includes commandline utility to administer the metadata repository</li>
 		                <li> Implements the Search/Retrieval via URL (SRU) search protocol</li>
-		                <li> Implements OpenSearch</li>
+		                <li> Implements Open Archives Initiative Protocol for Metadata Harvesting</li>
+		                <li> Implements Full Text Search capabilities</li>
 		                <li> Realtime XML Schema validation</li>
 		                </ul>
 		            </section>
@@ -152,9 +166,9 @@
 		            <section>
 		                <h2>Standards Support</h2>
 		                <ul>
-		                <li> OGC CSW 2.0.2</li>
-		                <li> OGC Filter 1.1.0</li>
-		                <li> OGC OWS Common 1.0.0</li>
+		                <li> OGC CSW 2.0.2, 3.0.0</li>
+		                <li> OGC Filter 1.1.0, 2.0.0</li>
+		                <li> OGC OWS Common 1.0.0, 2.0.0</li>
 		                <li> OGC GML 3.1.1</li>
 		                <li> OGC SFSQL 1.2.1</li>
 		                <li> Dublin Core 1.1</li>
@@ -165,8 +179,8 @@
 		                <li> NASA DIF 9.7</li>
 		                <li> FGDC CSDGM 1998</li>
 		                <li> SRU 1.1</li>
-		                <li> A9 OpenSearch 1.1</li>
-		                <li> OGC OpenSearch Geo/Time extensions 1.0</li>
+		                <li> OAI-PMH 2.0</li>
+		                <li> OGC OpenSearch 1.0</li>
 		                </ul>
 		            </section>
 		            
@@ -180,13 +194,211 @@
 		                <li>GetRepositoryItem</li>
 		                <li>GetDomain</li>
 		                <li>Harvest</li>
+		                <li>UnHarvest</li>
 		                <li>Transaction</li>
 		                </ul>
 		            </section>
 		        </section>
 
+				<!--New in pycsw 2.0-->
+		        <section>
+		            <section>
+		                <h2>What's new in pycsw 2.0.0</h2>
+		            </section>
+		            
+		            <section>
+		                <h2>OGC CSW 3.0.0</h2>
+		                <ul>
+		                <li>OGC <a href="http://www.opengeospatial.org/pressroom/pressreleases/2445">released</a> Catalogue Service Standard v3.0 on July 12, 2016</li>
+		                <li>Version 3.0 better aligns with other OGC standards (such as OWS Common 2.0 and Filter 2.0)</li>
+		                <li>Provides a developer-friendly OpenSearch Geo API</li>
+		                <li>Supports querying via temporal extents</li>
+		                <li>Improves distributed search to better federate catalogues</li>
+		                </ul>
+		            </section>
+
+		            <section>
+		                <h2>OGC CSW 3.0.0</h2>
+		                <p align="left">CSW 3.0.0 provides major features and improvements over CSW 2.0.2 as part of the evolution of OGC Catalogue Services, including Open Search Geo and Time Extensions, OpenSearch 1.1, and the Atom Syndication Format.</p>
+		                <p align="left">Other enhancements include:</p>
+		                <ul>
+		                <li>Features advertised as conformance classes</li>
+		                <li>Simpler KVP API</li>
+		                <li>Enhanced distributed searching functionality</li>
+		                <li>Raw metadata response for GetRecordById</li>
+		                <li>Proper use of HTTP status codes</li>
+		                <li>Proper use of HTTP request/response headers</li>
+		                <li>UnHarvest operation</li>
+		                <li>Use of temporal predicates for query and presentation</li>
+		                </ul>
+		            </section>
+
+		            <section>
+		                <h2>OGC CSW 3.0.0</h2>
+		                <ul>
+		                <li>OGC provides a CSW 3.0 compliance test suite</li>
+		                <li>The <a href="https://github.com/opengeospatial/ets-cat30">compliance suite</a> was developed in 2015, while the specification was under review</li>
+		                <li>pycsw 2.0 was also mainly developed in 2015, in parallel with the compliance suite</li>
+		                <li>pycsw development branch was the first to fully pass the compliance test</li>
+		                <li>Two <a href="https://github.com/opengeospatial/cite/wiki/Reference-Implementations">reference implementations</a> were available at <a href="http://www.opengeospatial.org/pressroom/pressreleases/2445">release</a> time</li>
+		                </ul>
+		            </section>
+
+		            <section>
+		                <h2>OGC CSW 3.0.0</h2>
+		                <ul>
+		                <li>In alignment with the CSW specifications, the default version returned is the latest supported version</li>
+		                <li>pycsw 2.0 will always behave like a 3.0.0 CSW unless the client explicitly requests a 2.0.2 CSW</li>
+		                <li>The new default behaviour breaks the pycsw API compatibility (pycsw.server.Csw.dispatch_wsgi now returns the HTTP status code along with the response string)</li>
+		                <li>More details on the pycsw <a href="http://pycsw.org/development/rfc/rfc-4.html">RFC</a></li>
+		                </ul>
+		            </section>
+
+		            <section>
+		                <h2>OGC CSW 3.0.0</h2>
+		                <pre><code data-trim contenteditable>
+
+http://localhost/csw  # returns 3.0.0 Capabilities
+http://localhost/csw?service=CSW&request=GetCapabilities  # returns 3.0.0 Capabilities
+http://localhost/csw?service=CSW&version=2.0.2&request=GetCapabilities  # returns 2.0.2 Capabilities
+http://localhost/csw?service=CSW&version=3.0.0&request=GetCapabilities  # returns 3.0.0 Capabilities
+
+		                </code></pre>
+		            </section>
+
+		            <section>
+		                <h2>OGC OpenSearch</h2>
+		                <ul>
+		                <li>The <a href="http://www.opengeospatial.org/standards/opensearchgeo">OGC OpenSearch Geo and Time Extensions 1.0 standard</a> provides a lightweight mechanism to query a catalogue via HTTP GET for simple spatial and temporal searches</li>
+		                <li>pycsw supports OGC OpenSearch <a href="http://pycsw.org/development/rfc/rfc-2.html">since 1.10.0</a></li>
+		                <li>OGC OpenSearch is now tightly integrated in CSW 3.0 specification</li>
+		                </ul>
+		            </section>
+
+		            <section>
+		                <h2>OGC OpenSearch</h2>
+		                <p align="left">To query pycsw via OpenSearch, requests must be specificed with mode=opensearch. The following parameters are supported:</p>
+		                <ul>
+		                <li>{searchTerms} (keywords)</li>
+		                <li>{geo:box} (bounding box of minx,miny,maxx,maxy)</li>
+		                <li>{time:start} and {time:end} (temporal)</li>
+		                </ul>
+		            </section>
+
+		            <section>
+		                <h2>OGC OpenSearch</h2>
+		                <p align="left">Some examples:</p>
+		                <ul>
+		                <li>Autodiscovery: <a href="http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetCapabilities">http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetCapabilities</a></li>
+		                <li>Keywords: <a href="http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&q=idaho">http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&q=idaho</a></li>
+		                <li>BBOX: <a href="http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&bbox=-140,20,-40,40">http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&bbox=-140,20,-40,40</a></li>
+		                <li>Temporal Extent (range): <a href="http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&time=2001/2004">http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&time=2001/2004</a></li>
+		                </ul>
+		            </section>
+
+					<section>
+		                <h2>OGC OpenSearch</h2>
+		                <p align="left">More examples:</p>
+		                <ul>
+		                <li>Temporal Extent (since 2004): <a href="http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&time=2004/">http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&time=2004/</a></li>
+		                <li>Keywords and Bounding Box: <a href="http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&q=vegetation&bbox=-140,20,-40,40">http://catalog.data.gov/csw?mode=opensearch&service=CSW&version=2.0.2&request=GetRecords&elementsetname=full&resulttype=results&typenames=csw:Record&q=vegetation&bbox=-140,20,-40,40</a></li>
+		                <li>More examples <a href="https://gist.github.com/kalxas/6ecb06d61cdd487dc7f9">here</a></li>
+		                </ul>
+		            </section>
+
+		            <section>
+		                <h2>Python 3 support</h2>
+		                <ul>
+		                <li>Support for Python 3 through usage of __future__ and six library</li>
+		                <li>Needed to heavily review list usage, since Python 3 added support for sorted lists</li>
+		                <li>Only support Python 3 after 3.4</li>
+		                <li>Continous integration through Travis now includes Python 2.6, 2.7 and 3.4</li>
+		                </ul>
+		            </section>
+
+		            <section>
+		                <h2>Better JSON support</h2>
+		                <ul>
+		                <li>Implemented with <a href="https://github.com/martinblech/xmltodict">xmltodict</a> which provides parsing/serialization support in a manner which provides a closer mapping to / from an XML content model</li>
+		                <li>More compact JSON output (~30% reduction in payload size)</li>
+		                <li>Closer representation / better transformation of native XML</li>
+		                <li>Easier for downstream applications to process</li>
+		                </ul>
+		            </section>
+
+		      		<section>
+		                <h2>Better JSON support (before)</h2>
+		                <pre><code data-trim contenteditable>
+
+    {
+      "tag": "csw30:SummaryRecord",
+      "children": [
+        {
+          "text": "urn:uuid:19887a8a-f6b0-4a63-ae56-7fba0e17801f",
+          "tag": "dc:identifier"
+        },
+        {
+          "text": "Lorem ipsum",
+          "tag": "dc:title"
+        },
+        {
+          "text": "http:\/\/purl.org\/dc\/dcmitype\/Image",
+          "tag": "dc:type"
+        },
+        {
+          "text": "Tourism--Greece",
+          "tag": "dc:subject"
+        },
+        {
+          "text": "image\/svg+xml",
+          "tag": "dc:format"
+        },
+        {
+          "text": "Quisque lacus diam, placerat mollis, pharetra in, commodo sed, augue. Duis iaculis arcu vel arcu.",
+          "tag": "dct:abstract"
+        }
+      ]
+    }
+
+		                </code></pre>
+		            </section>
+
+		            <section>
+		                <h2>Better JSON support (after)</h2>
+		                <pre><code data-trim contenteditable>
+
+  "csw30:SummaryRecord": [
+    {
+      "dc:identifier": "urn:uuid:19887a8a-f6b0-4a63-ae56-7fba0e17801f",
+      "dc:title": "Lorem ipsum",
+      "dc:type": "http:\/\/purl.org\/dc\/dcmitype\/Image",
+      "dc:subject": "Tourism--Greece",
+      "dc:format": "image\/svg+xml",
+      "dct:abstract": "Quisque lacus diam, placerat mollis, pharetra in, commodo sed, augue. Duis iaculis arcu vel arcu."
+    }
+
+		                </code></pre>
+		            </section>
+
+		            <section>
+		                <h2>More pycsw 2.0.0 features</h2>
+		                <ul>
+		                <li>WMTS harvesting support</li>
+		                <li>XML output improvements</li>
+		                <li>GM03 support for Swiss metadata</li>
+		                <li>Added temporal extent support to WMS layer harvesting</li>
+		                </ul>
+		            </section>
+
+		        </section>
+
 		        <!--Architecture-->
 		        <section>
+
+		        	<section>
+		                <h2>Architecture</h2>
+		            </section>
+
 		            <section>
 		                <h2>Component Architecture</h2>
 		                <p><img src="http://geopython.github.io/pycsw-workshop/_images/pycsw-component-architecture.jpg" width="700" alt="" /></p>
@@ -200,71 +412,165 @@
 
 		        <!--Installation-->
 		        <section>
+
+		        	<section>
+		                <h2>Installation</h2>
+		            </section>
+
 		            <section>
 		                <h2>Installation: the proper way</h2>
 		                <ul>
-		                <li>Python Package Index (PyPi)</li>
-		                <li>openSUSE Application:Geo RPM packages</li>
-		                <li>UbuntuGIS deb packages</li>
-		                <li>DebianGIS deb packages</li>
+		                <li><a href="https://pypi.python.org/pypi/pycsw">Python Package Index</a> (PyPi)</li>
+		                <li><a href="https://packages.debian.org/source/sid/pycsw">Debian</a> (non-free due to the OGC schema licensing: <a href="http://lists.alioth.debian.org/pipermail/pkg-grass-devel/2014-November/024520.html">link1</a> <a href="http://osgeo-org.1560.x6.nabble.com/OGC-XML-schemas-and-FOSS4G-software-distribution-td5186023.html">link2</a>)</li>
+		                <li><a href="https://launchpad.net/ubuntu/+source/pycsw">Ubuntu</a></li>
+		                <li><a href="https://build.opensuse.org/package/show/Application:Geo/python-pycsw">openSUSE Application:Geo</a></li>
+		                <li>Source code available on <a href="https://github.com/geopython/pycsw">GitHub</a></li>
 		                </ul>
 		            </section>
 		            
 		            <section>
-		                <h2>4 Minute Install</h2>
+		                <h2>Installation: 4 Minute Install</h2>
 		                <pre><code data-trim contenteditable>
 
+# Setup a virtual environment:
 $ virtualenv pycsw && cd pycsw && . bin/activate
-$ git clone git@github.com:geopython/pycsw.git && cd pycsw
-$ pip install -e . && pip install -r requirements.txt
+
+# Grab the pycsw source code:
+$ git clone https://github.com/geopython/pycsw.git && cd pycsw
+$ pip install -e . && pip install -r requirements-standalone.txt
+
+# Create and adjust a configuration file:
 $ cp default-sample.cfg default.cfg
 $ vi default.cfg
 # adjust paths in
 # - server.home
 # - repository.database
 # set server.url to http://localhost:8000/
-$ python csw.wsgi
+
+# Setup the database:
+$ pycsw-admin.py -c setup_db -f default.cfg
+
+# Load records by indicating a directory of XML files, use -r for recursive:
+$ pycsw-admin.py -c load_records -f default.cfg -p /path/to/xml/
+
+# Run the server:
+$ python ./pycsw/wsgi.py
+
+# See that it works!
 $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 
 		                </code></pre>
 		            </section>
 		            
 		            <section>
-		                <h2>OSGeoLive</h2>
-		                <p>pycsw is available to test in OSGeoLive since version 5.5</p>
-		                <p>Project Overview and Quickstart Tutorial are included</p>
+		                <h2>OSGeo-Live</h2>
+		                <ul>
+		                	<li>pycsw is available to test in OSGeoLive since version 5.5</li>
+		                	<li>Project Overview and Quickstart Tutorial are included</li>
+		                </ul>
 		            </section>
 		        </section>
 
-		        <!--1.10 Features-->
+		        <!--Downstream Projects and Recent Deployments-->
 		        <section>
+
+		        	<section>
+		                <h2>Downstream Projects and Deployments</h2>
+		            </section>
+
+				    <section>
+		                <h2><a href="http://geonode.org/">GeoNode</a></h2>
+		                <h3>Open Source Geospatial Content Management System</h3>
+		                <ul>
+		                	<li>GeoNode is a web-based application and platform for developing geospatial information systems (GIS) and for deploying spatial data infrastructures (SDI).</li>
+		                    <li>pycsw is embeded and enabled as the default CSW server</li>
+		                </ul>
+		            </section>
+
 		            <section>
-		              <h2>pycsw 1.10 features</h2>
-		              <ul>
-		              <li>Repository filtering</li>
-		              <li>Database connection pooling for WSGI</li>
-		              <li>PostgreSQL FTS (Full Text Search)</li>
-		              <li>Link type detection</li>
-		              <li>OGC OpenSearch Geo/Time extensions 1.0</li>
-		              </ul>
+		                <h2><a href="http://ckan.org/">CKAN</a></h2>
+		                <ul>
+		                	<li>An Open Source Data Management System for powering data hubs and data portals</li>
+		                    <li>Publishing, sharing, finding and using data</li>
+		                    <li>pycsw is embeded in <a href="http://docs.ckan.org/projects/ckanext-spatial/en/latest/">spatial extension (ckanext-spatial)</a></li>
+		                    <li>Tight integration implemented in <a href="https://github.com/PublicaMundi/ckanext-publicamundi">PublicaMundi extension</a></li>
+		                </ul>
 		            </section>
-		        </section>
-
-		        <!--2.0 Features-->
-		        <section>
+		            
 		            <section>
-		              <h2>Upcoming pycsw 2.0 release</h2>
-		              <ul>
-		              <li>CSW 3.0.0 support has just landed on git master!</li>
-		              <li>pycsw is planned to be OGC CSW 3 Reference Implementation</li>
-		              <li>DCAT and GeoDCAT support to be implemented soon</li>
-		              <li>pycsw 2.0 release is expected after OGC finalizes CSW 3.0 standard</li>
-		              </ul>
+		                <h2><a href="https://github.com/azavea/Open-Data-Catalog">Open Data Catalog</a></h2>
+		                <h3></h3>
+		                <ul>
+		                	<li>Code For America Application</li>
+		                    <li>Open data publishing</li>
+		                    <li>pycsw is embeded and enabled out of the box</li>
+		                </ul>
+		            </section>
+		            
+		            <section>
+		              	<h2><a href="http://hh.worldmap.harvard.edu/">HHypermap (Harvard Hypermap)</a></h2>
+		              	<ul>
+		              		<li><a href="https://github.com/cga-harvard/HHypermap">HHypermap (Harvard Hypermap) Registry</a> is an application that manages OWS, Esri REST, and other types of map service harvesting, and maintains uptime statistics for services and layers</li>
+		              		<li><a href="https://github.com/cga-harvard/HHypermap/blob/master/setup.py#L73">pycsw 2.0.0</a> is embeded</li>
+		              	</ul>
+		            </section>
+
+		            <section>
+		              	<h2><a href="http://boundlessgeo.com/exchange/">Boundless Exchange</a></h2>
+		              	<ul>
+		              		<li>Boundless Exchange is a web-based GIS platform. It facilitates the creation, sharing, and collaborative use of geospatial data.</li>
+		              		<li><a href="https://github.com/boundlessgeo/exchange">Boundless Exchange</a> is built on top of GeoNode, pycsw, HHypermap, GeoGig and GeoServer</li>
+		              	</ul>
+		            </section>
+		            
+		            <section>
+		                <h2><a href="https://www.data.gov/">Data.gov</a></h2>
+		                <ul>
+		                    <li><a href="http://catalog.data.gov/dataset">US Government Open Data portal</a> is based on CKAN</li>
+		                    <li>Since 2014 pycsw is deployed as the <a href="http://catalog.data.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities">data.gov CSW implementation</a> serving <a href="http://catalog.data.gov/csw-all?service=CSW&version=2.0.2&request=GetRecords&typenames=csw:Record&elementsetname=full"> 2 million datasets</a></li>
+		                </ul>
+		            </section>
+
+		            <section>
+						<h2>Recent Deployments</h2>
+					  	<p>
+					  	<ul>
+					    	<li>NOAA (<a href="http://data.noaa.gov">data.noaa.gov</a>)</li>
+					    	<li>DOI (<a href="http://data.doi.gov">data.doi.gov</a>)</li>
+					    	<li>US Department of State (<a href="http://geonode.state.gov">geonode.state.gov</a>)</li>
+					    	<li>PacIOOS (<a href="http://pacioos.org">pacioos.org</a>)</li>
+					    	<li>Geodata.gov.gr (<a href="http://geodata.gov.gr">geodata.gov.gr</a>)</li>
+					  	</ul>
+					  	</p>
+					  	<p>See more at the pycsw <a href="http://pycsw.org/community">Live Deployments Map</a></p>
+					</section>
+
+		        </section>
+
+		        <!--Future Developments-->
+		        <section>
+
+		        	<section>
+		                <h2>Future Developments</h2>
+		            </section>
+
+		            <section>
+		              	<h2>Future Developments</h2>
+		              	<ul>
+		              		<li>Support for GeoDCAT-AP</li>
+		              		<li>Support for ElasticSearch</li>
+		              		<li>Support for SOLR back-end</li>
+		              	</ul>
 		            </section>
 		        </section>
 
-		        <!--OSGeo Incubation-->
+		        <!--Community-->
 		        <section>
+
+		        	<section>
+		                <h2>Community</h2>
+		            </section>
+
 		            <section>
 		              <h2>OSGeo Incubation process</h2>
 		              <ul>
@@ -278,45 +584,28 @@ $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 		                  <li><a href="http://wiki.osgeo.org/wiki/Board_Meeting_2015-03-05#Motions_.28to_be_confirmed_by_email.29">OSGeo Board approval</a> - 5 Mar 2015</li>
 		              </ul>
 		            </section>
-		        </section>
 
-		        <!--Recent Deployments-->
-		        <section>
-		          <h2>Recent Deployments</h2>
-		          <p>
-		          <ul>
-		            <li>NOAA (<a href="http://data.noaa.gov">data.noaa.gov</a>)</li>
-		            <li>DOI (<a href="http://data.doi.gov">data.doi.gov</a>)</li>
-		            <li>PacIOOS (<a href="http://pacioos.org">pacioos.org</a>)</li>
-		          </ul>
-		          </p>
-		          <p>See more at the pycsw <a href="http://pycsw.org/community">Live Deployments Map</a></p>
-		        </section>
+		            <section>
+			            <h2>Getting Involved</h2>
+			            <h3>Community</h3>
+			            <p>
+			            <a href="http://pycsw.org/community.html">http://pycsw.org/community.html</a>
+			            </p>
+			            <h3>Mailing List and IRC</h3>
+			            <p><a href="http://lists.osgeo.org/mailman/listinfo/pycsw-devel">http://lists.osgeo.org/mailman/listinfo/pycsw-devel</a></p>
+			            <p>#pycsw and #geopython on Freenode</p>
+			            <h3>Source Code, Wiki, Issues on GitHub</h3>
+			            <p><a href="https://github.com/geopython/pycsw">https://github.com/geopython/pycsw</a></p>
+			            <h3>Professional support</h3>
+			            <p><a href="http://www.osgeo.org/search_profile">http://www.osgeo.org/search_profile</a></p>
+			        </section>
 
-		        <section>
-		            <h2>Workshop</h2>
-		            <p align="left">Oregon Coastal & Marine Data Network pycsw Workshop materials available at <a href="http://www.coastalmarinedata.net/?p=229">http://www.coastalmarinedata.net/?p=229</a></p>
-		            <p align="left">Workshop source code available on <a href="https://github.com/geopython/pycsw-workshop">https://github.com/geopython/pycsw-workshop</a></p>
-		        </section>
+			        <section>
+			            <h2>Workshop</h2>
+			            <p align="left">Oregon Coastal & Marine Data Network pycsw Workshop materials available at <a href="http://www.coastalmarinedata.net/?p=229">http://www.coastalmarinedata.net/?p=229</a></p>
+			            <p align="left">Workshop source code available on <a href="https://github.com/geopython/pycsw-workshop">https://github.com/geopython/pycsw-workshop</a></p>
+			        </section>
 
-		        <section>
-		            <h2>Getting Involved</h2>
-		            <h3>Community</h3>
-		            <p>
-		            <a href="http://pycsw.org/community.html">http://pycsw.org/community.html</a>
-		            </p>
-		            <p>
-		            <a href="https://plus.google.com/communities/104084873011085696113">Google+</a>
-		            </p>
-		            </p><br/>
-		            <h3>Mailing List and IRC</h3>
-		            <p><a href="http://lists.osgeo.org/mailman/listinfo/pycsw-devel">http://lists.osgeo.org/mailman/listinfo/pycsw-devel</a></p>
-		            <p>#pycsw and #geopython on Freenode</p>
-		            <br/>
-		            <h3>Source Code, Wiki, Issues on GitHub</h3>
-		            <p><a href="https://github.com/geopython/pycsw">https://github.com/geopython/pycsw</a></p><br/>
-		            <h3>Professional support</h3>
-		            <p><a href="http://www.osgeo.org/search_profile">http://www.osgeo.org/search_profile</a></p><br/>
 		        </section>
 
 		        <section>
@@ -324,8 +613,6 @@ $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 		                <h3>Questions?</h3>
 		                </br>
 		        </section>
-
-
 
 			</div>
 		</div>
