@@ -50,21 +50,6 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -64.318835, 
-                    44.377005
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "marker-color": "00FF00", 
-                "role": "Mentor (OSGeo Incubation)", 
-                "name": "<a target=\"_blank\" href=\"https://github.com/jmckenna\">Jeff McKenna</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
                     -1.61778, 
                     54.978252
                 ]
