@@ -28,8 +28,10 @@ Workflow
     # check links
     check-links _site
     # view at http://localhost:4000
-    # publish to live
-    ./publish.sh <username>
+    # commit changes
+    git commit -m 'my change' ...
+    # publish to live site
+    git push origin gh-pages
     # update live deployment map
     python to_geojson.py live_deployments
     git commit -m 'update live deployment map' live-deployments.geojson
