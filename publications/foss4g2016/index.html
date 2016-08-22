@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Towards pycsw 2.0 - project report</title>
+		<title>Towards pycsw 2.0: project report</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/pycsw.css">
@@ -27,13 +27,13 @@
 
 				<section>
 		            <!--h1>pycsw</h1-->
-		            <h2>Towards pycsw 2.0 - Project report</h2>
+		            <h2>Towards pycsw 2.0: Project report</h2>
 		            <a class="image" href="http://pycsw.org" target="_blank">
 		                <img src="../../img/pycsw-logo.png" width="150">
 		            </a>
 		            <p>
 		                <small><a href="http://users.ntua.gr/tzotsos/">Angelos Tzotsos</a> / <a href="http://twitter.com/tzotsos">@tzotsos</a></small><br/>
-		                <small><a href="http://www.kralidis.ca/">Tom Kralidis</a> / <a href="https://twitter.com/tomkralidis">@tomkralidis</a></small><br/>
+		                <small><a href="http://kralidis.ca/">Tom Kralidis</a> / <a href="https://twitter.com/tomkralidis">@tomkralidis</a></small><br/>
 		            </p>
 			    <p><a href="http://2016.foss4g.org">FOSS4G 2016 Bonn</a></p>
 		        </section>
@@ -62,8 +62,8 @@
 		            <section>
 		                <h2>Introduction</h2>
 		                <ul>
-		                    <li><a href="http://pycsw.org">pycsw</a> is a OGC CSW server implementation written in Python.</li>
-		                    <li>Open Source project released under the MIT license.</li>
+		                    <li><a href="http://pycsw.org">pycsw</a> is a OGC CSW server implementation written in Python</li>
+		                    <li>Open Source project released under the MIT license</li>
 		                    <li>Runs on all major platforms (Windows, Linux, Mac OS X)</li>
 		                    <li>OSGeo Project since 11 March 2015</li>
 		                </ul>
@@ -73,6 +73,7 @@
 		                <h2>Introduction</h2>
 		                <ul>
 		                <li>pycsw fully implements the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web]</li>
+		                <li>pycsw also implements OpenSearch, OAI-PMH, SRU</li>
 		                <li>pycsw allows for the publishing and discovery of geospatial metadata</li>
 		                </ul>
 		            </section>
@@ -87,6 +88,9 @@
 		                </p>
 		                <p>
 		                <a title="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." href="http://www.opengeospatial.org/resource/products/details/?pid=1104"><img alt="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 2.0.2. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." src="https://portal.opengeospatial.org/public_ogc/compliance/badge.php?s=CAT%20CSW%202.0.2&r=1" height="38"/></a>
+		                </p>
+		                <p>
+		                <a title="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 3.0.0. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." href="http://www.opengeospatial.org/resource/products/details/?pid=1104"><img alt="This product conforms to the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web], Revision 3.0.0. OGC, OGC®, and CERTIFIED OGC COMPLIANT are trademarks or registered trademarks of the Open Geospatial Consortium, Inc. in the United States and other countries." src="https://portal.opengeospatial.org/public_ogc/compliance/badge.php?s=CAT%20CSW%203.0.0&r=1" height="38"/></a>
 		                </p>
 		                <p>
 		                pycsw is an official OSGeo Project
@@ -209,11 +213,12 @@
 		            <section>
 		                <h2>OGC CSW 3.0.0</h2>
 		                <ul>
-		                <li>OGC <a href="http://www.opengeospatial.org/pressroom/pressreleases/2445">released</a> Catalogue Service Standard v3.0 on July 12, 2016</li>
-		                <li>Version 3.0 better aligns with other OGC standards (such as OWS Common 2.0 and Filter 2.0)</li>
+		                <li>OGC <a href="http://www.opengeospatial.org/pressroom/pressreleases/2445">released</a> Catalogue Service Standard v3.0 on 12 July 2016</li>
+		                <li>Version 3.0 better aligns with newer OGC standards (such as OWS Common 2.0 and Filter 2.0)</li>
 		                <li>Provides a developer-friendly OpenSearch Geo API</li>
 		                <li>Supports querying via temporal extents</li>
 		                <li>Improves distributed search to better federate catalogues</li>
+		                <li><a href="http://www.opengeospatial.org/blog/2448">OGC blogpost on CSW 3.0</a></li>
 		                </ul>
 		            </section>
 
@@ -239,6 +244,7 @@
 		                <li>OGC provides a CSW 3.0 compliance test suite</li>
 		                <li>The <a href="https://github.com/opengeospatial/ets-cat30">compliance suite</a> was developed in 2015, while the specification was under review</li>
 		                <li>pycsw 2.0 was also mainly developed in 2015, in parallel with the compliance suite</li>
+		                <li>pycsw 2.0 development contributed to bug fixes and improvements to the OGC compliance suite</li>
 		                <li>pycsw development branch was the first to fully pass the compliance test</li>
 		                <li>Two <a href="https://github.com/opengeospatial/cite/wiki/Reference-Implementations">reference implementations</a> were available at <a href="http://www.opengeospatial.org/pressroom/pressreleases/2445">release</a> time</li>
 		                </ul>
@@ -249,8 +255,8 @@
 		                <ul>
 		                <li>In alignment with the CSW specifications, the default version returned is the latest supported version</li>
 		                <li>pycsw 2.0 will always behave like a 3.0.0 CSW unless the client explicitly requests a 2.0.2 CSW</li>
-		                <li>The new default behaviour breaks the pycsw API compatibility (pycsw.server.Csw.dispatch_wsgi now returns the HTTP status code along with the response string)</li>
-		                <li>More details on the pycsw <a href="http://pycsw.org/development/rfc/rfc-4.html">RFC</a></li>
+		                <li>The new default behaviour breaks the pycsw API compatibility (<code>pycsw.server.Csw.dispatch_wsgi</code> now returns the HTTP status code along with the response string)</li>
+		                <li>More details on the pycsw <a href="http://pycsw.org/development/rfc/rfc-4.html">RFC</a> for CSW 3.0 support</li>
 		                </ul>
 		            </section>
 
@@ -511,14 +517,14 @@ $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 		              	<h2><a href="http://hh.worldmap.harvard.edu/">HHypermap (Harvard Hypermap)</a></h2>
 		              	<ul>
 		              		<li><a href="https://github.com/cga-harvard/HHypermap">HHypermap (Harvard Hypermap) Registry</a> is an application that manages OWS, Esri REST, and other types of map service harvesting, and maintains uptime statistics for services and layers</li>
-		              		<li><a href="https://github.com/cga-harvard/HHypermap/blob/master/setup.py#L73">pycsw 2.0.0</a> is embeded</li>
+		              		<li><a href="https://github.com/cga-harvard/HHypermap/blob/master/setup.py#L73">pycsw 2.0.0</a> is embedded</li>
 		              	</ul>
 		            </section>
 
 		            <section>
 		              	<h2><a href="http://boundlessgeo.com/exchange/">Boundless Exchange</a></h2>
 		              	<ul>
-		              		<li>Boundless Exchange is a web-based GIS platform. It facilitates the creation, sharing, and collaborative use of geospatial data.</li>
+		              		<li>Boundless Exchange is a web-based GIS platform. It facilitates the creation, sharing, and collaborative use of geospatial data</li>
 		              		<li><a href="https://github.com/boundlessgeo/exchange">Boundless Exchange</a> is built on top of GeoNode, pycsw, HHypermap, GeoGig and GeoServer</li>
 		              	</ul>
 		            </section>
@@ -535,6 +541,9 @@ $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 						<h2>Recent Deployments</h2>
 					  	<p>
 					  	<ul>
+					    	<li>Land Information New Zealand (<a href="https://data.linz.govt.nz/">https://data.linz.govt.nz/</a>)</li>
+					    	<li>Harvard Hypermap (<a href="http://hh.worldmap.harvard.edu">http://hh.worldmap.harvard.edu</a>)</li>
+					    	<li>geopole.org (<a href="http://geopole.org">http://geopole.org</a>)</li>
 					    	<li>NOAA (<a href="http://data.noaa.gov">data.noaa.gov</a>)</li>
 					    	<li>DOI (<a href="http://data.doi.gov">data.doi.gov</a>)</li>
 					    	<li>US Department of State (<a href="http://geonode.state.gov">geonode.state.gov</a>)</li>
@@ -558,8 +567,9 @@ $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 		              	<h2>Future Developments</h2>
 		              	<ul>
 		              		<li>Support for GeoDCAT-AP</li>
-		              		<li>Support for ElasticSearch</li>
-		              		<li>Support for SOLR back-end</li>
+		              		<li>Support for ElasticSearch backend</li>
+		              		<li>Support for SOLR backend</li>
+		              		<li>Improved testing (py.test)</li>
 		              	</ul>
 		            </section>
 		        </section>
@@ -597,7 +607,7 @@ $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 			            <h3>Source Code, Wiki, Issues on GitHub</h3>
 			            <p><a href="https://github.com/geopython/pycsw">https://github.com/geopython/pycsw</a></p>
 			            <h3>Professional support</h3>
-			            <p><a href="http://www.osgeo.org/search_profile">http://www.osgeo.org/search_profile</a></p>
+			            <p><a href="http://www.osgeo.org/search_profile?SET=1&MUL_TECH[]=00107">http://www.osgeo.org/search_profile?SET=1&MUL_TECH[]=00107</a></p>
 			        </section>
 
 			        <section>
@@ -608,7 +618,7 @@ $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 
 			        <section>
 			            <h2>pycsw 2.0.0 codenamed "Doug"</h2>
-			            <p align="left">The 2.0.0 release is codenamed “Doug” in honour of Doug Nebert of the FGDC. Doug was internationally recognized as a champion of metadata, discovery and interoperability. Involved in numerous international standards bodies and spatial data infrastructure initiatives, Doug was one of the editors of the CSW 3.0 specification and encouraged pycsw developers to adopt and implement CSW 3.0 as part of US data.gov efforts. Doug’s vision and expertise will always be remembered and appreciated by the pycsw development team.</p>
+			            <p align="left">The 2.0.0 release is codenamed “Doug” in honour of <a href="http://www.opengeospatial.org/blog/2038">Doug Nebert</a> of the FGDC. Doug was internationally recognized as a champion of metadata, discovery and interoperability.  Involved in numerous international standards bodies and spatial data infrastructure initiatives, Doug was one of the editors of the CSW 3.0 specification and encouraged pycsw developers to adopt and implement CSW 3.0 as part of US <a href="https://data.gov">data.gov</a> efforts. Doug’s vision and expertise will always be remembered and appreciated by the pycsw development team.</p>
 			        </section>
 
 		        </section>
