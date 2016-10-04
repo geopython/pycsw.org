@@ -37,7 +37,7 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://data.linz.govt.nz/feeds/csw?service=CSW&version=2.0.2&request=GetCapabilities\">LINZ Data Service</a>"
+                "url": "<a target=\"_blank\" href=\"http://data.linz.govt.nz/services/csw?service=CSW&version=2.0.2&request=GetCapabilities\">LINZ Data Service</a>"
             }
         }, 
         {
@@ -96,6 +96,19 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
+                    -71.109734, 
+                    42.373616
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://hh.worldmap.harvard.edu/search/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Harvard Hypermap</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
                     -79.468857, 
                     43.782039
                 ]
@@ -122,13 +135,13 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    176.07021, 
-                    -38.685692
+                    -77.306373, 
+                    38.846224
                 ]
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://portal.smart-project.info/mycsw/csw?service=CSW&version=2.0.2&request=GetCapabilities\">SMART Aquifer Characterisation Programme (Journals)</a>"
+                "url": "<a target=\"_blank\" href=\"http://cube.csiss.gmu.edu/srv/csw?service=CSW&version=2.0.2&request=GetCapabilities\">GMU-CSISS Catalogue Service for Unidata</a>"
             }
         }, 
         {
@@ -194,45 +207,6 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://maps.data.ug/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Uganda Open Data</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -58.381593, 
-                    -34.603723
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://nodo.mapaeducativo.edu.ar/catalogue/csw?request=GetCapabilities&version=2.0.2&service=CSW\">Mapa Educativo Nacional - Inicio</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    178.4419, 
-                    -18.1416
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geonode.sopac.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Secretariat of the Pacific Community</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    179.472656, 
-                    -10.728072
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://pcrafi.spc.int/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Pacific Risk Information System</a>"
             }
         }, 
         {
@@ -317,13 +291,13 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    11.26031667, 
-                    43.77731667
+                    -74.075833, 
+                    4.598056
                 ]
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://www.igmi.org/cgi-bin/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Istituto Geografico Militare (beta test)</a>"
+                "url": "<a target=\"_blank\" href=\"http://geonode.colombiassh.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Columbia Sala de Situaci\u00f3n Humanitaria</a>"
             }
         }, 
         {
@@ -337,6 +311,19 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://lgi-climbsrv.geographie.uni-kiel.de/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">CLIMB Geoportal</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -73.913293, 
+                    41.011308
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://api.rvdata.us/catalog?service=CSW&version=2.0.2&request=GetCapabilities\">Rolling Deck to Repository (R2R) Program</a>"
             }
         }, 
         {
@@ -376,6 +363,19 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://geonode.wfp.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">UN WFP GeoNode</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    8.541694, 
+                    47.376887
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://csw.geopole.org/?service=CSW&version=2.0.2&request=GetCapabilities\">geopole.org Geospatial Catalogue</a>"
             }
         }
     ]
