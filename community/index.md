@@ -63,6 +63,10 @@ pycsw developers can be found in the IRC channel.  Below are some suggested IRC 
 
 IRC logs can be found at [http://irclogs.geoapt.com/pycsw/](http://irclogs.geoapt.com/pycsw/)
 
+## Gitter
+
+Gitter provides a web-based instant messaging and chatroom.  The pycsw [Gitter chatroom](https://gitter.im/geopython/pycsw) is public and open to anyone (you require a Gitter or Twitter account to sign in).
+
 ## Service Providers
 
 pycsw service providers (core development, support, training) can be found on the [OSGeo Service Provider Directory](http://www.osgeo.org/search_profile?SET=1&MUL_TECH[]=00107)
