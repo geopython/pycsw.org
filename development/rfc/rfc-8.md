@@ -12,7 +12,7 @@ active_page: rfc-8
 - author: Ricardo Garcia Silva
 - contact: ricardo.garcia.silva@gmail.com
 - status: draft
-- modified: 2016-12-23
+- modified: 2017-01-23
 
 ## Overview
 
@@ -295,7 +295,7 @@ Documentation will be updated as required.
 
 Pull request at:
 
-[https://github.com/geopython/pycsw/pull/492](https://github.com/geopython/pycsw/pull/492)
+[https://github.com/geopython/pycsw/pull/495](https://github.com/geopython/pycsw/pull/495)
 
 ### Voting History
 
