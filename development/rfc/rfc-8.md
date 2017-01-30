@@ -301,7 +301,7 @@ Pull request at:
 
 +1 from @amercader, @kalxas, @tomkralidis, @ricardogsilva*
 
-* non-PSC
+\* non-PSC
 
 ### Status
 
