@@ -299,7 +299,7 @@ Pull request at:
 
 ### Voting History
 
-+1 from @amercader, @kalxas, @tomkralidis, @ricardogsilva*
++1 from @amercader, @kalxas, @tomkralidis, @ricardogsilva*, @capooti
 
 \* non-PSC
 
