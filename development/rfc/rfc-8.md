@@ -12,7 +12,7 @@ active_page: rfc-8
 - author: Ricardo Garcia Silva
 - contact: ricardo.garcia.silva@gmail.com
 - status: draft
-- modified: 2017-01-23
+- modified: 2017-01-30
 
 ## Overview
 
@@ -299,8 +299,12 @@ Pull request at:
 
 ### Voting History
 
-TBD
++1 from @amercader, @kalxas, @tomkralidis, @ricardogsilva*
+
+* non-PSC
 
 ### Status
+
+Adopted.
 
 TBD
