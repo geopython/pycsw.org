@@ -32,6 +32,8 @@ active_page: faq
 
 [Why am I getting a 'Connection refused' error when connecting pycsw?](#why-am-i-getting-a-connection-refused-error-when-connecting-to-pycsw)
 
+[When doing a GetRecords why are there no results?](#when-doing-a-getrecords-why-are-there-no-results)
+
 Can I use pycsw within my WSGI application?
 -------------------------------------------
 
@@ -198,3 +200,18 @@ Why am I getting a 'Connection refused' error when connecting to pycsw?
 -----------------------------------------------------------------------
 
 Most CSW client tools (e.g. [QGIS MetaSearch](https://hub.qgis.org/projects/MetaSearch), [OWSLib](http://geopython.github.io/OWSLib), etc.) derive the CSW URL from the `GetCapabilities` reponse XML, as opposed to using directly the URL you provide.  Ensure that the `server.url` configuration value is set to ensure the URL to be advertised in the CSW Capabilities XML.
+
+When doing a GetRecords why are there no results?
+------------------------------------------------
+
+The default result type of a ``GetRecords`` response is a hit count, which does not show any records per se but provides a summary of the search result
+
+{% highlight xml %}
+<csw:SearchResults nextRecord="0"
+                   numberOfRecordsMatched="0"
+                   numberOfRecordsReturned="0"
+                   recordSchema="http://www.opengis.net/cat/csw/2.0.2"
+                   elementSet="full"/>
+{% endhighlight %}
+
+To return actual records add ``resulttype=results`` to the ``GetRecords`` request.
