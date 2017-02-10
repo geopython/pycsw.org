@@ -68,7 +68,7 @@ Create a 'parent' metadata record from which all relevant metadata records (imag
         <ogc:And>
           <ogc:PropertyIsEqualTo>
             <ogc:PropertyName>apiso:parentIdentifier</ogc:PropertyName>
-            <ogc:PropertyName>$identifier</ogc:PropertyName>
+            <ogc:Literal>$identifier</ogc:Literal>
           </ogc:PropertyIsEqualTo>
           <ogc:BBOX>
             <ogc:PropertyName>ows:BoundingBox</ogc:PropertyName>
