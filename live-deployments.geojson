@@ -336,7 +336,7 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://oos.soest.hawaii.edu/pacioos/ogc/csw.py?service=CSW&version=2.0.2.&request=GetCapabilities\">Pacific Islands Ocean Observing System (PacIOOS)</a>"
+                "url": "<a target=\"_blank\" href=\"http://www.pacioos.hawaii.edu/ogc/csw?service=CSW&version=2.0.2.&request=GetCapabilities\">Pacific Islands Ocean Observing System (PacIOOS)</a>"
             }
         }, 
         {
