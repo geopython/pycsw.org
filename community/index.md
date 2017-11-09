@@ -33,7 +33,7 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 
 ## Code of Conduct
 
-In support of an inclusive and welcoming community, the pycsw code of conduct can be found at https://github.com/geopython/pycsw/blob/master/CODE_OF_CONDUCT.md.
+In support of an inclusive and welcoming community, the pycsw code of conduct can always be found at [https://github.com/geopython/pycsw/blob/master/CODE_OF_CONDUCT.md](https://github.com/geopython/pycsw/blob/master/CODE_OF_CONDUCT.md).
 
 There are numerous ways to interact with the pycsw community.
 
