@@ -31,6 +31,10 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 <a class="reference external image-reference" href="http://data.ioos.us"><img alt="The U.S. Integrated Ocean Observing System (IOOS)" src="{{site.baseurl}}/img/ioos.png"/></a>
 </div>
 
+## Code of Conduct
+
+In support of an inclusive and welcoming community, the pycsw code of conduct can be found at https://github.com/geopython/pycsw/blob/master/CODE_OF_CONDUCT.md.
+
 There are numerous ways to interact with the pycsw community.
 
 ## Google+
