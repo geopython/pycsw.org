@@ -364,6 +364,19 @@
             "properties": {
                 "url": "<a target=\"_blank\" href=\"https://api.bas.ac.uk/data/metadata/csw/v1?service=CSW&version=2.0.2&request=GetCapabilities\">Discovery Metadata System,<br/> British Antarctic Survey</a>"
             }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    0.080, 
+                    52.213
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://api.bas.ac.uk/data/metadata/csw/v1?service=CSW&version=2.0.2&request=GetCapabilities\">Discovery Metadata System, British Antarctic Survey</a>"
+            }
         }
     ]
 }
