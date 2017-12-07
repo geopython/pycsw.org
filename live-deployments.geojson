@@ -57,13 +57,13 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -77.026088, 
-                    38.990666
+                    -77.039175, 
+                    39.00415
                 ]
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://data.noaa.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities\">NOAA Data Catalog</a>"
+                "url": "<a target=\"_blank\" href=\"https://data.ioos.us/csw?service=CSW&version=2.0.2&request=GetCapabilities\">IOOS Catalog</a>"
             }
         }, 
         {
@@ -76,7 +76,7 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geoport.whoi.edu/csw?service=CSW&version=2.0.2&request=GetCapabilities\">USGS Coastal and Marine Geoscience Portal</a>"
+                "url": "<a target=\"_blank\" href=\"http://gamone.whoi.edu/csw?service=CSW&version=2.0.2&request=GetCapabilities\">USGS Coastal and Marine Geoscience Portal</a>"
             }
         }, 
         {
@@ -102,7 +102,7 @@
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://hh.worldmap.harvard.edu/search/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Harvard Hypermap</a>"
+                "url": "<a target=\"_blank\" href=\"http://hh.worldmap.harvard.edu/registry/hypermap/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Harvard Hypermap</a>"
             }
         }, 
         {
@@ -116,19 +116,6 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://geo.woudc.org/csw?service=CSW&version=2.0.2&request=GetCapabilities\">World Ozone and Ultraviolet Radiation Data Centre (WOUDC)</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -89.512008, 
-                    30.388758
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geoint.nrlssc.navy.mil/pycsw/csw.py?service=CSW&version=2.0.2&request=GetCapabilities\">U.S. Naval Research Laboratory</a>"
             }
         }, 
         {
@@ -213,13 +200,13 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    36.821946, 
-                    -1.292066
+                    179.472656, 
+                    -10.728072
                 ]
             }, 
             "type": "Feature", 
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://horn.rcmrd.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open Data for the Horn (OpenDRI)</a>"
+                "url": "<a target=\"_blank\" href=\"http://pcrafi.spc.int/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Pacific Risk Information System</a>"
             }
         }, 
         {
@@ -278,32 +265,6 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -3.70379, 
-                    40.416775
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://ide.geogra.uah.es/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Universidad de Alcala</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -74.075833, 
-                    4.598056
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geonode.colombiassh.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Columbia Sala de Situaci\u00f3n Humanitaria</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
                     11.576754, 
                     48.13672
                 ]
@@ -343,19 +304,6 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    -79.931051, 
-                    32.776475
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://pycsw.secoora.org/?service=CSW&version=2.0.2.&request=GetCapabilities\">SECOORA Geospatial Catalogue</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
                     12.5, 
                     41.9
                 ]
@@ -376,6 +324,45 @@
             "type": "Feature", 
             "properties": {
                 "url": "<a target=\"_blank\" href=\"http://csw.geopole.org/?service=CSW&version=2.0.2&request=GetCapabilities\">geopole.org Geospatial Catalogue</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    -0.97813, 
+                    51.454265
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://apps.ecmwf.int/csw/?service=CSW&version=2.0.2&request=GetCapabilities\">Copernicus Atmosphere Monitoring Service Product Catalogue</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    16.369543, 
+                    48.196017
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://pycsw.eodc.eu/?service=CSW&version=2.0.2&request=GetCapabilities\">EODC Data Catalogue</a>"
+            }
+        }, 
+        {
+            "geometry": {
+                "type": "Point", 
+                "coordinates": [
+                    0.08, 
+                    52.213
+                ]
+            }, 
+            "type": "Feature", 
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://api.bas.ac.uk/data/metadata/csw/v1?service=CSW&version=2.0.2&request=GetCapabilities\">Discovery Metadata System,<br/> British Antarctic Survey</a>"
             }
         }
     ]

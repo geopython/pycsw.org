@@ -33,6 +33,7 @@ git commit -m 'my change' ...
 # publish to live site
 git push origin gh-pages
 # update live deployment map
+# content is managed at https://github.com/geopython/pycsw/wiki/Live-Deployments
 python to_geojson.py live_deployments
 git commit -m 'update live deployment map' live-deployments.geojson
 git push origin gh-pages
