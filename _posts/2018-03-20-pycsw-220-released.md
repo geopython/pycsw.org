@@ -1,0 +1,46 @@
+---
+layout: post
+title: pycsw 2.2.0 released
+author: Tom Kralidis
+author_url: https://twitter.com/tomkralidis
+publish_date: 2018-03-20 06:08:22 -0400
+---
+
+The pycsw team announces the release of pycsw 2.2.0. 
+
+The 2.2.0 release adds WMS 1.3.0 and WPS process harvesting as well as plugin support enhancements.
+
+Source and binary downloads:
+----------------------------
+
+The source code is available at: 
+
+[http://pycsw.org/download](http://pycsw.org/download)
+
+Version 2.2.0 (2018-03-20):
+---------------------------
+
+[Bulleted list of enhancements / bug fixes]
+
+- Support overriding PYCSW_ROOT via environment variable
+- handle malformed basic service options
+- support Python import for plugins
+- support WMS 1.3.0 harvesting
+- implement CQL to Filter transforms
+- implement WPS process harvesting
+- fix CQL literals with spaces
+- include dct:alternative in CSW3 full output
+- update testing framework to py.test
+- implement OGC filter parsing as Python dict for easy parsing by repository plugins
+- do not silence exceptions on custom plugins
+- support CQL WKT ENVELOPE syntax
+- check forwarded ip address when pycsw is behind a proxy
+- add official Docker implementation
+- fix CSW service / version support (optional in 3.0.0)
+- fix CSW 3 GetRecords POST handling
+
+Testers and developers are welcome.
+ 
+The pycsw developer team.
+[http://pycsw.org/](http://pycsw.org/)
+
