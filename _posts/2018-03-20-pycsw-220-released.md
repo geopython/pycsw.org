@@ -40,6 +40,9 @@ Version 2.2.0 (2018-03-20):
 - fix CSW 3 GetRecords POST handling
 
 Testers and developers are welcome.
+
+We would like to thank [OSGeo](https://osgeo.org) and the [2018 Bonn Code Sprint](https://wiki.osgeo.org/wiki/OSGeo_Code_Sprint_2018) organizers and sponsors for their
+support.
  
 The pycsw developer team.
 [http://pycsw.org/](http://pycsw.org/)
