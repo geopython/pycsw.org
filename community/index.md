@@ -13,22 +13,22 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 <script src="https://embed.github.com/view/geojson/geopython/pycsw.org/gh-pages/live-deployments.geojson"> </script>
 
 <div class="pycsw-powered">
-<a class="reference external image-reference" href="http://data.gov"><img alt="Data.gov" src="{{site.baseurl}}/img/data-gov.png"/></a>
-<a class="reference external image-reference" href="http://ckan.org"><img alt="CKAN" src="{{site.baseurl}}/img/ckan.png"/></a>
+<a class="reference external image-reference" href="https://data.gov"><img alt="Data.gov" src="{{site.baseurl}}/img/data-gov.png"/></a>
+<a class="reference external image-reference" href="https://ckan.org"><img alt="CKAN" src="{{site.baseurl}}/img/ckan.png"/></a>
 <a class="reference external image-reference" href="http://cida.usgs.org"><img alt="USGS Center for Integrated Data Analytics" src="{{site.baseurl}}/img/usgs-cida.jpg"/></a>
 <a class="reference external image-reference" href="http://geonode.org"><img alt="GeoNode" src="{{site.baseurl}}/img/geonode.jpg"/></a>
 <a class="reference external image-reference" href="http://sopac.org"><img alt="Secretariat of the Pacific Community" src="{{site.baseurl}}/img/sopac.jpg"/></a>
 <a class="reference external image-reference" href="http://insideidaho.org"><img alt="INSIDE Idaho" src="{{site.baseurl}}/img/inside-idaho.jpg"/></a>
-<a class="reference external image-reference" href="http://www.opengeospatial.org/projects/initiatives/chisp"><img alt="OGC Climate-Hydrologic Information Sharing Pilot" src="{{site.baseurl}}/img/ogc-chisp.jpg"/></a>
-<a class="reference external image-reference" href="http://commons.codeforamerica.org/apps/open-data-catalog"><img alt="Open Data Catalog, Code for America Brigade" src="{{site.baseurl}}/img/open-data-catalog.png"/></a>
-<a class="reference external image-reference" href="http://crc806db.uni-koeln.de"><img alt="University of Cologne, Department of Geography, Collaborative Research Centre 806" src="{{site.baseurl}}/img/uni-koeln.png"/></a>
-<a class="reference external image-reference" href="http://data.noaa.gov"><img alt="National Oceanic and Atmospheric Administration" src="{{site.baseurl}}/img/noaa.png"/></a>
+<a class="reference external image-reference" href="https://www.opengeospatial.org/projects/initiatives/chisp"><img alt="OGC Climate-Hydrologic Information Sharing Pilot" src="{{site.baseurl}}/img/ogc-chisp.jpg"/></a>
+<a class="reference external image-reference" href="https://commons.codeforamerica.org/apps/open-data-catalog"><img alt="Open Data Catalog, Code for America Brigade" src="{{site.baseurl}}/img/open-data-catalog.png"/></a>
+<a class="reference external image-reference" href="https://crc806db.uni-koeln.de"><img alt="University of Cologne, Department of Geography, Collaborative Research Centre 806" src="{{site.baseurl}}/img/uni-koeln.png"/></a>
+<a class="reference external image-reference" href="https://data.noaa.gov"><img alt="National Oceanic and Atmospheric Administration" src="{{site.baseurl}}/img/noaa.png"/></a>
 <a class="reference external image-reference" href="http://geothermaldata.org"><img alt="National Geothermal Data System" src="{{site.baseurl}}/img/ngds.png"/></a>
-<a class="reference external image-reference" href="http://data.linz.govt.nz"><img alt="Land Information New Zealand" src="{{site.baseurl}}/img/linz.png"/></a>
+<a class="reference external image-reference" href="https://data.linz.govt.nz"><img alt="Land Information New Zealand" src="{{site.baseurl}}/img/linz.png"/></a>
 <a class="reference external image-reference" href="http://geonode.state.gov"><img alt="U.S. Department of State" src="{{site.baseurl}}/img/usdos.png"/></a>
 <a class="reference external image-reference" href="http://geopole.org"><img alt="geopole.org" src="{{site.baseurl}}/img/geopole.gif"/></a>
 <a class="reference external image-reference" href="http://geoint.nrlssc.navy.mil/"><img alt="United States Naval Research Laboratory" src="{{site.baseurl}}/img/usnrl.png"/></a>
-<a class="reference external image-reference" href="http://data.ioos.us"><img alt="The U.S. Integrated Ocean Observing System (IOOS)" src="{{site.baseurl}}/img/ioos.png"/></a>
+<a class="reference external image-reference" href="https://data.ioos.us"><img alt="The U.S. Integrated Ocean Observing System (IOOS)" src="{{site.baseurl}}/img/ioos.png"/></a>
 </div>
 
 ## Code of Conduct
@@ -47,9 +47,9 @@ The [_FAQ_]({{site.baseurl}}/faq.html) provides answers to commonly asked questi
 
 ## Mailing List
 
-The pycsw-devel mailing list enables users and developers to exchange ideas, discuss improvements / issues, and ask questions. To subscribe, visit <http://lists.osgeo.org/mailman/listinfo/pycsw-devel>.
+The pycsw-devel mailing list enables users and developers to exchange ideas, discuss improvements / issues, and ask questions. To subscribe, visit <https://lists.osgeo.org/mailman/listinfo/pycsw-devel>.
 
-Mailing list archives are available at <http://lists.osgeo.org/pipermail/pycsw-devel>.  The mailing list is also available/searchable via the OSGeo [Nabble](http://osgeo-org.1560.x6.nabble.com/pycsw-devel-f5055821.html) forum.
+Mailing list archives are available at <https://lists.osgeo.org/pipermail/pycsw-devel>.  The mailing list is also available/searchable via the OSGeo [Nabble](https://osgeo-org.1560.x6.nabble.com/pycsw-devel-f5055821.html) forum.
 
 ## IRC
 
@@ -63,7 +63,7 @@ pycsw developers can be found in the IRC channel.  Below are some suggested IRC 
 
 - [Chatzilla](http://chatzilla.hacksrus.com/) (Firefox)
 - [Colloquy](http://colloquy.info/) (Mac OS)
-- [irssi](http://irssi.org/) (Terminal-based)
+- [irssi](https://irssi.org/) (Terminal-based)
 
 IRC logs can be found at [http://irclogs.geoapt.com/pycsw/](http://irclogs.geoapt.com/pycsw/)
 

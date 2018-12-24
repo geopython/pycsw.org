@@ -16,5 +16,5 @@ active_page: docs
 Workshop
 --------
 
-* [pycsw Workshop](http://geopython.github.io/pycsw-workshop)
+* [pycsw Workshop](https://geopython.github.io/pycsw-workshop)
 

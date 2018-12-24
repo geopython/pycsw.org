@@ -8,9 +8,9 @@ active_page: download
 
 # Download <span class="glyphicon glyphicon-download"> </span>
 
-* Current Stable Release (2.2.0) <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-2.2.0.tar.gz">tar.gz <span class="glyphicon glyphicon-compressed"> </span></a> <a class="btn btn-default" href="http://download.osgeo.org/pycsw/pycsw-2.2.0.zip">zip <span class="glyphicon glyphicon-compressed"> </span></a>
+* Current Stable Release (2.2.0) <a class="btn btn-default" href="https://download.osgeo.org/pycsw/pycsw-2.2.0.tar.gz">tar.gz <span class="glyphicon glyphicon-compressed"> </span></a> <a class="btn btn-default" href="https://download.osgeo.org/pycsw/pycsw-2.2.0.zip">zip <span class="glyphicon glyphicon-compressed"> </span></a>
 
-* [All Releases](http://download.osgeo.org/pycsw/)
+* [All Releases](https://download.osgeo.org/pycsw/)
 
 ## Source Code
 
@@ -36,4 +36,4 @@ __See Also:__ [_Installing on Ubuntu/Xubuntu/Kubuntu_](http://docs.pycsw.org/en/
 
 ## OSGeo-Live
 
-pycsw is available on the [OSGeo-Live](http://live.osgeo.org/) project.  The pycsw [overview](http://live.osgeo.org/en/overview/pycsw_overview.html) and [quickstart](http://live.osgeo.org/en/quickstart/pycsw_quickstart.html) provides further information on using pycsw in OSGeo-Live.
+pycsw is available on the [OSGeo-Live](https://live.osgeo.org/) project.  The pycsw [overview](https://live.osgeo.org/en/overview/pycsw_overview.html) and [quickstart](https://live.osgeo.org/en/quickstart/pycsw_quickstart.html) provides further information on using pycsw in OSGeo-Live.

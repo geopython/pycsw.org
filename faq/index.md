@@ -37,7 +37,7 @@ active_page: faq
 Can I use pycsw within my WSGI application?
 -------------------------------------------
 
-Yes.  pycsw can be deployed as both via traditional CGI or WSGI.  You can also integrate pycsw via [Django](https://www.djangoproject.com/) views, [Pylons](http://www.pylonsproject.org/) controllers or [Flask](http://flask.pocoo.org/) routes.
+Yes.  pycsw can be deployed as both via traditional CGI or WSGI.  You can also integrate pycsw via [Django](https://www.djangoproject.com/) views, [Pylons](https://www.pylonsproject.org/) controllers or [Flask](https://flask.pocoo.org/) routes.
 
 How do I export my repository?
 -------------------------------
@@ -127,7 +127,7 @@ wget http://demo.pycsw.org/cite/csw --post-file=/path/to/request.xml
 Does pycsw have a GUI/webapp/interface?
 ---------------------------------------
 
-No.  pycsw is a headless metadata catalog.  [Administration](http://docs.pycsw.org/en/latest/administration.html) is via command line.  For full metadata management, applications like [CKAN](http://ckan.org), [GeoNode](http://geonode.org)  and [Open Data Catalog](http://commons.codeforamerica.org/apps/open-data-catalog) are built with pycsw inside and provide functionality to manage metadata via a GUI.
+No.  pycsw is a headless metadata catalog.  [Administration](http://docs.pycsw.org/en/latest/administration.html) is via command line.  For full metadata management, applications like [CKAN](https://ckan.org), [GeoNode](http://geonode.org)  and [Open Data Catalog](https://commons.codeforamerica.org/apps/open-data-catalog) are built with pycsw inside and provide functionality to manage metadata via a GUI.
 
 I have 2147 metadata records.  How do I add them?
 -------------------------------------------------
@@ -199,7 +199,7 @@ Yes.  See our [API](http://docs.pycsw.org/en/latest/api.html) docs for examples 
 Why am I getting a 'Connection refused' error when connecting to pycsw?
 -----------------------------------------------------------------------
 
-Most CSW client tools (e.g. [QGIS MetaSearch](https://hub.qgis.org/projects/MetaSearch), [OWSLib](http://geopython.github.io/OWSLib), etc.) derive the CSW URL from the `GetCapabilities` reponse XML, as opposed to using directly the URL you provide.  Ensure that the `server.url` configuration value is set to ensure the URL to be advertised in the CSW Capabilities XML.
+Most CSW client tools (e.g. [QGIS MetaSearch](https://hub.qgis.org/projects/MetaSearch), [OWSLib](https://geopython.github.io/OWSLib), etc.) derive the CSW URL from the `GetCapabilities` reponse XML, as opposed to using directly the URL you provide.  Ensure that the `server.url` configuration value is set to ensure the URL to be advertised in the CSW Capabilities XML.
 
 When doing a GetRecords why are there no results?
 ------------------------------------------------
