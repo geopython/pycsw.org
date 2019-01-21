@@ -8,9 +8,9 @@ active_page: psc
 
 # Project Steering Committee
 
-In accordance with [RFC1](http://pycsw.org/development/rfc/rfc-1.html),
+In accordance with [RFC1](https://pycsw.org/development/rfc/rfc-1.html),
 the authoritative and current PSC membership list is maintained at
-[http://pycsw.org/community/psc.html](http://pycsw.org/community/psc.html)
+[https://pycsw.org/community/psc.html](https://pycsw.org/community/psc.html)
 
 Members are (in alphabetical order):
 

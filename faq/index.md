@@ -51,7 +51,7 @@ pycsw-admin.py -c export_records -f default.cfg -p /path/to/output_dir
 How do I add a custom metadata format?
 --------------------------------------
 
-pycsw provides a plugin framework in which you can implement a custom profile (see [Profile Plugins](http://docs.pycsw.org/en/latest/profiles.html#profiles))
+pycsw provides a plugin framework in which you can implement a custom profile (see [Profile Plugins](https://docs.pycsw.org/en/latest/profiles.html#profiles))
 
 How can I catalogue 'sets' of metadata?
 ---------------------------------------
@@ -89,7 +89,7 @@ The above query will search for all metadata records of the same `apiso:parentId
 How can I handle transactions safely?
 -------------------------------------
 
-Transactions are handled by an IP-based authentication list which can be set in pycsw's [configuration](http://docs.pycsw.org/en/latest/configuration.html#configuration) (in `manager.allowed_ips`).  Supported notations includes traditional IP address, wildcard, and CIDR.
+Transactions are handled by an IP-based authentication list which can be set in pycsw's [configuration](https://docs.pycsw.org/en/latest/configuration.html#configuration) (in `manager.allowed_ips`).  Supported notations includes traditional IP address, wildcard, and CIDR.
 
 How can I make CSW POST XML requests?
 -------------------------------------
@@ -127,7 +127,7 @@ wget http://demo.pycsw.org/cite/csw --post-file=/path/to/request.xml
 Does pycsw have a GUI/webapp/interface?
 ---------------------------------------
 
-No.  pycsw is a headless metadata catalog.  [Administration](http://docs.pycsw.org/en/latest/administration.html) is via command line.  For full metadata management, applications like [CKAN](https://ckan.org), [GeoNode](http://geonode.org)  and [Open Data Catalog](https://commons.codeforamerica.org/apps/open-data-catalog) are built with pycsw inside and provide functionality to manage metadata via a GUI.
+No.  pycsw is a headless metadata catalog.  [Administration](https://docs.pycsw.org/en/latest/administration.html) is via command line.  For full metadata management, applications like [CKAN](https://ckan.org), [GeoNode](http://geonode.org)  and [Open Data Catalog](https://commons.codeforamerica.org/apps/open-data-catalog) are built with pycsw inside and provide functionality to manage metadata via a GUI.
 
 I have 2147 metadata records.  How do I add them?
 -------------------------------------------------
@@ -143,12 +143,12 @@ pycsw-admin.py -c load_records -f /path/to/default.cfg -p /path/to/records -r
 
 {% endhighlight %}
 
-See [Loading Records](http://docs.pycsw.org/en/latest/administration.html#loading-records) in the documentation.
+See [Loading Records](https://docs.pycsw.org/en/latest/administration.html#loading-records) in the documentation.
 
 How do I add metadata from a WAF?
 ---------------------------------
 
-Use the `pycsw-admin.py` [utility](http://docs.pycsw.org/en/latest/administration.html) and CSW's `Harvest` operation against your own server:
+Use the `pycsw-admin.py` [utility](https://docs.pycsw.org/en/latest/administration.html) and CSW's `Harvest` operation against your own server:
 
 {% highlight bash %}
 pycsw-admin.py -c post_xml -u http://localhost/csw -x /path/to/harvest-waf.xml
@@ -181,7 +181,7 @@ FTP (result gets pushed to `ftp://host/result.xml`):
 </Harvest>
 {% endhighlight %}
 
-SMTP (result gets emailed to `you@example.com`.  See [the docs](http://docs.pycsw.org/en/latest/configuration.html) for more information on configuring `server.smtp_host`):
+SMTP (result gets emailed to `you@example.com`.  See [the docs](https://docs.pycsw.org/en/latest/configuration.html) for more information on configuring `server.smtp_host`):
 {% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <Harvest xmlns="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-publication.xsd" service="CSW" version="2.0.2">
@@ -194,7 +194,7 @@ SMTP (result gets emailed to `you@example.com`.  See [the docs](http://docs.pycs
 Is pycsw customizable or extensible?
 ------------------------------------
 
-Yes.  See our [API](http://docs.pycsw.org/en/latest/api.html) docs for examples on deploying pycsw in a custom application/framework.
+Yes.  See our [API](https://docs.pycsw.org/en/latest/api.html) docs for examples on deploying pycsw in a custom application/framework.
 
 Why am I getting a 'Connection refused' error when connecting to pycsw?
 -----------------------------------------------------------------------

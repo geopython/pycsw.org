@@ -8,10 +8,10 @@ active_page: docs
 
 # Documentation
 
-* [Current Release (2.2.0)](http://docs.pycsw.org/en/2.2.0)
-* [Latest (master)](http://docs.pycsw.org/en/latest)
+* [Current Release (2.2.0)](https://docs.pycsw.org/en/2.2.0)
+* [Latest (master)](https://docs.pycsw.org/en/latest)
 
-* [All Releases](http://docs.pycsw.org)
+* [All Releases](https://docs.pycsw.org)
 
 Workshop
 --------
