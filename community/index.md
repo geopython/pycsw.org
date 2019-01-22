@@ -49,7 +49,7 @@ The [_FAQ_]({{site.baseurl}}/faq.html) provides answers to commonly asked questi
 
 The pycsw-devel mailing list enables users and developers to exchange ideas, discuss improvements / issues, and ask questions. To subscribe, visit <https://lists.osgeo.org/mailman/listinfo/pycsw-devel>.
 
-Mailing list archives are available at <https://lists.osgeo.org/pipermail/pycsw-devel>.  The mailing list is also available/searchable via the OSGeo [Nabble](https://osgeo-org.1560.x6.nabble.com/pycsw-devel-f5055821.html) forum.
+Mailing list archives are available at <https://lists.osgeo.org/pipermail/pycsw-devel>.  The mailing list is also available/searchable via the OSGeo [Nabble](http://osgeo-org.1560.x6.nabble.com/pycsw-devel-f5055821.html) forum.
 
 ## IRC
 
