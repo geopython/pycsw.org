@@ -19,10 +19,13 @@ Members are (in alphabetical order):
         <td class="psc">
             <ul>
                 <li>Paolo Corti (@capooti)</li>
-                <li>Adam Hinz (@ahinz)</li>
                 <li>Tom Kralidis (@tomkralidis) (Chair)</li>
                 <li>Adri&agrave; Mercader (@amercader)</li>
                 <li>Angelos Tzotsos (@kalxas)</li>
+            </ul>
+            Past PSC Members
+            <ul>
+                <li>Adam Hinz (@ahinz)</li>
             </ul>
         </td>
         <td>
