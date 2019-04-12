@@ -29,6 +29,7 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 <a class="reference external image-reference" href="http://geopole.org"><img alt="geopole.org" src="{{site.baseurl}}/img/geopole.gif"/></a>
 <a class="reference external image-reference" href="http://geoint.nrlssc.navy.mil/"><img alt="United States Naval Research Laboratory" src="{{site.baseurl}}/img/usnrl.png"/></a>
 <a class="reference external image-reference" href="https://data.ioos.us"><img alt="The U.S. Integrated Ocean Observing System (IOOS)" src="{{site.baseurl}}/img/ioos.png"/></a>
+<a class="reference external image-reference" href="http://ecopotential-project.eu"><img alt="EU Ecopotential Project" src="{{site.baseurl}}/img/ecopotential.png"/></a>
 </div>
 
 ## Code of Conduct
