@@ -8,8 +8,6 @@ publish_date: 2019-05-17 13:34:41 -0500
 
 The pycsw team announces the release of pycsw 2.4.0. 
 
-The 2.4.0 release adds WMS 1.3.0 and WPS process harvesting as well as plugin support enhancements.
-
 Note that though pycsw works with Python 2 and 3, we have turned
 off Python 2 testing given the [Python 2 end of life](https://pythonclock.org)
 scheduled for 01 January 2020.  Users are strongly encouraged to update
