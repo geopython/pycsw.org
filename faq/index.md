@@ -94,7 +94,7 @@ Transactions are handled by an IP-based authentication list which can be set in 
 How can I make CSW POST XML requests?
 -------------------------------------
 
-HTTP POST requests with XML are a bit different then the traditional HTTP POST approach (key=value).  An HTTP client opens a connection to the server and sends XML directly.  CSW implements HTTP POST in this manner with XML requests.
+HTTP POST requests with XML are a bit different than the traditional HTTP POST approach (key=value).  An HTTP client opens a connection to the server and sends XML directly.  CSW implements HTTP POST in this manner with XML requests.
 
 There are numerous ways to make this type of request, but here are a few:
 
@@ -199,7 +199,7 @@ Yes.  See our [API](https://docs.pycsw.org/en/latest/api.html) docs for examples
 Why am I getting a 'Connection refused' error when connecting to pycsw?
 -----------------------------------------------------------------------
 
-Most CSW client tools (e.g. [QGIS MetaSearch](https://hub.qgis.org/projects/MetaSearch), [OWSLib](https://geopython.github.io/OWSLib), etc.) derive the CSW URL from the `GetCapabilities` reponse XML, as opposed to using directly the URL you provide.  Ensure that the `server.url` configuration value is set to ensure the URL to be advertised in the CSW Capabilities XML.
+Most CSW client tools (e.g. [QGIS MetaSearch](https://docs.qgis.org/latest/en/docs/user_manual/plugins/plugins_metasearch.html), [OWSLib](https://geopython.github.io/OWSLib), etc.) derive the CSW URL from the `GetCapabilities` reponse XML, as opposed to using directly the URL you provide.  Ensure that the `server.url` configuration value is set to ensure the URL to be advertised in the CSW Capabilities XML.
 
 When doing a GetRecords why are there no results?
 ------------------------------------------------
@@ -207,9 +207,9 @@ When doing a GetRecords why are there no results?
 The default result type of a ``GetRecords`` response is a hit count, which does not show any records per se but provides a summary of the search result
 
 {% highlight xml %}
-<csw:SearchResults nextRecord="0"
-                   numberOfRecordsMatched="0"
-                   numberOfRecordsReturned="0"
+<csw:SearchResults nextRecord="101"
+                   numberOfRecordsMatched="1972"
+                   numberOfRecordsReturned="100"
                    recordSchema="http://www.opengis.net/cat/csw/2.0.2"
                    elementSet="full"/>
 {% endhighlight %}
