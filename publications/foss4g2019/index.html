@@ -217,14 +217,39 @@
 		                <ul>
 		                <li>WMS 1.3.0</li>
 		                <li>WPS processes</li>
-		                <li>Docker support</li>
 		                </ul>
 		            </section>
 		            <section>
 				<h2>Plugin enhancements</h2>
+				<ul>
+					<li>Abstraction of query filters (previously bound to SQL)</li>
+					<li>OGC Filter XML -> Python dict <-> repository query grammar</li>
+					<li>Enables search engine backends (Elasticsearch, GraphQL, etc.)</li>
+				</ul>
 		            </section>
 		            <section>
-				<h2>Docker support</h2>
+				<h2>Docker Support</h2>
+				<ul>
+					<li>Official Docker image on <a href="https://hub.docker.com/r/geopython/pycsw">Docker Hub</a></li>
+					<li><a href="http://docs.pycsw.org/en/latest/docker.html">Documentation</a></li>
+				</ul>
+				<p><code>docker run -p 8000:8000 geopython/pycsw</code></p>
+		            </section>
+		            <section>
+				<h2>New Branding</h2>
+				<p>Get your stickers at the OSGeo booth!</p>
+				<img style="background: white;" src="../../img/pycsw-logo-horizontal.png"/>
+				<br>
+				<img style="background: white;" src="../../img/pycsw-logo-vertical.png"/>
+		            </section>
+		            <section>
+				<h2>More improvements</h2>
+				<ul>
+					<li>Updated testing framework (py.test)</li>
+					<li>Translation updates (Chinese)</li>
+					<li>Enhanced harvesting workflows</li>
+					<li>paging improvements</li>
+				</ul>
 		            </section>
 		        </section>
 
@@ -269,31 +294,31 @@
 		                <pre><code data-trim contenteditable>
 
 # Setup a virtual environment:
-$ virtualenv pycsw && cd pycsw && . bin/activate
+virtualenv pycsw && cd pycsw && . bin/activate
 
 # Grab the pycsw source code:
-$ git clone https://github.com/geopython/pycsw.git && cd pycsw
-$ pip install -e . && pip install -r requirements-standalone.txt
+git clone https://github.com/geopython/pycsw.git && cd pycsw
+pip install -e . && pip install -r requirements-standalone.txt
 
 # Create and adjust a configuration file:
-$ cp default-sample.cfg default.cfg
-$ vi default.cfg
+cp default-sample.cfg default.cfg
+vi default.cfg
 # adjust paths in
 # - server.home
 # - repository.database
 # set server.url to http://localhost:8000/
 
 # Setup the database:
-$ pycsw-admin.py -c setup_db -f default.cfg
+pycsw-admin.py -c setup_db -f default.cfg
 
 # Load records by indicating a directory of XML files, use -r for recursive:
-$ pycsw-admin.py -c load_records -f default.cfg -p /path/to/xml/
+pycsw-admin.py -c load_records -f default.cfg -p /path/to/xml/
 
 # Run the server:
-$ python ./pycsw/wsgi.py
+python ./pycsw/wsgi.py
 
 # See that it works!
-$ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
+curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 
 		                </code></pre>
 		            </section>
@@ -302,7 +327,7 @@ $ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 		                <h2>OSGeo-Live</h2>
 		                <ul>
 		                	<li>pycsw is available to test in OSGeoLive since version 5.5</li>
-		                	<li>Project Overview and Quickstart Tutorial are included</li>
+		                	<li>Project <a href="https://live.osgeo.org/en/overview/pycsw_overview.html">Overview</a> and <a href="https://live.osgeo.org/en/quickstart/pycsw_quickstart.html">Quickstart Tutorial</a> are included</li>
 		                </ul>
 		            </section>
 		        </section>
