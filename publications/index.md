@@ -8,6 +8,8 @@ active_page: publications_index
 
 # Publications
 
+* FOSS4G 2019
+  * [Presentation](foss4g2019)
 * FOSS4G 2016
   * [Presentation](foss4g2016)
 * FOSS4G Europe 2015
