@@ -44,7 +44,7 @@ pycsw exists as a [Google+ community](https://plus.google.com/communities/104084
 
 ## FAQ
 
-The [_FAQ_]({{site.baseurl}}/faq.html) provides answers to commonly asked questions about pycsw.
+The [_FAQ_]({{site.baseurl}}/faq) provides answers to commonly asked questions about pycsw.
 
 ## Mailing List
 
