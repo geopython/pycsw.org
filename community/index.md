@@ -38,10 +38,6 @@ In support of an inclusive and welcoming community, the pycsw code of conduct ca
 
 There are numerous ways to interact with the pycsw community.
 
-## Google+
-
-pycsw exists as a [Google+ community](https://plus.google.com/communities/104084873011085696113). Join us there for pycsw news discussion, and more.
-
 ## FAQ
 
 The [_FAQ_]({{site.baseurl}}/faq) provides answers to commonly asked questions about pycsw.
