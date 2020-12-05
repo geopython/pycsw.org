@@ -8,6 +8,7 @@ active_page: announce_index
 
 # Release Announcements <span class="glyphicon glyphicon-bullhorn"> </span>
 
+* [2.6.0](2.6.0.html)
 * [2.4.0](2.4.0.html)
 * [2.2.0](2.2.0.html)
 * [2.0.0](2.0.0.html)
