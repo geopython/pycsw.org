@@ -3,7 +3,7 @@
 
 # pycsw.org
 
-This is the setup for http://pycsw.org
+This is the setup for https://pycsw.org
 
 ## Setting up website environment locally
 
@@ -56,7 +56,7 @@ git commit -m 'publish article'
 git push origin gh-pages
 ```
 
-For a [Sphinx](http://sphinx-doc.org/) feel, there's a `Makefile` with
+For a [Sphinx](https://www.sphinx-doc.org/) feel, there's a `Makefile` with
 the familiar targets:
 
 ```bash
