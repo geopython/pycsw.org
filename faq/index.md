@@ -34,6 +34,8 @@ active_page: faq
 
 [When doing a GetRecords why are there no results?](#when-doing-a-getrecords-why-are-there-no-results)
 
+[My pycsw install doesn't work at all with QGIS](#my-pycsw-install-doesnt-work-at-all-with-qgis)
+
 Can I use pycsw within my WSGI application?
 -------------------------------------------
 
@@ -215,3 +217,61 @@ The default result type of a ``GetRecords`` response is a hit count, which does 
 {% endhighlight %}
 
 To return actual records add ``resulttype=results`` to the ``GetRecords`` request.
+
+My pycsw install doesn't work at all with QGIS
+----------------------------------------------
+
+A key component of the pycsw configuration is the ``server.url`` directive.  When working
+with CSW servers, applications such as [QGIS MetaSearch](https://docs.qgis.org/latest/en/docs/user_manual/plugins/core_plugins/plugins_metasearch.html)
+and [OWSLib](https://geopython.github.io) read a CSW's Capabilities XML document
+to be able to 'bind' to the appropriate URL when making subsequent CSW requests.
+
+For example, in the pycsw case, if your ``server.url`` directive is set to ``http://localhost:8000``, but your server
+is deployed to ``http://example.org/pycsw``, QGIS MetaSearch, OWSLib and other CSW clients will intially
+connect to ``http://example.org/pycsw`` to derive the Capabilities XML response, and then use
+``http://localhost:8000`` for subsequent requests (such as ``GetRecords``, ``GetDomain``,
+``GetRecordById``, etc.).
+
+The end result is having a pycsw instance that is able to respond to a ``GetCapabilities``
+request but nothing more, in tools like QGIS/MetaSearch, OWSLib, etc.
+
+This is a feature, not a bug.  What's going on here?
+
+Standards-wise, this is all valid and proper.  OGC CSW uses OWS Common to be able to identify,
+well, common constructs of service metadata in the CSW 2/3 Capabilities XML response.  OWS
+Common's ``OperationsMetadata`` section defines various binding endpoints/URLs for each OWS
+operation.  This means you can, in theory, have a given URL for ``GetCapabilities`` requests,
+and a different URL for ``GetRecords`` requests.  In the pycsw case, the ``server.url`` directive
+is used across the server's Capabilities XML for simplicity.  It is critical to ensure this URL
+is consistent with your deployment as advertised and published.
+
+A common area which this may cause errors is in the case of pycsw servers deployed with HTTPS but
+``server.url`` directives set to ``http://...``.  Currently (2020), numerous services are or have migrated from
+HTTP to HTTPS, and include web server redirects to manage traffic accordingly.  Given CSW servers
+include support for XML POST, a web server's redirect may not pass along the XML payload
+as part of the redirect.
+
+Here's a bare bones example of the differences between HTTP and HTTPS responses using
+curl with the same request (this mimics essentially QGIS MetaSearch/OWSLib behaviour):
+
+```bash
+# request example 1: works
+curl -s https://raw.githubusercontent.com/geopython/pycsw/master/tests/functionaltests/suites/default/post/GetRecords-all.xml
+| curl -X POST -d @- https://example.org/pycsw
+
+# request example 2: does not work
+curl -s https://raw.githubusercontent.com/geopython/pycsw/master/tests/functionaltests/suites/default/post/GetRecords-all.xml
+| curl -X POST -d @- http://example.org/pycsw
+```
+
+Here's what happens in request example 2:
+
+- client sends an HTTP request to http://example.org/pycsw with an XML POST payload (``GetRecords-all.xml``)
+- server redirects the HTTP request to the equivalent HTTPS endpoint
+- the XML POST payload is not passed along accordingly, and the HTTPS endpoint receives and processes
+  a 'bare' request and responds accordingly (which in this case returns a CSW 3.0 Capabilities response)
+
+It is this behaviour that results in, for example, QGIS MetaSearch and OWSLib errors.
+
+Setting ``server.url`` accordingly will alleviate these issues and will allow pycsw to continue to
+work as expected with CSW clients.
