@@ -12,7 +12,7 @@ active_page: rfc-9
 - author: Tom Kralidis, Angelos Tzotsos
 - contact: tomkralidis@gmail.com, tzotsos@gmail.com
 - status: draft
-- modified: 2021-06-14
+- modified: 2021-06-21
 
 ## Overview
 
@@ -115,11 +115,11 @@ and the Flask deployment strategy.
 
 ### Voting History
 
-TBD
++1 from @capooti, @kalxas, @tomkralidis
 
 ### Status
 
-TBD
+Adopted.
 
 
 [1]: https://docs.ogc.org/DRAFTS/20-004.html
