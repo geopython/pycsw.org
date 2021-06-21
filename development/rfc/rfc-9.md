@@ -115,7 +115,7 @@ and the Flask deployment strategy.
 
 ### Voting History
 
-+1 from @capooti, @kalxas, @tomkralidis
++1 from @capooti, @amercader, @kalxas, @tomkralidis
 
 ### Status
 
