@@ -22,6 +22,7 @@ Members are (in alphabetical order):
                 <li>Tom Kralidis (@tomkralidis) (Chair)</li>
                 <li>Adri&agrave; Mercader (@amercader)</li>
                 <li>Angelos Tzotsos (@kalxas)</li>
+                <li>Ricardo Garcia Silva (@ricardogsilva)</li>
             </ul>
             Past PSC Members
             <ul>

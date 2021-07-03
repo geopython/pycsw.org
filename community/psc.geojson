@@ -60,6 +60,21 @@
                 "role": "PSC", 
                 "name": "<a target=\"_blank\" href=\"https://github.com/kalxas\">Angelos Tzotsos</a>"
             }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.139337,
+                    38.722252
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "marker-color": "0000FF",
+                "role": "PSC",
+                "name": "<a target=\"_blank\" href=\"https://github.com/ricardogsilva\">Ricardo Garcia Silva</a>"
+            }
         }
     ]
 }
