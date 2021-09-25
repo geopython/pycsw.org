@@ -63,7 +63,7 @@
 		            <section>
 		                <h2>Introduction</h2>
 		                <ul>
-		                    <li><a href="https://pycsw.org">pycsw</a> is a OGC CSW server implementation written in Python</li>
+		                    <li><a href="https://pycsw.org">pycsw</a> is an OARec and OGC CSW server implementation written in Python</li>
 		                    <li>Open Source project released under the MIT license</li>
 		                    <li>Runs on all major platforms (Windows, Linux, Mac OS X)</li>
 		                    <li>OSGeo Project since 11 March 2015</li>
@@ -74,7 +74,7 @@
 		                <h2>Introduction</h2>
 		                <ul>
 		                <li>pycsw fully implements the OpenGIS Catalogue Service Implementation Specification [Catalogue Service for the Web]</li>
-		                <li>pycsw also implements OpenSearch, OAI-PMH, SRU</li>
+		                <li>pycsw also implements OGC API Records, OpenSearch, OAI-PMH, SRU, STAC</li>
 		                <li>pycsw allows for the publishing and discovery of geospatial metadata</li>
 		                </ul>
 		            </section>
@@ -113,12 +113,12 @@
 		                <li>Apr 2013: pycsw entered OSGeo Incubation</li>
 		                <li>Feb 2014: pycsw powers data.gov</li>
 		                <li>Mar 2015: pycsw graduates OSGeo Incubation</li>
-		                <li>Jul 2016: Latest stable release (2.0.0)</li>
+		                <li>Jul 2016: Version 2.0 released</li>
 		                <li>Jul 2016: Reference implementation of <a href="https://www.opengeospatial.org/pressroom/pressreleases/2445">OGC CSW 3.0.0</a></li>
-		                <li>Mar 2018: 2.2.0 released</a></li>
 		                <li>May 2019: 2.4.0 released</a></li>
 		                <li>Dec 2020: Happy 10th <a href="https://github.com/geopython/pycsw/commit/2025ff4b5a00ef97ffadb9f53075df84bf03e697">birthday!</a></li>
 		                <li>Dec 2020: 2.6.0 released</a></li>
+		                <li>Jul 2021: OGC API Records and STAC implementation</li>
 		                </ul>
 		            </section>
 
@@ -146,7 +146,9 @@
 		                <li> Harvesting support for WMS, WFS, WCS, WPS, WAF, CSW, SOS</li>
 		                <li> Implements ISO Metadata Application Profile 1.0.0</li>
 		                <li> Implements FGDC CSDGM Application Profile for CSW 2.0</li>
-		                <li> Implements OGC OpenSearch Geo and Time Extensions</li>
+		                <li> Implements OGC OpenSearch Geo, Time and EO Extensions</li>
+		                <li> Implements OGC API Records (in development)</li>
+		                <li> Implements STAC API (1.0.0-beta2)</li>
 		                <li> Implements INSPIRE Discovery Services 3.0</li>
 		                <li> Supports ISO, Dublin Core, DIF, FGDC, Atom and GM03 metadata models</li>
 		                <li> Standalone of embedded deployment (CGI or WSGI)</li>
@@ -189,6 +191,7 @@
     		                <li> SRU 1.1</li>
     		                <li> OAI-PMH 2.0</li>
     		                <li> OGC OpenSearch 1.0</li>
+                            <li> STAC API 1.0.0-beta2</li>
 		                </ul>
 		            </section>
                 </section>
@@ -210,6 +213,18 @@
                             <li>Kubernetes support</li>
                             <li>Helm chart support</li>
                             <li>Python 2 support removed</li>
+                        </ul>
+		            </section>
+
+		            <section>
+		                <h2>What's new in development branch (3.0.0)</h2>
+		            </section>
+		            <section>
+                        <ul>
+                            <li>Support for OGC OpenSearch Earth Observation Extension</li>
+                            <li>Early implementation of OGC API - Records: Part 1 - Core</li>
+                            <li>Early implementation of STAC API</li>
+                            <li>New WSGI endpoint using Flask</li>
                         </ul>
 		            </section>
 		        </section>
@@ -292,6 +307,15 @@ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 		                	<li>Project <a href="https://live.osgeo.org/en/overview/pycsw_overview.html">Overview</a> and <a href="https://live.osgeo.org/en/quickstart/pycsw_quickstart.html">Quickstart Tutorial</a> are included</li>
 		                </ul>
 		            </section>
+
+		            <section>
+		                <h2>Docker - K8s</h2>
+		                <ul>
+                            <li>pycsw is available on <a href="https://hub.docker.com/r/geopython/pycsw/">DockerHub</a></li>
+                            <li>Sample Kubernetes configuration available on <a href="https://github.com/geopython/pycsw/tree/master/docker/kubernetes">GitHub</a></li>
+                            <li>Helm Chart also available on <a href="https://github.com/geopython/pycsw/tree/master/docker/helm">GitHub</a></li>
+		                </ul>
+		            </section>
 		        </section>
 
 		        <!--Downstream Projects and Recent Deployments-->
@@ -303,6 +327,12 @@ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 
                     <section>
                         <h2>EOEPCA</h2>
+                        <ul>
+                            <li>ESA's <a href="https://eoepca.org/">Earth Observation Exploitation Platform Common Architecture</a></li>
+                            <li>Exploitation Platform: A collaborative, virtual work environment providing access to EO data, algorithms, tools and ICT resources</li>
+                            <li>Goal to define and agree a re-usable exploitation platform architecture using open interfaces</li>
+                            <li>pycsw is the Resource Catalogue component of the architecture</li>
+                        </ul>
                     </section>
 
                     <section>
@@ -318,6 +348,7 @@ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
                         </ul>
                         <p>Enabling data search and access to raw data as well as to data services like OpenDAP, WMS</p>
                     </section>
+
                     <section>
                         <h2>Norweigan Meteorological Institute</h2>
                         <h3>Ongoing work</h3>
@@ -328,6 +359,7 @@ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
                             <li>Automatic update of CSW catalogues with new metadata as they are produced</li>
                         </ul>
                     </section>
+
                     <section>
                         <h2>Meteorological Service of Canada and WMO Information System (WIS)</h2>
                         <h3>Migration of Data Collection and Production Centre (DCPC) Catalogue</h3>
@@ -350,9 +382,16 @@ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
                             <li>Part of <a href="https://ogcapi.org">OGC API</a> efforts</li>
 		              		<li>REST/JSON/OpenAPI/Swagger</li>
 		              		<li>pycsw is part of the OARec Standards Working Group (SWG)</li>
+                            <li>OGC CQL (text/JSON)</li>
                         </ul>
-                        <h2>OGC CQL (text/JSON)</h2>
+                    </section>
+                    <section>
                         <h2>STAC</h2>
+                        <ul>
+                            <li>STAC Item 1.0 support</li>
+                            <li>STAC API 1.0-beta2 support</li>
+                            <li>Tested against pystac-client</li>
+                        </ul>
                     </section>
                     <section>
                         <h2>Coming soon</h2>
