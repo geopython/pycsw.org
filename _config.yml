@@ -5,7 +5,7 @@ timezone: GMT
 baseurl: https://pycsw.org
 description: pycsw is an OARec and OGC CSW server implementation written in Python. Started in 2010 (more formally announced in 2011), pycsw allows for the publishing and discovery of geospatial metadata, providing a standards-based metadata and catalogue component of spatial data infrastructures. pycsw is Open Source, released under an MIT license, and runs on all major platforms (Windows, Linux, Mac OS
 keywords: pycsw, csw, catalogue, catalog, metadata, discovery, search, ogc, iso, fgdc, dif, ebrim, inspire
-exclude: [to_geojson.py, Makefile, README.md, community/psc.csv, community/psc.geojson, live-deployments.geojson, setenv-ruby-gem, LICENSE.txt, CNAME]
+exclude: [to_geojson.py, Makefile, README.md, community/psc.csv, community/psc.geojson, live-deployments.geojson, setenv-ruby-gem, LICENSE.txt, CNAME, .github/workflows/main.yml]
 gems:
 - jekyll-mentions
 - jekyll-sitemap

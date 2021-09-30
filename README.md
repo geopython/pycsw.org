@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/geopython/pycsw.org.png)](https://travis-ci.org/geopython/pycsw.org)
+[![Build Status](https://github.com/geopython/pycsw.org/workflows/build%20%E2%9A%99%EF%B8%8F/badge.svg)](https://github.com/geopython/pycsw.org/actions)
 
 # pycsw.org
 
