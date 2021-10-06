@@ -48,29 +48,17 @@ The pycsw-devel mailing list enables users and developers to exchange ideas, dis
 
 Mailing list archives are available at <https://lists.osgeo.org/pipermail/pycsw-devel>.
 
-## IRC
-
-Internet Relay Chat (IRC) allows for real-time communication and group discussion.  The [pycsw IRC channel](irc://irc.freenode.net/pycsw) can be found at:
-
-- **Server**: `irc.freenode.net`
-- **Channel**: `#pycsw` (or `#geopython`)
-- **Port**: `6667`
-
-pycsw developers can be found in the IRC channel.  Below are some suggested IRC clients:
-
-- [Chatzilla](http://chatzilla.hacksrus.com/) (Firefox)
-- [Colloquy](http://colloquy.info/) (Mac OS)
-- [irssi](https://irssi.org/) (Terminal-based)
-
-IRC logs can be found at [http://irclogs.geoapt.com/pycsw/](http://irclogs.geoapt.com/pycsw/)
-
 ## Gitter
 
-Gitter provides a web-based instant messaging and chatroom.  The pycsw [Gitter chatroom](https://gitter.im/geopython/pycsw) is public and open to anyone (you require a Gitter or Twitter account to sign in).
+pycsw developers can typically be found on Gitter, which provides a web-based instant messaging and chatroom.  The pycsw [Gitter chatroom](https://gitter.im/geopython/pycsw) is public and open to anyone (you require a Gitter or Twitter account to sign in).
+
+## Slack
+
+The OSGeo Slack also provides a bridge to the pycsw chat via https://osgeo.slack.com/pycsw.
 
 ## Service Providers
 
-pycsw service providers (core development, support, training) can be found on the [OSGeo Service Provider Directory](http://www.osgeo.org/search_profile?SET=1&MUL_TECH[]=00107)
+pycsw service providers (core development, support, training) can be found on the [OSGeo Service Provider Directory](https://www.osgeo.org/service-providers)
 
 ## GitHub (Wiki, Issues, Code)
 
@@ -81,6 +69,11 @@ pycsw's [issue tracker](https://github.com/geopython/pycsw/issues) is the place 
 GitHub provides the ability for users to issue [pull requests](https://help.github.com/articles/creating-a-pull-request), and is the preferred way to have your contributions added to pycsw, although patches and other mechanisms are welcome as well.  If you are submitting a patch, please add the `has-patch` label to the ticket (so tickets with patches can be easily filtered).  Also read the [_FAQ_]({{site.baseurl}}/faq.html) before submitting.
 
 All pycsw [source code](https://github.com/geopython/pycsw) is managed on GitHub, which includes the latest (`master`) and other supported branches.
+
+## Security issues
+
+If you encounter a security vulnerability in pycsw please report as per our [Security Policy](https://github.com/geopython/pycsw/blob/master/SECURITY.md).
+
 
 ## Getting Involved
 
