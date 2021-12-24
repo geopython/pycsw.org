@@ -24,3 +24,4 @@ the project.
 * [RFC7: HHypermap Repository Plugin](rfc-7.html)
 * [RFC8: Move to pytest testing tool](rfc-8.html)
 * [RFC9: OGC API - Records support](rfc-9.html)
+* [RFC10: OGC API - Records virtual collections support](rfc-10.html)
