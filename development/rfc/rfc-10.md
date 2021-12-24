@@ -6,7 +6,7 @@ keywords: rfc,rfc-10,OARec,ogcapi,records,virtual collections
 active_page: rfc-10
 ---
 
-# RFC 10: OGC API - Records support
+# RFC 10: OGC API - Records virtual collections support
 
 - date: 2021-12-24
 - author: Tom Kralidis, Angelos Tzotsos
