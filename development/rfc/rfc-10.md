@@ -12,16 +12,16 @@ active_page: rfc-10
 - author: Tom Kralidis, Angelos Tzotsos
 - contact: tomkralidis@gmail.com, tzotsos@gmail.com
 - status: draft
-- modified: 2021-12-24
+- modified: 2022-01-07
 
 ## Overview
 
 This RFC describes the pycsw implementation of virtual collections as part of OGC API - Records support ([OGC 20-004][1]).
 
-The current pycsw implementation supports a single collection of metadata in both OGC:CSW and OARec modes.  O
+The current pycsw implementation supports a single collection of metadata in both OGC:CSW and OARec modes.  OGC API - Records
 differs from OGC:CSW in that multiple collections of metadata can be published and made available as disctinct endpoints.  Providing
 multiple collections of metadata from a pycsw instance allows for finer grained discovery based on collections of metadata
-(themes, projects, or areas of interest, etc.).
+(themes, projects, areas of interest, etc.).
 
 Hierarchical metadata relationships are defined in both metadata and OGC standards:
 
@@ -29,10 +29,11 @@ Hierarchical metadata relationships are defined in both metadata and OGC standar
 - IANA link relations
   - `collection`
   - `up` ([RFC8288][3])
-- ISO `gmd:parentIdentifier`
+- ISO 19115 `gmd:parentIdentifier`
 
 pycsw implements parent/child relationships in the core metadata repository model, enabling clients
-to discover metadata based on a specific collection.  This functionality is realized as follows
+to discover metadata based on a specific collection.  This functionality is realized as follows:
+
 - OGC:CSW: `GetRecords` and FES `parentIdentifier` filters
 - OGC API - Records: `.../items` queries with `parentidentifier=` property query
 
@@ -57,12 +58,12 @@ endpoints:
 - `/collections/virtual-collection-1/queryables`
   - return queryable properties as normal (straightforward given all metadata regardless of granularity have the same underlying model)
 - `/collections/virtual-collection-1/items`
-  - underlying query for records with `parentidentifier='virtual-collection-1'`
+  - underlying query for records with `parentidentifier='virtual-collection-1`
   - return records accordingly
 - `/collections/virtual-collection-1/items/{itemId}`
   - process as normal (query single identifier)
 
-Note that `/collections/metadata:main/...'` remains the "cross-collection" functionality.
+Note that `/collections/metadata:main/...` remains the "cross-collection" functionality.
 
 ## Implementation
 
