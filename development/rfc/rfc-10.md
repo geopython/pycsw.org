@@ -109,7 +109,7 @@ TBD
 
 ### Pull Request
 
-TBD
+https://github.com/geopython/pycsw/pull/726
 
 ### Voting History
 
