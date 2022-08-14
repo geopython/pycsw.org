@@ -17,7 +17,7 @@ discussed and addressed, which are elaborated on in detail below.
 - XSLT support: [implementation](https://github.com/geopython/pycsw/pull/765) of [issue 761](https://github.com/geopython/pycsw/issues/761) in
 - SOLR repository backends: initial SOLR backed support was implemented in [https://github.com/epifanio/adc-pycsw](https://github.com/epifanio/adc-pycsw)
 - JSON storage: as per [issue 704](https://github.com/geopython/pycsw/issues/704), initial JSON support was [implemented](https://github.com/geopython/pycsw/pull/766) along with an OGC API - Records parser / ingest
-- Security, access control and transactions: 
+- Security, access control and transactions
 
 More information on the sprint can be found on the [pycsw wiki](https://github.com/geopython/pycsw/wiki/Code-Sprint-2022-05).
 

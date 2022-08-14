@@ -8,6 +8,8 @@ active_page: publications_index
 
 # Publications
 
+* FOSS4G 2022
+  * [Presentation](foss4g2022)
 * FOSS4G 2021
   * [Presentation](foss4g2021)
 * FOSS4G 2019
