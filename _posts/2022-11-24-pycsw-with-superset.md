@@ -12,7 +12,7 @@ At [ISRIC - World Soil Information](https://isric.org) we're in the process of a
 workflow related to the [EJP Soil](https://www.ejpsoil.eu) project. One of the project requirenements is to provide a dashboard with catalogue statistics. 
 On one hand to better understand the content of the catalogue, but also to identify gaps in data availability, by location, date and/or topic.
 
-![image](img/superset-dashboard.png)
+![image]({{site.baseurl}}/img/superset-dashboard.png)
 
 At ISRIC we're already using [Apache Superset](https://superset.apache.org/) in some of our projects, so it was relatively easy to add 
 the pycsw database and set up the initial dashboard vizualisations. The initiative was appreciated, so these days we include the dashboard 
