@@ -12,7 +12,7 @@ At [ISRIC - World Soil Information](https://isric.org) we're in the process of a
 workflow related to the [EJP Soil](https://www.ejpsoil.eu) project. One of the project requirenements is to provide a dashboard with catalogue statistics. 
 On one hand to better understand the content of the catalogue, but also to identify gaps in data availability, by location, date and/or topic.
 
-![image]({{site.baseurl}}/img/superset-dashboard.png)
+<img src="{{site.baseurl}}/img/superset-dashboard.png" alt="Apache Superset dashboard visualizaion of pycsw catalogue" width="600"/>
 
 At ISRIC we're already using [Apache Superset](https://superset.apache.org/) in some of our projects, so it was relatively easy to add 
 the pycsw database and set up the initial dashboard vizualisations. The initiative was appreciated, so these days we include the dashboard 
@@ -59,11 +59,12 @@ set up saved queries and use them as datasets. In a saved query you can place ad
 Note that you have to parse the json to string of record(set). In case of record(set) you need to join the result of the json parsing back 
 to the original resultset (unnest). An example of a query to unnest the pycsw links:
 
-```
+```sql
 SELECT identifier, k.name, k.protocol
 FROM 
   records r, 
   json_to_recordset(cast(r.links as json)) as k(name text, protocol text)
 ```
+
 Saved queries are created in the `SQL lab`. Click `Explore` once the query is ok to save it and create a vizualisation on it. Note that you have 
 to give access to `public` on the saved query for it to be available publicly.
