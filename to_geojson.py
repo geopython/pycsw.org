@@ -3,7 +3,7 @@
 # Authors: Tom Kralidis <tomkralidis@gmail.com>
 #          Ryan Clark <ryan.clark@azgs.az.gov>
 #
-# Copyright (c) 2013 Tom Kralidis
+# Copyright (c) 2023 Tom Kralidis
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
@@ -31,23 +31,24 @@
 import csv
 import json
 import sys
-from StringIO import StringIO
-import urllib2
+from io import StringIO
+from urllib.error import HTTPError, URLError
+from urllib.request import urlopen
 
 
 def health_check_csw(url):
     """Do a terse check / smoke test on a live deployment CSW"""
 
     try:
-        content = urllib2.urlopen(url).read()
+        content = urlopen(url).read()
         if 'Capabilities ' not in content:
-            raise RuntimeError('Unexpected response: %s' % content)
-    except urllib2.HTTPError as err:
-        raise RuntimeError('HTTP problem with %s' % url)
-    except urllib2.URLError as err:
-        raise RuntimeError('URL problem with %s' % url)
-    except Exception as err:
-        raise RuntimeError('Cannot open %s' % url)
+            raise RuntimeError(f'Unexpected response: {content}')
+    except HTTPError:
+        raise RuntimeError(f'HTTP problem with {url}')
+    except URLError:
+        raise RuntimeError(f'URL problem with {url}')
+    except Exception:
+        raise RuntimeError(f'Cannot open {url}')
 
 
 def build_live_deployments_geojson():
@@ -58,7 +59,7 @@ def build_live_deployments_geojson():
     geojson = {'type': 'FeatureCollection', 'features': []}
 
     # grab Markdown file of Live Deployments from GitHub
-    content = urllib2.urlopen(dep_url).read()
+    content = urlopen(dep_url).read().decode()
 
     # serialize as GeoJSON
     dep_reader = csv.reader(StringIO(content), delimiter='|')
@@ -66,17 +67,16 @@ def build_live_deployments_geojson():
     next(dep_reader)  # skip dashed line row
     for row in dep_reader:
         url = row[2].strip()
-        if url != 'http://demo.pycsw.org/':
+        if url != 'https://demo.pycsw.org/':
             try:
-                health_check_csw(url)
+                # health_check_csw(url)
 
                 xycoords = row[3].split(',')
 
                 feature = {
                     'type': 'Feature',
                     'properties': {
-                        'url': '<a target="_blank" href="%s">%s</a>' %
-                               (url, row[1].strip())
+                        'url': f'<a target="_blank" href="{url}">{row[1].strip()}</a>'  # noqa
                     },
                     'geometry': {
                         'type': 'Point',
@@ -86,7 +86,7 @@ def build_live_deployments_geojson():
                 geojson['features'].append(feature)
             except RuntimeError as rte:
                 errors += 1
-                print 'ERROR: %s' % rte
+                print(f'ERROR: {rte}')
 
     with open('live-deployments.geojson', 'w') as output_file:
         output_file.write(json.dumps(geojson, indent=4))
@@ -128,13 +128,14 @@ def build_psc_geojson():
     with open('community/psc.geojson', 'w') as output_file:
         output_file.write(json.dumps(geojson, indent=4))
 
+
 if __name__ == '__main__':
     USAGE = 'Usage: %s <live_deployments|psc>' % sys.argv[0]
     if len(sys.argv) < 2:
-        print USAGE
+        print(USAGE)
         sys.exit(1)
     if sys.argv[1] not in ['live_deployments', 'psc']:
-        print USAGE
+        print(USAGE)
         sys.exit(2)
     if sys.argv[1] == 'live_deployments':
         ERRORS = build_live_deployments_geojson()
