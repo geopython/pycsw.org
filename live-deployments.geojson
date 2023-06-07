@@ -1,381 +1,706 @@
 {
-    "type": "FeatureCollection", 
+    "type": "FeatureCollection",
     "features": [
         {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://catalog.data.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Data.gov Catalog (collections)</a>"
+            },
             "geometry": {
-                "type": "Point", 
+                "type": "Point",
                 "coordinates": [
-                    -77.036464, 
+                    -77.036464,
                     38.907231
                 ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://catalog.data.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Data.gov Catalog (collections)</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -77.036464, 
-                    38.907231
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://catalog.data.gov/csw-all?service=CSW&version=2.0.2&request=GetCapabilities\">Data.gov Catalog (all metadata)</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    174.776236, 
-                    -41.28646
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://data.linz.govt.nz/services/csw?service=CSW&version=2.0.2&request=GetCapabilities\">LINZ Data Service</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    23.807655, 
-                    38.054956
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geodata.gov.gr/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Geodata.gov.gr geodata.gov.gr CSW Geospatial Catalogue</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -77.039175, 
-                    39.00415
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"https://data.ioos.us/csw?service=CSW&version=2.0.2&request=GetCapabilities\">IOOS Catalog</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -70.673086, 
-                    41.526498
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://gamone.whoi.edu/csw?service=CSW&version=2.0.2&request=GetCapabilities\">USGS Coastal and Marine Geoscience Portal</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -77.4875, 
-                    39.0437
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geonode.state.gov/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">U.S. Department of State</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -71.109734, 
-                    42.373616
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://hh.worldmap.harvard.edu/registry/hypermap/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Harvard Hypermap</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -79.468857, 
-                    43.782039
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geo.woudc.org/csw?service=CSW&version=2.0.2&request=GetCapabilities\">World Ozone and Ultraviolet Radiation Data Centre (WOUDC)</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -77.306373, 
-                    38.846224
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://cube.csiss.gmu.edu/srv/csw?service=CSW&version=2.0.2&request=GetCapabilities\">GMU-CSISS Catalogue Service for Unidata</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    176.07021, 
-                    -38.685692
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://portal.smart-project.info/pycsw/csw?service=CSW&version=2.0.2&request=GetCapabilities\">SMART Aquifer Characterisation Programme (Services)</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -110.926479, 
-                    32.221743
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://search.geothermaldata.org/csw?service=CSW&Version=2.0.2&request=GetCapabilities\">US National Geothermal Data System</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -89.504288, 
-                    43.097217
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://cida.usgs.gov/coastalchangehazardsportal/csw/?service=CSW&version=2.0.2&request=GetCapabilities\">USGS Coastal Hazards Geospatial Catalogue</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    12.315515, 
-                    45.440847
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://siplan.veniceandlagoon.org/catalogue/csw?request=GetCapabilities&version=2.0.2&service=CSW\">UNESCO SIPLAN Venezia e la sua laguna</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    32.5656, 
-                    0.3156
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://maps.data.ug/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Uganda Open Data</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    179.472656, 
-                    -10.728072
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://pcrafi.spc.int/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Pacific Risk Information System</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    8.607788, 
-                    45.817903
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geonode.jrc.ec.europa.eu/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">SDI for Syria Crisis Assessment</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    11.589237, 
-                    50.927054
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://artemis.geogr.uni-jena.de/pycsw/csw-modis.py?service=CSW&version=2.0.2&request=GetCapabilities\">SIB-ESS-C MODIS Metadata Catalogue</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    11.589237, 
-                    50.927054
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://artemis.geogr.uni-jena.de/pycsw/csw-projects.py?service=CSW&version=2.0.2&request=GetCapabilities\">SIB-ESS-C Projects Metadata Catalogue</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    13.698664, 
-                    42.661143
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://mappe.provincia.teramo.it/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Provincia de Teramo</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    11.576754, 
-                    48.13672
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://lgi-climbsrv.geographie.uni-kiel.de/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">CLIMB Geoportal</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -73.913293, 
-                    41.011308
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://api.rvdata.us/catalog?service=CSW&version=2.0.2&request=GetCapabilities\">Rolling Deck to Repository (R2R) Program</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -157.8161, 
-                    21.2979
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://www.pacioos.hawaii.edu/ogc/csw?service=CSW&version=2.0.2.&request=GetCapabilities\">Pacific Islands Ocean Observing System (PacIOOS)</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    12.5, 
-                    41.9
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geonode.wfp.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">UN WFP GeoNode</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    8.541694, 
-                    47.376887
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://csw.geopole.org/?service=CSW&version=2.0.2&request=GetCapabilities\">geopole.org Geospatial Catalogue</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    -0.97813, 
-                    51.454265
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"http://apps.ecmwf.int/csw/?service=CSW&version=2.0.2&request=GetCapabilities\">Copernicus Atmosphere Monitoring Service Product Catalogue</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    16.369543, 
-                    48.196017
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"https://pycsw.eodc.eu/?service=CSW&version=2.0.2&request=GetCapabilities\">EODC Data Catalogue</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
-                    0.08, 
-                    52.213
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "url": "<a target=\"_blank\" href=\"https://api.bas.ac.uk/data/metadata/csw/v1?service=CSW&version=2.0.2&request=GetCapabilities\">Discovery Metadata System,<br/> British Antarctic Survey</a>"
             }
         },
         {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://catalog.data.gov/csw-all?service=CSW&version=2.0.2&request=GetCapabilities\">Data.gov Catalog (all metadata)</a>"
+            },
             "geometry": {
-                "type": "Point", 
+                "type": "Point",
+                "coordinates": [
+                    -77.036464,
+                    38.907231
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://data.linz.govt.nz/services/csw?service=CSW&version=2.0.2&request=GetCapabilities\">LINZ Data Service</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    174.776236,
+                    -41.28646
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://data.gov.uk/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Data.gov.uk</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.127758,
+                    51.507351
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geodata.gov.gr/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Geodata.gov.gr geodata.gov.gr CSW Geospatial Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.807655,
+                    38.054956
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://data.ioos.us/csw?service=CSW&version=2.0.2&request=GetCapabilities\">IOOS Catalog</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.039175,
+                    39.00415
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://data.noaa.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities\">NOAA Data Catalog</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.026088,
+                    38.990666
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://data.doi.gov/csw?service=CSW&version=2.0.2&request=GetCapabilities\">DOI Data Catalog</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.036871,
+                    38.907192
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://gamone.whoi.edu/csw?service=CSW&version=2.0.2&request=GetCapabilities\">USGS Coastal and Marine Geoscience Portal</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -70.673086,
+                    41.526498
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geonode.state.gov/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">U.S. Department of State</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.4875,
+                    39.0437
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://hh.worldmap.harvard.edu/registry/hypermap/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Harvard Hypermap</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -71.109734,
+                    42.373616
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://geo.woudc.org/csw?service=CSW&version=2.0.2&request=GetCapabilities\">World Ozone and Ultraviolet Radiation Data Centre (WOUDC)</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.468857,
+                    43.782039
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geoint.nrlssc.navy.mil/pycsw/csw.py?service=CSW&version=2.0.2&request=GetCapabilities\">U.S. Naval Research Laboratory</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.512008,
+                    30.388758
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://cube.csiss.gmu.edu/srv/csw?service=CSW&version=2.0.2&request=GetCapabilities\">GMU-CSISS Catalogue Service for Unidata</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.306373,
+                    38.846224
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://portal.smart-project.info/pycsw/csw?service=CSW&version=2.0.2&request=GetCapabilities\">SMART Aquifer Characterisation Groundwater Hub Data Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    176.07021,
+                    -38.685692
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://search.geothermaldata.org/csw?service=CSW&Version=2.0.2&request=GetCapabilities\">US National Geothermal Data System</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.926479,
+                    32.221743
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://mapas.ciga.sc.gov.br/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Sistema de Informa\u00e7\u00f5es Geogr\u00e1ficas CIGA</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -48.549454,
+                    -27.596904
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://cida.usgs.gov/coastalchangehazardsportal/csw/?service=CSW&version=2.0.2&request=GetCapabilities\">USGS Coastal Hazards Geospatial Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -89.504288,
+                    43.097217
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://ide.ubiobio.cl/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">La Infraestructura de Datos Espaciales de la Universidad del Bio-Bio</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.050319,
+                    -36.818938
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://siplan.veniceandlagoon.org/catalogue/csw?request=GetCapabilities&version=2.0.2&service=CSW\">UNESCO SIPLAN Venezia e la sua laguna</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.315515,
+                    45.440847
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://maps.data.ug/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Uganda Open Data</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    32.5656,
+                    0.3156
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://dominode.net/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Dominode.net</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -61.391602,
+                    15.36895
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://nodo.mapaeducativo.edu.ar/catalogue/csw?request=GetCapabilities&version=2.0.2&service=CSW\">Mapa Educativo Nacional - Inicio</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -58.381593,
+                    -34.603723
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://www.opendatacincy.org/catalog/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open Data Cincinnati</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -84.51202,
+                    39.103118
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://opendatadurham.org/catalog/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open Data Durham</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -78.898619,
+                    35.994033
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geonode.sopac.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Secretariat of the Pacific Community</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    178.4419,
+                    -18.1416
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://sfb806ckan.geographie.uni-koeln.de/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Collaborative Research Centre 806 Database</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.960279,
+                    50.937531
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://pcrafi.spc.int/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Pacific Risk Information System</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    179.472656,
+                    -10.728072
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://insideidaho.org/ogccsw/csw.py?service=CSW&version=2.0.2&request=GetCapabilities\">INSIDE Idaho Geospatial Catalog</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.214607,
+                    43.61871
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://184.73.217.132/pycsw/csw.py?service=CSW&version=2.0.2&request=GetCapabilities\">OGC Climatology-Hydrology Information Sharing Pilot</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.058101,
+                    51.045325
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://horn.rcmrd.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open Data for the Horn (OpenDRI)</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    36.821946,
+                    -1.292066
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geonode.jrc.ec.europa.eu/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">SDI for Syria Crisis Assessment</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.607788,
+                    45.817903
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://artemis.geogr.uni-jena.de/pycsw/csw-modis.py?service=CSW&version=2.0.2&request=GetCapabilities\">SIB-ESS-C MODIS Metadata Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.589237,
+                    50.927054
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://artemis.geogr.uni-jena.de/pycsw/csw-projects.py?service=CSW&version=2.0.2&request=GetCapabilities\">SIB-ESS-C Projects Metadata Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.589237,
+                    50.927054
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://mappe.provincia.teramo.it/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Provincia de Teramo</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.698664,
+                    42.661143
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://ide.geogra.uah.es/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Universidad de Alcala</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.70379,
+                    40.416775
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geonode.colombiassh.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Columbia Sala de Situaci\u00f3n Humanitaria</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.075833,
+                    4.598056
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://maps.opensandiego.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Open San Diego</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.157255,
+                    32.715329
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://www.igmi.org/cgi-bin/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Istituto Geografico Militare (beta test)</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.26031667,
+                    43.77731667
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://lgi-climbsrv.geographie.uni-kiel.de/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">CLIMB Geoportal</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.576754,
+                    48.13672
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://api.rvdata.us/catalog?service=CSW&version=2.0.2&request=GetCapabilities\">Rolling Deck to Repository (R2R) Program</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -73.913293,
+                    41.011308
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://www.pacioos.hawaii.edu/ogc/csw?service=CSW&version=2.0.2.&request=GetCapabilities\">Pacific Islands Ocean Observing System (PacIOOS)</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -157.8161,
+                    21.2979
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://pycsw.secoora.org/?service=CSW&version=2.0.2.&request=GetCapabilities\">SECOORA Geospatial Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -79.931051,
+                    32.776475
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://demo.pycsw.org/\">pycsw demo server (various)</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.262044,
+                    44.564566
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://geonode.wfp.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">UN WFP GeoNode</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.5,
+                    41.9
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://csw.geopole.org/?service=CSW&version=2.0.2&request=GetCapabilities\">geopole.org Geospatial Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.541694,
+                    47.376887
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://apps.ecmwf.int/csw/?service=CSW&version=2.0.2&request=GetCapabilities\">Copernicus Atmosphere Monitoring Service Product Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.97813,
+                    51.454265
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://csw.eodc.eu/?service=CSW&version=2.0.2&request=GetCapabilities\">EODC Data Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.369543,
+                    48.196017
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://api.bas.ac.uk/data/metadata/csw/v1?service=CSW&version=2.0.2&request=GetCapabilities\">Discovery Metadata System,<br/> British Antarctic Survey</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.08,
+                    52.213
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://geoserver.geo.uzh.ch/wgms/csw/csw.py?service=CSW&version=2.0.2&request=GetCapabilities\">World Glacier Monitoring Service CSW Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.541694,
+                    47.376888
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"http://data.ecopotential-project.eu:8081/?service=CSW&version=2.0.2&request=GetCapabilities\">EU Ecopotential Project</a>"
+            },
+            "geometry": {
+                "type": "Point",
                 "coordinates": [
                     4.351721,
                     50.850346
                 ]
-            }, 
-            "type": "Feature", 
+            }
+        },
+        {
+            "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://95.216.157.254:8081/?service=CSW&version=2.0.2&request=GetCapabilities\">EU Ecopotential Project</a>"
+                "url": "<a target=\"_blank\" href=\"https://data.amerigeoss.org/csw?service=CSW&version=2.0.2&request=GetCapabilities\">AmeriGEOSS Community Platform DataHub</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -77.383873,
+                    38.96973
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://catalog.opensciencedata.esa.int\">ESA Open Science Catalogue</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.3859602,
+                    50.8436923
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://catalogue.ejpsoil.eu\">European Joint Programme on Agricultural Soil Management</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.666667,
+                    51.966667
+                ]
             }
         }
     ]
