@@ -17,11 +17,11 @@ active_page: home
     <div id="deploy-in-4-minutes" class="collapse panel panel-default text-left">
         {% highlight bash %}
         # Setup a virtual environment:
-        virtualenv pycsw && cd pycsw && . bin/activate
+        python3 -m venv pycsw && cd pycsw && . bin/activate
         
         # Grab the pycsw source code:
         git clone https://github.com/geopython/pycsw.git && cd pycsw
-        pip install -e . && pip install -r requirements-standalone.txt
+        pip3 install -e . && pip3 install -r requirements-standalone.txt
         
         # Create and adjust a configuration file:
         cp default-sample.cfg default.cfg
@@ -98,7 +98,7 @@ active_page: home
     </p>
     <p>
       <a title="OSGeo Project" href="https://osgeo.org"><img alt="OSGeo Project" src="https://raw.githubusercontent.com/OSGeo/osgeo/master/incubation/project/OSGeo_project.png" height="64"/></a>
-      <a title="FOSS4G Conference" href="https://2022.foss4g.org"><img alt="FOSS4G Conference" width="145" height="45" src="https://2022.foss4g.org/img/logo/logo-dark.png"/></a>
+      <a title="FOSS4G Conference" href="https://2023.foss4g.org"><img alt="FOSS4G Conference" width="145" height="45" src="https://2023.foss4g.org/img/logo.png"/></a>
     </p>
     <p>
       <script type="text/javascript" src="https://www.openhub.net/p/488022/widgets/project_thin_badge.js"></script> 
