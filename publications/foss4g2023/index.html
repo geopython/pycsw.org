@@ -268,7 +268,7 @@ pip3 install -e . && pip3 install -r requirements-standalone.txt
 # Create and adjust a configuration file:
 cp default-sample.cfg default.cfg
 vi default.cfg
-# adjust paths in
+# adjust paths in:
 # - server.home
 # - repository.database
 # set server.url to http://localhost:8000/
@@ -383,7 +383,7 @@ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 
 	            <section>
 			<h2>EJP SOIL Participatory Metadata management</h2>
-	                <p>pycsw, pygeoapi, mdme, GitHub (<a href="https://catalogue.ejpsoil.eu">catalogue.ejpsoil.eu</a>)</p>
+	                <p>pycsw, pygeometa, mdme, GitHub (<a href="https://catalogue.ejpsoil.eu">catalogue.ejpsoil.eu</a>)</p>
 			<img height="500" src="../../../img/ejpsoil2.jpg">
 	            </section>
 
@@ -442,7 +442,7 @@ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
                         <ul>
                             <li>Federation (aggregation, distributed search)</li>
                             <li>Elasticsearch</li>
-                            <li>pygeofilter integration</li>
+                            <li>deeper pygeofilter integration</li>
                             <li>updated CLI tooling (Python Click)</li>
                             <li>updated configuration (YAML)</li>
                         </ul>
