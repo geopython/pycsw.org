@@ -75,6 +75,21 @@
                 "role": "PSC",
                 "name": "<a target=\"_blank\" href=\"https://github.com/ricardogsilva\">Ricardo Garcia Silva</a>"
             }
+        },
+        {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.665395,
+                    51.969189
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "marker-color": "0000FF",
+                "role": "PSC",
+                "name": "<a target=\"_blank\" href=\"https://github.com/pvgenuchten\">Paul van Genuchten</a>"
+            }
         }
     ]
 }

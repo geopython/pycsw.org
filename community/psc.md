@@ -23,6 +23,7 @@ Members are (in alphabetical order):
                 <li>Adri&agrave; Mercader (@amercader)</li>
                 <li>Angelos Tzotsos (@kalxas)</li>
                 <li>Ricardo Garcia Silva (@ricardogsilva)</li>
+                <li>Paul van Genuchten (@pvgenuchten)</li>
             </ul>
             Past PSC Members
             <ul>
