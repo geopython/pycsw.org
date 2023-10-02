@@ -5,21 +5,6 @@
             "geometry": {
                 "type": "Point", 
                 "coordinates": [
-                    8.612078, 
-                    45.813958
-                ]
-            }, 
-            "type": "Feature", 
-            "properties": {
-                "marker-color": "0000FF", 
-                "role": "PSC", 
-                "name": "<a target=\"_blank\" href=\"https://github.com/capooti\">Paolo Corti</a>"
-            }
-        }, 
-        {
-            "geometry": {
-                "type": "Point", 
-                "coordinates": [
                     -79.383184, 
                     43.653226
                 ]
