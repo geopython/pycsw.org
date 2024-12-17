@@ -24,18 +24,18 @@ active_page: home
         pip3 install -e . && pip3 install -r requirements-standalone.txt
         
         # Create and adjust a configuration file:
-        cp default-sample.cfg default.cfg
-        vi default.cfg
+        cp default-sample.yml default.yml
+        vi default.yml
         # adjust paths in
         # - server.home
         # - repository.database
         # set server.url to http://localhost:8000/
         
         # Setup the database:
-        pycsw-admin.py setup_db --config default.cfg
+        pycsw-admin.py setup-repository --config default.yml
         
         # Load records by indicating a directory of XML files, use -r for recursive:
-        pycsw-admin.py load_records --config default.cfg --path /path/to/xml/
+        pycsw-admin.py load-records --config default.yml --path /path/to/xml/
         
         # Run the server:
         python ./pycsw/wsgi.py
