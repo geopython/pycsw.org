@@ -55,7 +55,7 @@ def build_live_deployments_geojson():
     """Convert Live Deployments wiki page to GeoJSON for GitHub to render"""
 
     errors = 0
-    dep_url = 'https://raw.github.com/wiki/geopython/pycsw/Live-Deployments.md'
+    dep_url = 'https://raw.githubusercontent.com/wiki/geopython/pycsw/Live-Deployments.md'
     geojson = {'type': 'FeatureCollection', 'features': []}
 
     # grab Markdown file of Live Deployments from GitHub
