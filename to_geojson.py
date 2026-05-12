@@ -3,7 +3,7 @@
 # Authors: Tom Kralidis <tomkralidis@gmail.com>
 #          Ryan Clark <ryan.clark@azgs.az.gov>
 #
-# Copyright (c) 2023 Tom Kralidis
+# Copyright (c) 2026 Tom Kralidis
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
@@ -40,9 +40,7 @@ def health_check_csw(url):
     """Do a terse check / smoke test on a live deployment CSW"""
 
     try:
-        content = urlopen(url).read()
-        if 'Capabilities ' not in content:
-            raise RuntimeError(f'Unexpected response: {content}')
+        _ = urlopen(url)
     except HTTPError:
         raise RuntimeError(f'HTTP problem with {url}')
     except URLError:
@@ -55,7 +53,7 @@ def build_live_deployments_geojson():
     """Convert Live Deployments wiki page to GeoJSON for GitHub to render"""
 
     errors = 0
-    dep_url = 'https://raw.githubusercontent.com/wiki/geopython/pycsw/Live-Deployments.md'
+    dep_url = 'https://raw.githubusercontent.com/wiki/geopython/pycsw/Live-Deployments.md'  # noqa
     geojson = {'type': 'FeatureCollection', 'features': []}
 
     # grab Markdown file of Live Deployments from GitHub
@@ -69,7 +67,7 @@ def build_live_deployments_geojson():
         url = row[2].strip()
         if url != 'https://demo.pycsw.org/':
             try:
-                # health_check_csw(url)
+                health_check_csw(url)
 
                 xycoords = row[3].split(',')
 
