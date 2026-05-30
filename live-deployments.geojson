@@ -69,19 +69,6 @@
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"http://geonode.iwlearn.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">IW:LEARN Spatial Lab</a>"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    2.3522,
-                    48.8566
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "url": "<a target=\"_blank\" href=\"https://catalogue.ejpsoil.eu\">European Joint Programme on Agricultural Soil Management</a>"
             },
             "geometry": {
@@ -160,143 +147,182 @@
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://geoportal.lujandecuyo.gob.ar/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Geoportal Luj\u00e1n de Cuyo</a>"
+                "url": "<a target=\"_blank\" href=\"https://acma.africanmarineatlas.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">African Coastal and Marine Atlas</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -68.89047,
-                    -33.036813
+                    36.8219,
+                    1.2921
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://geoportal.cepal.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Comisi\u00f3n Econ\u00f3mica para Am\u00e9rica Latina y El Caribe (CEPAL)</a>"
+                "url": "<a target=\"_blank\" href=\"https://nysmac-sios.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">NySMAC collection of the Svalbard Integrated Arctic Earth Observing System Catalogue Interface</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -70.6693,
-                    -33.4489
+                    10.7313,
+                    59.9122
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://geoportal.obraspublicas.gob.ar/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Datos abiertos parael an\u00e1lisis territorial</a>"
+                "url": "<a target=\"_blank\" href=\"https://tone-nordatanet.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">Troll Observing Network collection of the Norwegian Scientific Data Network Catalogue Interface</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -58.3821,
-                    -34.6037
+                    10.7313,
+                    59.9122
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://framefavn.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Flood Risk Information System for Adaptation Measures and Evaluation in Central Vietnam</a>"
+                "url": "<a target=\"_blank\" href=\"https://adc.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">Arctic Data Centre Catalogue Interface</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    105.8542,
-                    21.0285
+                    10.7313,
+                    59.9122
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://maps.eurac.edu/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">EDP - MAPS platform</a>"
+                "url": "<a target=\"_blank\" href=\"https://nordatanet.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">Norwegian Scientific Data Network Catalogue Interface</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    11.3403,
-                    46.4949
+                    10.7313,
+                    59.9122
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://geo-backend.inta.gob.ar/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Geoportal del Instituto Nacional de Tecnolog\u00eda Agropecuaria</a>"
+                "url": "<a target=\"_blank\" href=\"http://sios.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">Svalbard Integrated Arctic Earth Observing System Catalogue Interface</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -58.3821,
-                    -34.6037
+                    10.7313,
+                    59.9122
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://sustainable-caucasus.unepgrid.ch/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Supporting Sustainable Mountain Development in the Caucasus</a>"
+                "url": "<a target=\"_blank\" href=\"https://nbs.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">Norwegian National Ground Segment for Satellite Data Catalogue Interface</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    6.1457,
-                    46.2022
+                    10.7313,
+                    59.9122
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://atlas.thuenen.de/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Interaktive Karten und Daten \u00fcber das Leben in l\u00e4ndlichen R\u00e4umen</a>"
+                "url": "<a target=\"_blank\" href=\"https://gcw.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">GCW Catalogue Interface</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    10.5246,
-                    52.2678
+                    10.7313,
+                    59.9122
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://www.fossilfuelatlasportal.org/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Fossil Fuel Atlas</a>"
+                "url": "<a target=\"_blank\" href=\"https://cvl.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">ESA CVL Catalogue Interface</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    18.0649,
-                    59.3326
+                    10.7313,
+                    59.9122
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://geoportal.cilss.int/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">CILSS Geoportal</a>"
+                "url": "<a target=\"_blank\" href=\"https://bluecloud-sios.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">SIOS - Blue Cloud endpoint</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -1.5197,
-                    12.3714
+                    10.7313,
+                    59.9122
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "url": "<a target=\"_blank\" href=\"https://geonode.resilienceacademy.ac.tz/catalogue/csw?service=CSW&version=2.0.2&request=GetCapabilities\">Climate Risk Database</a>"
+                "url": "<a target=\"_blank\" href=\"https://noiso-adc.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">noiso-adc endpoint</a>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    35.745426,
-                    -6.161184
+                    10.7313,
+                    59.9122
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://nmdc.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">Norwegian Meteorological Institute - NMDC node</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.7313,
+                    59.9122
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://polarin-sios.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">POLARIN metadata catalogue endpoint</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.7313,
+                    59.9122
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "url": "<a target=\"_blank\" href=\"https://arcticobserving.csw.met.no?service=CSW&version=2.0.2&request=GetCapabilities\">SAON/Arctic observing system catalogue Interface</a>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.7313,
+                    59.9122
                 ]
             }
         }
