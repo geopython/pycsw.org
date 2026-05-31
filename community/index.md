@@ -13,7 +13,6 @@ pycsw is [used](https://github.com/geopython/pycsw/wiki/Live-Deployments) in gov
 <script src="https://embed.github.com/view/geojson/geopython/pycsw.org/gh-pages/live-deployments.geojson"> </script>
 
 <div class="pycsw-powered">
-<a class="reference external image-reference" href="https://www.met.no"><img alt="Norwegian Meteorological Institute" src="{{site.baseurl}}/img/met-norway.jpg"/></a>
 <a class="reference external image-reference" href="https://data.gov"><img alt="Data.gov" src="{{site.baseurl}}/img/data-gov.png"/></a>
 <a class="reference external image-reference" href="https://ckan.org"><img alt="CKAN" src="{{site.baseurl}}/img/ckan.png"/></a>
 <a class="reference external image-reference" href="http://cida.usgs.org"><img alt="USGS Center for Integrated Data Analytics" src="{{site.baseurl}}/img/usgs-cida.jpg"/></a>
