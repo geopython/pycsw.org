@@ -246,6 +246,16 @@
                              <h2>Federated search implementation</h2>                      
 		          </section>
 		          <section>
+				<h2>ESA requirement</h2>
+				<ul>
+					<li><a title="EOEPCA+" href="https://eoepca.org">EOEPCA</a></li>
+					<li>Resource catalogue buildling block (BB)</li>
+					<li>Cross-Catalogue Search</li>
+					<li>Cross-Catalogue Search</li>
+					<li>Federation</li>
+				</ul>
+		          </section>
+		          <section>
                              <h2>Design</h2>
 				<p align="center">
 				<pre>
@@ -265,45 +275,88 @@
 				</pre>
 				</p>
 		          </section>
+		        <section>
+				<h2>Configuration</h2>
+				<p align="center">
+				  <pre>
+distributedsearch:
+    merge_results: true
+    catalogues:
+        - id: fedcat01
+          type: CSW 
+          title: Arctic SDI 
+          url: https://catalogue.arctic-sdi.org/csw
+        - id: metno
+          type: OARec
+          title: met.no API records
+          url: https://test.wps.met.no/collections/no.met.adc:1e7f7e14-5753-5dc9-bf51-0626d9af0dce
+        - id: fedcat03
+          type: STAC-API
+          title: Copernicus Data Space Ecosystem (CDSE) asset-level STAC catalogue
+          url: https://stac.dataspace.copernicus.eu/v1
+          collections:
+              - daymet-annual-pr
+				  </pre>
+				</p>
+		        </section>
+		        <section>
+				<p>
+				<h2>Link relations</h2>
+				<ul>
+				<li><code>http://www.opengis.net/def/rel/ogc/1.0/federatedCatalogues</code></li>
+				</ul>
+				</p>
+				<p>
+				<h2>Endpoints</h2>
+				<ul>
+				  <li><code>/collections/{collectionId}/federatedCatalogues</code></li>
+				  <li><code>/collections/{collectionId}/federatedCatalogues/{federatedCatalogueId}</code></li>
+				  <li><code>/collections/{collectionId}/items?distributedSearch=TRUE</code>
+				  <ul>
+				  <li>Additional query parameters / filters passed to distributed catalogues</code></li>
+				  </ul>
+				  </li>
+				</ul>
+				</p>
+		        </section>
+		        <section>
+				<h2>Search results</h2>
+				<p>
+				<ul>
+				  <li>grouped by <code>federatedSearchResults</code></li>
+				</ul>
+				</p>
+				<h2>Merging search results</h2>
+				<p>
+				<ul>
+				  <li>unpacked into main <code>features</code> array</li>
+				  <li>deduplication: ID prefixing
+				  <ul>
+				    <li><code>id123</code> -> <code>fedcat01::id123</code></li>
+				  </ul>
+				  </li>
+				  <li>catalogue/source identification (<code>federatedCatalogueId</code>)
+				  <ul>
+				    <li><code>"federatedCatalogueId": "fedcat01"</code></li>
+				  </ul>
+				  </li>
+				</ul>
+				</p>
+		        </section>
 		        </section>
 
-		        <!--Roadmap-->
+		        <!--Next steps-->
 		        <section>
 		        	<section>
-		                <h2>Roadmap</h2>
+		                <h2>Next steps</h2>
+				<ul>
+					<li>EODAG integration <a title="EODAG search" href="https://eodag.readthedocs.io/en/stable/plugins_reference/search.html">(<code>eodag.plugins.search</code>)</a></li>
+					<li>promote merging results at specification level (mergeResults=TRUE)</li>
+					<li>CRUD management of federated catalogues</li>
+				</ul>
 		            </section>
-
-                    <section>
-                        <h2>OGC API - Records / OGC SWG</h2>
-                        <ul>
-                            <li>Part of <a href="https://ogcapi.org">OGC API</a> efforts</li>
-		              		<li>REST/JSON/OpenAPI/Swagger</li>
-		              		<li>pycsw is part of the OGC API - Records Standards Working Group (SWG)</li>
-                            <li>OGC CQL (text/JSON)</li>
-                        </ul>
                     </section>
-                    <section>
-                        <h2>Coming soon</h2>
-                        <ul>
-                            <li>Federation (aggregation, distributed search)</li>
-                            <li>Repository abstraction (Elasticsearch, Solr)</li>
-                            <li>Deeper pygeofilter integration</li>
-                            <li>Updated CLI tooling (Python Click)</li>
-                            <li>Updated configuration (YAML)</li>
-                        </ul>
                     </section>
-		            <section>
-		              	<h2>Future releases</h2>
-		              	<ul>
-		              		<li>pycsw 3.0
-						<ul>
-							<li>OGC API - Records / CITE</li>
-							<li>Long term stable release for CSW 2/3</li>
-						</ul>
-					</li>
-		              		<li>Relationship to pygeoapi project</li>
-		              	</ul>
-		            </section>
 		        </section>
 
 		        <section>
