@@ -322,52 +322,11 @@ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 		            </section>
 
 		            <section>
-				<h2>OGC API - Records - Part 2: Facets</h2>
-				<p>
-					Grouping/aggregation of search results
-					<img src="../../img/pycsw-facets.png">
-				</p>
-		            </section>
-
-		            <section>
-				<h2>OGC API Transactions</h2>
-				<p>
-					OGC API - Features - Part 4: Create, Replace, Update, Delete
-					<img src="../../img/pycsw-transactions.png">
-				</p>
-		            </section>
-
-		            <section>
-				<h2>OGC API Transactions</h2>
-				<p>
-					OWSLib workflow
-				</p>
-					<img src="../../img/owslib-transactions.png">
-		            </section>
-
-		            <section>
-				<h2>Numerous specification updates</h2>
-		                <ul>
-		                <li>OGC API - Records</li>
-		                  <ul>
-		                    <li>Part 1: Core</li>
-		                    <li>Part 2: Facets</li>
-		                    <li>Part 3: Transactions</li>
-		                  </ul>
-		                <li>Enhanced STAC support (Collection, Catalog, Item)</li>
-		                <li>STAC API 1.0.0 support</li>
-		                  <ul>
-		                    <li>Transactions (Collections and Items)</li>
-		                  </ul>
-		                </ul>
-		            </section>
-
-		            <section>
 				<h2>Repository abstraction</h2>
 		                <ul>
 		                  <li>support for both RDBMS (PostgreSQL, SQLite3) and NoSQL (Elasticsearch, Solr)</li>
 		                  <li>refactor into use of pygeofilter for all query/filters (FES, CQL2 TEXT/JSON)</li>
-		                  <li>development/further testing with Met Norway (fall 2025) (<a href="https://github.com/geopython/pycsw/pull/1158">PR 1158</a>)</li>
+		                  <li>development/further testing with Met Norway (May 2026) (<a href="https://github.com/geopython/pycsw/pull/1158">PR 1158</a>)</li>
 		                </ul>
 		            </section>
 		            <section>
@@ -378,6 +337,123 @@ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 		                  <li><a href="https://docs.pycsw.org/en/latest/pubsub.html">documentation</a></li>
 		                </ul>
 		            </section>
+		          <section>
+                             <h2>Federated search implementation</h2>                      
+		          </section>
+		          <section>
+				<h2>ESA requirement</h2>
+				<ul>
+					<li><a title="EOEPCA+" href="https://eoepca.org">EOEPCA</a></li>
+					<li>Resource catalogue buildling block (BB)</li>
+					<li>Cross-Catalogue Search</li>
+					<li>Federation</li>
+				</ul>
+		          </section>
+		          <section>
+				<h2>pycsw Federated Search support</h2>
+				<p>
+				<ul>
+				  <li>CSW2/CSW3 distributed search</li>
+				  <li>OGC API - Records - Part 4: Federated Search (May 2026)</li>
+				</ul>
+				</p>
+		          </section>
+		          <section>
+                             <h2>Design</h2>
+				<p align="center">
+				<pre>
+				      client
+				         ^
+				         |
+				         v
+         			       pycsw
+				         ^
+				         |
+				         v
+				  /-------------\
+				  ^      ^      ^
+				  |      |      |
+				  v      v      v
+				 cat1   cat2   cat3
+				</pre>
+				</p>
+		          </section>
+		        <section>
+				<h2>Configuration</h2>
+				<p align="center">
+				  <pre>
+distributedsearch:
+    merge_results: true
+    catalogues:
+        - id: fedcat01
+          type: CSW 
+          title: Arctic SDI 
+          url: https://catalogue.arctic-sdi.org/csw
+        - id: metno
+          type: OARec
+          title: met.no API records
+          url: https://test.wps.met.no/collections/no.met.adc:1e7f7e14-5753-5dc9-bf51-0626d9af0dce
+        - id: fedcat03
+          type: STAC-API
+          title: Copernicus Data Space Ecosystem (CDSE) asset-level STAC catalogue
+          url: https://stac.dataspace.copernicus.eu/v1
+          collections:
+              - daymet-annual-pr
+				  </pre>
+				</p>
+		        </section>
+		        <section>
+				<p>
+				<h2>Link relations</h2>
+				<ul>
+				<li><code>http://www.opengis.net/def/rel/ogc/1.0/federatedCatalogues</code></li>
+				</ul>
+				</p>
+				<p>
+				<h2>Endpoints</h2>
+				<ul>
+				  <li><code>/collections/{collectionId}/federatedCatalogues</code></li>
+				  <li><code>/collections/{collectionId}/federatedCatalogues/{federatedCatalogueId}</code></li>
+				  <li><code>/collections/{collectionId}/items?distributedSearch=TRUE</code>
+				  <ul>
+				  <li>Additional query parameters / filters passed to distributed catalogues</code></li>
+				  </ul>
+				  </li>
+				</ul>
+				</p>
+		        </section>
+		        <section>
+				<h2>Search results</h2>
+				<p>
+				<ul>
+				  <li>grouped by <code>federatedSearchResults</code></li>
+				</ul>
+				</p>
+				<h2>Merging search results</h2>
+				<p>
+				<ul>
+				  <li>unpacked into main <code>features</code> array</li>
+				  <li>deduplication: ID prefixing
+				  <ul>
+				    <li><code>id123</code> -> <code>fedcat01::id123</code></li>
+				  </ul>
+				  </li>
+				  <li>catalogue/source identification (<code>federatedCatalogueId</code>)
+				  <ul>
+				    <li><code>"federatedCatalogueId": "fedcat01"</code></li>
+				  </ul>
+				  </li>
+				</ul>
+				</p>
+		        </section>
+                                <section>
+                                <h2>Next steps</h2>
+                                <ul>
+                                        <li>EODAG integration <a title="EODAG search" href="https://eodag.readthedocs.io/en/stable/plugins_reference/search.html">(<code>eodag.plugins.search</code>)</a></li>
+                                        <li>promote merging results at specification level (mergeResults=TRUE)</li>
+                                        <li>CRUD management of federated catalogues</li>
+                                </ul>
+                            </section>
 		        </section>
 
 		        <!--Projects and Recent Deployments-->
@@ -408,9 +484,9 @@ curl http://localhost:8000/?service=CSW&version=2.0.2&request=GetCapabilities
 	            <section>
 					<h2>SoilWise and pycsw</h2>
 	                <ul>
-						<li>30.000 records and 10 faceted fields</li>
-						<li>Aim for Solr as a backend</li>
-						<li>Index pdf content for full text search - result highlighting</li>
+						<li>30 000 records and 10 faceted fields</li>
+						<li>Aim for Apache Solr as a backend</li>
+						<li>Index PDF content for full text search - result highlighting</li>
 						<li>Continuous link liveliness assessment</li>
 						<li>Use LLM/NLP to better understand user questions and provide better results</li>
 					</ul>
